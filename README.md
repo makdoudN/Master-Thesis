@@ -3,16 +3,16 @@
 
 To compile:
 
-'''make
+```make
 make 
-'''
+```
 
 if you want to watch any changes and compile 
 
 
-'''make
+```make
 make watch
-'''
+```
 
 ## Prerequiste
 
