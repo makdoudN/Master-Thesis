@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  23 AUG 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  23 AUG 2017 19:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2101,6 +2101,18 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+
+Overfull \hbox (14.42934pt too wide) in paragraph at lines 10--12
+\OT1/cmr/m/n/12 notre exp^^Serience. In-tu-itive-ment, nous pour-rions penser c
+ette ap-proche inf^^Serieure
+ []
+
+
+Overfull \hbox (3.01001pt too wide) in paragraph at lines 10--12
+\OT1/cmr/m/n/12 cas que nous avons ren-contr^^Ses. Cela s'explique par la dif-f
+i-cult^^Se d'apprentissage
+ []
+
 [11]
 ! Missing $ inserted.
 <inserted text> 
@@ -2185,9 +2197,14 @@ du mod^^Rele de l'environnement
  []
 
 [13]
+Overfull \hbox (12.77565pt too wide) in paragraph at lines 72--73
+[]\OT1/cmr/m/n/12 Nous pou-vons g^^Sen^^Serer des ^^Sepisodes en com-men^^Xcant
+ par les ^^Setats nous int^^Seressant
+ []
+
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 78.
- [14] [15]
+[14] [15]
 ! Undefined control sequence.
 <argument> ...athbb {E}_{\text {s'} \sim \Epsilon 
                                                   }\big [r + \underset {a'}{...
@@ -2216,21 +2233,21 @@ Overfull \hbox (35.48329pt too wide) in paragraph at lines 15--17
 ge of em-pire, ...). l'organisation
  []
 
-[17] <./assets/GYM/gym2.png, id=494, 998.73125pt x 263.98625pt>
+[17] <./assets/GYM/gym2.png, id=492, 998.73125pt x 263.98625pt>
 File: ./assets/GYM/gym2.png Graphic file (type png)
 
 <use ./assets/GYM/gym2.png>
 Package pdftex.def Info: ./assets/GYM/gym2.png used on input line 32.
 (pdftex.def)             Requested size: 376.82907pt x 99.60283pt.
 
-<./assets/GYM/gym.png, id=495, 551.05875pt x 310.15875pt>
+<./assets/GYM/gym.png, id=493, 551.05875pt x 310.15875pt>
 File: ./assets/GYM/gym.png Graphic file (type png)
 
 <use ./assets/GYM/gym.png>
 Package pdftex.def Info: ./assets/GYM/gym.png used on input line 37.
 (pdftex.def)             Requested size: 376.82907pt x 212.10251pt.
 
-<./assets/GYM/deepmindlab.png, id=496, 1104.125pt x 735.74875pt>
+<./assets/GYM/deepmindlab.png, id=494, 1104.125pt x 735.74875pt>
 File: ./assets/GYM/deepmindlab.png Graphic file (type png)
 
 <use ./assets/GYM/deepmindlab.png>
@@ -2256,14 +2273,13 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 29.
 See the caption package documentation for explanation.
 
-
+[20 <./assets/DeepLearning/dl.png>]
 Overfull \hbox (15.04236pt too wide) in paragraph at lines 34--35
 []\OT1/cmr/m/n/12 Un probl^^Reme est main-tenant de d^^Sefinir com-ment va ^etr
 e g^^Sen^^Serer $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12 j []\OM
 L/cmm/m/it/12 ; []$
  []
 
-[20 <./assets/DeepLearning/dl.png>]
 <./assets/DeepLearning/dl2.png, id=515, 695.59875pt x 502.87875pt>
 File: ./assets/DeepLearning/dl2.png Graphic file (type png)
 
@@ -2416,13 +2432,12 @@ File: ./assets/DeepLearning/Dense.png Graphic file (type png)
 Package pdftex.def Info: ./assets/DeepLearning/Dense.png used on input line 82.
 
 (pdftex.def)             Requested size: 236.08382pt x 171.34145pt.
-
+ [23 <./assets/DeepLearning/Dense.png>]
 Overfull \hbox (18.91586pt too wide) in paragraph at lines 90--91
 \OT1/cmr/m/n/12 le r^^Seseaux de neu-rones ^^Ra con-vo-lu-tions utilise l'op^^S
 eration de con-vo-lu-tion pour d^^Seterminer
  []
 
-[23 <./assets/DeepLearning/Dense.png>]
 <./assets/DeepLearning/conv.png, id=535, 795.97375pt x 706.64pt>
 File: ./assets/DeepLearning/conv.png Graphic file (type png)
 
@@ -2503,6 +2518,9 @@ If that doesn't work, type  X <return>  to quit.
 Overfull \hbox (8.7297pt too wide) in paragraph at lines 102--114
  []$[]$$[]$ 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -2682,16 +2700,16 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[24 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png>]
-<./assets/DeepLearning/reccurent.png, id=545, 810.02625pt x 271.0125pt>
+[24] <./assets/DeepLearning/reccurent.png, id=542, 810.02625pt x 271.0125pt>
 File: ./assets/DeepLearning/reccurent.png Graphic file (type png)
 
 <use ./assets/DeepLearning/reccurent.png>
 Package pdftex.def Info: ./assets/DeepLearning/reccurent.png used on input line
  132.
 (pdftex.def)             Requested size: 405.01213pt x 135.5059pt.
- [25 <./assets/DeepLearning/reccurent.png>] <./assets/DeepLearning/DP_EX.png, i
-d=554, 853.1875pt x 570.13pt>
+ [25 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png> <
+./assets/DeepLearning/reccurent.png>]
+<./assets/DeepLearning/DP_EX.png, id=554, 853.1875pt x 570.13pt>
 File: ./assets/DeepLearning/DP_EX.png Graphic file (type png)
 
 <use ./assets/DeepLearning/DP_EX.png>
@@ -4583,7 +4601,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  26661 strings out of 492995
  486937 string characters out of 6132704
- 734516 words of memory out of 5000000
+ 733516 words of memory out of 5000000
  29331 multiletter control sequences out of 15000+600000
  20271 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4619,7 +4637,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (67 pages, 3598334 bytes).
+Output written on main.pdf (67 pages, 3598355 bytes).
 PDF statistics:
  961 PDF objects out of 1000 (max. 8388607)
  782 compressed objects within 8 object streams
