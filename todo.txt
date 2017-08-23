@@ -1,0 +1,13 @@
+1. Relecture Fautes d'orthographes ...
+2. Traduire les titres
+
+
+AVANCEMENT RELECTURE / CORRECTION
+.. 
+PRELIMINAIRE : ENTIER : OK 
+CORPS :
+    - INTRODUCTION : ENTIER : OK
+    - PRELIMINAIRE : NEANT
+    - CURIOSITE    : INTRODUCTION : OK
+    - SESTARRESEAU : ENTIER : OK
+    - CONTRÔLE     : ENTIER : OK

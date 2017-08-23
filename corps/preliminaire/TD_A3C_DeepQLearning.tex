@@ -1,0 +1,139 @@
+\subsubsection{Introduction des principales approches en apprentissage par renforcement}
+
+Après avoir introduit les principaux concepts de l'apprentissage par renforcement, il convient d'en extraire des algorithmes permettant de trouver notre politique optimale. Un difficulté majeur est que nous n'avons ni connaissance des fonctions d'états (et d'états-actions) ni connaissance de la dynamique du modèle (noté $\textcal{T}$).
+
+La question est donc de savoir s'il est possible d'approximer ces fonctions, ou alors de s'en passer.
+
+Avant de répondre à ces questions, il est important de faire la différence entre deux types d'approches en apprentissage par renforcement: 
+
+\begin{enumerate}
+    \item \textbf{Model Free} (Apprentissage sans modèle): \\
+    Dans ce type d'approche, nous n'utilisons pas un modèle de l'environnement pour déterminer la politique optimale, uniquement une recherche basée sur notre expérience. Intuitivement, on pourrait penser cette approche inférieur à l'approche \emph{Model Based} pourtant on verra que l'approche \emph{Model Free} est plus simple à mettre en place et est plus performante dans la plupart des cas que nous avons rencontré. Cela s'explique par la difficulté d'apprentissage de la dynamique de l'environnement (qui dans bien est cas n'est pas stationnaire).
+    
+    \item \textbf{Model Based} (Apprentissage avec modèle): \\
+    Dans ce type d'approche, nous allons utiliser la connaissance du modèle (ou l'approximation interne du modèle par l'agent) pour déterminer la politique optimale. L'apprentissage avec modèle apparaît comme plus puissant mais est encore un problème non résolus (tout comme en Model Free mais des algorithmes ont déjà montré leur capacité à résoudre des environnements difficiles). La difficulté étant que bien souvent l'entrée n'est pas très informative sur la dynamique de l'environnement. Ainsi, une image 2D représentant un monde 3D est une entrée dont il est difficile de tiré un modèle. 
+\end{enumerate}
+
+Dans cette partie, nous allons nous concentrer sur l'établissement d'algorithme \emph{Model Free}. 
+
+
+Précédemment, nous avons établi que nous n'avions aucune connaissances des fonctions d'états, ni de la dynamique de l'environnement. Notre objectif est trouvé une approximation des fonctions optimales d'états qui nous permettrait d'établir une politique optimale. Pour ce faire nous devons trouver un moyen d'approximer la fonction d'état et de trouver un moyen d'établir à quelle point notre approximation est loin de la fonction optimale.
+
+Nous expliquerons plus tard le mécanisme d'approximation de fonctions utilisé (réseau de neurone), pour cette partie, nous considérerons juste la fonction $\omega, s \rightarrow \overset{\sim}{V_\omega}(s)$ qui associe une matrice $\omega$ et un état à une approximation de la fonction d'état. 
+
+Nous pouvons ainsi formaliser, en un problème d'optimisation, notre objectif:
+
+$$ \omega^* = \underset{\omega}{\min} \norm{{V^\pi - \overset{\sim}{V}_\omega}}_2$$
+
+On peut donc en utilisant une méthode d'optimisation tel que la descente de gradient stochastique déterminer un minimum locale:
+
+\begin{equation}
+\begin{aligned}
+\omega_{t+1} = \omega_t - \tfrac{1}{2} \: \alpha \nabla_\omega \norm{{V^\pi - \overset{\sim}{V}_\omega}}_2 \\[0.75ex]
+\omega_{t+1} = \omega_t + \tfrac{1}{2} \: \alpha (V^\pi - \overset{\sim}{V}_\omega)\nabla_\omega \overset{\sim}{V}_\omega
+
+\end{aligned}
+\end{equation}
+
+Cela nous pose un problème de taille, nous n'avons pas connaissance de la fonction d'état or notre précédante équation repose sur la connaissance de celle ci et ils ne seraient pas pertinant de chercher une approximation d'une fonction déjà connue. Il existe plusieurs méthodes pour l'approximer, nous allons en donner deux. Une méthode basé sur la méthode de Monte Carlo, et l'autre basé sur du \emph{bootstrapping} (le bootstrapping étant basé sur des processus itératifs convergeant vers la valeur qui est souhaitée)
+
+\bigskip 
+
+\begin{center}
+
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.5}
+ 
+\begin{tabular}{ |c|c|  }
+\hline
+\multicolumn{2}{|c|}{Approximations possibles de la fonction d'état} \\
+\hline
+Monte-Carlo &  $\overset{\sim}{v}(s_t) = \mathbb{E}_\pi \big[G_t \vert S_t = s\big] \sim \frac{1}{N}\:\underset{k=0}{\sum}^N\: \gamma r_{t+k}$
+\\[1.5ex]
+\hline
+Bootstrapping & $v_{k+1} =  \underset{a}{\sum}\: \pi(a, s)\: \underset{s', r}{\sum} \:p(s', r \:\vert\: s, a) \: \big[ r + \gamma\: v_k(s')\:\big]$  \\
+
+\hline
+\end{tabular}
+\end{center}
+
+\bigskip 
+
+Nous commencerons par envisager l'approche par bootstrapping. La première remarque est que le bootstrapping requiert la connaissance du modèle de l'environnement ce qui est particulièrement handicapant dans notre cas. Néanmoins, nous avons des garantis sur la convergence de notre approximation vers la fonction d'état. Ainsi, si nous sommes en capacité de connaître le modèle, il nous suffit d'itérer pour connaître la véritable fonction d'état. Pourtant, le véritable problème que nous avons avec cette méthode est un problème qui apparaîtra souvent et qui est dénommé \emph{la malédiction de la dimensionalité}. Plus la dimensionnalité de l'état est grande plus le coût de cette approche augmente (de façon exponentielle). Dans notre cas d'usage, l'état sera un tableau de pixel ce qui rend impossible l'utilisation de ce genre d'algorithmes.
+
+Si l'approche précédente reste inapplicable, la philosophie du bootstrapping n'a pas a être jeté. Il n'est pas pertinent de rechercher à tendre vers la fonction d'état en itérant selon la formule de bellman, cependant il sera intéressant de chercher à itérer d'une autre façon de façon à s'approcher de la véritable fonction d'état. Toute la question est de trouver une formule qui permet d'itérer (à faible coût) et qui garantie de tendre vers une approximation de la fonction d'état pertinente.
+
+
+Passons maintenant à la méthode via \emph{Monte Carlo}. Cette méthode s'intègre parfaitement dans l'esprit de l'apprentissage par renforcement. En effet, un agent va jouer un épisode et récupérer un ensemble d'action, état, et récompense. A partir de cet ensemble, nous sommes en capacité d'approximer la fonction d'état tel que l'approximation de la fonction d'état pour un état s correspond aux récompenses obtenues dès la première visite de l'état s (\emph{First visite Monte Carlo}). Dans le cas où on va jouer plusieurs épisode, on pourra affiner notre approximation en approximant notre fonction d'état pour un état s comme étant la moyenne des récompenses obtenues dès la première visite de l'état s sur l'ensemble des épisodes joués. 
+Les méthodes d'approximations de la fonction d'états possède des quelques avantages par rapport au bootstrapping:
+
+\begin{itemize}
+\item Insensible à la dimension de l'état ce qui est intéressant dans notre cas.
+\item On peut générer des épisodes en commençant par les états nous intéressant pour estimer leur fonction d'état ce qui n'est pas possible.
+\end{itemize}
+
+Néanmoins, l'approche par Monte Carlo possède aussi des désavantages tel que le fait d'être obliger de jouer un épisode entier pour pouvoir estimer la fonction d'état. Cela pourra être problématique dans le cas où l'épisode est  long . De plus, il parait pertinent de pouvoir itérer à partir d'estimations antérieures ce qui n'est pas le cas avec les méthodes de Monte Carlo. 
+
+\subsubsection{TD Learning: la base des algorithmes pour le contrôleur}
+\todo[inline]{explain temporal difference --> td}
+ En se basant sur l'approximation décrite précédemment en utilisant l'approche de Monte-Carlo. Pour un environnement non stationnaire (qui change en fonction du temps), on peut trouver une formule approximant la fonction d'état:
+ 
+ \begin{equation}
+\overset{\sim}{V}_{\pi}(S_t) \leftarrow \overset{\sim}{V}_{\pi}(S_t) + \alpha \bigg(\textcolor{blue}{G_t} - \overset{\sim}{V}_{\pi}(S_t)\bigg)
+\end{equation}
+ 
+Le problème de la formule ci dessus est que pour mettre à jour notre croyance sur la fonction d'état, nous sommes obligé d'attendre la fin d'un épisode.
+
+Nous allons voir dans cette partie qu'il est possible de combiner les approches de Monte-Carlo et Bootstrapping pour garder les avantages dès deux méthodes tout en gommant leurs défauts. Pour cela, rapellons la formule de la fonction d'état: 
+
+\begin{align*}
+V_{\pi} = \valueFunction \\
+= \mathbb{E}_\pi \big[\textcolor{blue}{G_t} \vert S_t = s\big] \\
+= \mathbb{E}_\pi \big[\textcolor{red}{r_{t+1} + \gamma V_{\pi}(S_{t+1})} \vert S_t = s\big]
+\end{align*}
+ 
+ On peut en déduire une nouvelle formule pour pour estimer la fonction d'état:
+ 
+\begin{equation}
+\overset{\sim}{V}_{\pi}(S_t) \leftarrow \overset{\sim}{V}_{\pi}(S_t) + \alpha \bigg(\textcolor{red}{r_{t+1} + \gamma V_{\pi}(S_{t+1})} - \overset{\sim}{V}_{\pi}(S_t)\bigg)
+\end{equation}
+
+Nous obtenons ainsi une formule se basant sur du bootstrapping car nous nous servons de la fonction d'état à $S_{t+1}$ et nous n'avons toujours pas besoin de la connaissance du modèle (Monte-Carlo).
+
+La formule précédemment constitue la base sur laquelle on va s'appuyer pour créer notre contrôleur néanmoins si la fonction d'état est importante, il est plus intéressant d'approximer la fonction d'état action dans le contexte d'un contrôle.
+
+Pour le contrôle, c'est donc la formule ci dessous, qui se nomme SARSA (pour \emph{state action reward state action} \footnote{voir la formule ci dessous pour comprendre pourquoi}, qui sera utilisé:
+
+\begin{equation}
+\overset{\sim}{Q}_{\pi}(S_t, A_t) \leftarrow \overset{\sim}{Q}_{\pi}(S_t, A_t) + \alpha \bigg(r_{t+1} + \gamma \overset{\sim}{Q}_{\pi}(S_{t+1}, A_{t+1}) - \overset{\sim}{Q}_{\pi}(S_t, A_t)\bigg)
+\end{equation}
+
+Il existe dans la littérature une pléthore de variation de SARSA en particulier, une des variations qui va nous intéresser est celle qui s'appelle Q-Learning \cite{Watkins92q-learning}: 
+
+\begin{equation}
+\overset{\sim}{Q}_{\pi}(S_t, A_t) \leftarrow \overset{\sim}{Q}_{\pi}(S_t, A_t) + \alpha \bigg(r_{t+1} + \gamma \underset{a'}{\max}\overset{\sim}{Q}_{\pi}(S_{t+1}, a') - \overset{\sim}{Q}_{\pi}(S_t, A_t)\bigg)
+\end{equation}
+
+Malgré leur relative proximité, nous privilégierons le Q-Learning pour dès raison que nous expliquerons plus tard. 
+
+Nous allons finir cette partie sur le TD Learning par expliquer la relation entre l'approximation de la fonction d'état par optimisation d'une fonction de perte et le Q learning. Cette introduction est importante car c'est l'algorithme le plus simple qui a été utilisé durant ce stage sur différent environnements. Nous allons expliquer comment fonctionne le Deep Q Learning \cite{2013arXiv1312.5602M} \cite{mnih-dqn-2015} (soit le premier algorithme d'apprentissage par renforcement profond). 
+
+Néanmoins, nous n'expliquerons pas totalement cette algorithme car il requiert quelques connaissances en deep learning pour la compréhension du mécanisme d'approximation de la fonction. Pourtant, il est important de le mentionner maintenant car il découle du TD Learning et en particulier de l'algorithme du Q-Learning et qu'il est fondamental pour la compréhension des autres algorithmes utilisés durant ce stage.
+
+\subsubsection{Du TD Learning au Deep Q Learning}
+
+Un problème en apprentissage par renforcement est la représentation de la fonction d'état (d'état action). Naivement, on pourrait imaginer un dictionnaire qui à chaque état garderait en mémoire la fonction d'état action pour chacune des actions néanmoiNs dans le cas d'états représentés par des pixels, il faudrait une capacité astronomique de mémoire pour cela. 
+
+Nous préférons donc utiliser des fonctions paramétrisées par un ensemble de poids (noté $\theta$) tel que $f_\theta = \overset{\sim}{Q} \sim Q$. 
+
+Précédemment, nous avions introduit une méthode par optimisation d'une fonction de perte pour permettre de trouver l'ensemble $\theta$ tel que $f_\theta = \overset{\sim}{Q} \sim Q$. 
+
+Imaginons maintenant que notre agent joue dans l'environnement et récolte des transitions (un ensemble composé de l'état courant, de l'état précédent, de l'action jouée et de la récompense obtenu que l'on notera $e_i$ pour la ième transition). L'agent stockera ces transitions dans une mémoire que l'on notera $\mathcal{D}$. Soit $\mathcal{D} = \big(e_0, ..., e_N\big)$ 
+
+La fonction de perte utilisée est: 
+\begin{align}
+L_i(\theta_i) = \mathbb{E_{\text{s}, \text{a} \sim \rho(.)}}\bigg[ \big( y_i - f_\theta(s, a; \theta)\big)^2 \bigg]\\
+y_i = \mathbb{E}_{\text{s'} \sim \Epsilon}\big[r + \underset{a'}{\max}f_{\theta_{i-1}}(s', a') \big] 
+\end{align}
+
+Avec $\rho(s, a)$ la distribution sur la séquence d'états et d'actions.

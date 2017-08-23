@@ -1,0 +1,245 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{bm}                                     % bold in math env
+\usepackage{import}                                 % import package
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tcolorbox}                              % Beautiful box 
+\usepackage{hyperref}
+\usepackage{amsfonts,amsmath,amssymb,amsthm}        % all the math in one 
+\usepackage{amsfonts}
+\usepackage{tikz}                                   % drawing package
+\usepackage[acronym, toc]{glossaries}               % Module for glossary
+\usepackage{acronym}                                % Module for acronyms
+\usepackage{xargs}                                  % more than one args in cmd
+\usepackage{mathrsfs}                               % Cursive font
+\usepackage{afterpage}                              % https://ctan.org/pkg/afterpage
+\usepackage{float}                                  % Position of float
+\usepackage{subfig}
+\usepackage{makecell}                               % \Xhline{NUM\arrayrulewidth}
+
+
+% https://tex.stackexchange.com/questions/20575/attractive-boxed-equations
+\usepackage{empheq}                         
+
+% { ..
+% ..TODO REMOVE WHEN READY
+\usepackage{lipsum}                                 
+\usepackage[nottoc]{tocbibind}
+\usepackage[firstpage]{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{4}
+\SetWatermarkColor[rgb]{0.7,0.1,0.2}
+\usepackage[pdftex,dvipsnames]{xcolor}  % Coloured text etc.
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+% }
+
+\setlength{\parindent}{0pt}     % Annule indentation automatique
+\setlength{\parskip}{2ex}       % Saut de ligne
+
+\title{Contrôle d'un agent via apprentissage par renforcement}
+\author{Makdoud Nizam}
+\date{\today}
+
+% { -- Esthétique
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+% }
+
+
+%% -- Redefinition
+\renewcommand{\contentsname}{Table des matières} 
+\renewcommand*\listfigurename{Liste des figures}
+\renewcommand*{\acronymname}{Abréviations}
+\renewcommand{\glossaryname}{Glossaire}
+
+\makenoidxglossaries
+
+\input{glossary.tex}
+
+% --------------------------------------------------------------------------
+%%                                  BEGIN
+% --------------------------------------------------------------------------
+
+\begin{document}
+
+\pagenumbering{roman}
+
+% ============================================================
+% Mise en page du titre
+% cfhttps://www.overleaf.com/10351077tkgybggqnnsh#/38448375/
+% ============================================================
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{0 cm}{.5 cm}{1.5 cm}{0 cm}{0 cm} % Quick Hack 
+
+\begin{titlepage}
+	\centering
+    \includegraphics[scale = 0.70]{./assets/ensem}\\[.75 cm]	% University Logo
+    \textsc{\large École National Supérieur d'électricité et de Mécanique}\\[1.7 cm]	% University Name
+
+	\rule{\linewidth}{0.5 mm} \\[.8 cm]
+	{ \huge \bfseries \thetitle}\\[.65cm]
+	\rule{\linewidth}{0.5 mm} \\[1.cm]
+	
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft} \large
+			\emph{Auteur:}\\
+			\theauthor
+			\end{flushleft}
+			\end{minipage}~
+			\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+			\emph{Tuteur:} \\
+			A\\
+			B\\
+			C									
+		\end{flushright}
+	\end{minipage}\\[1.3 cm]
+	
+	\today\\[1. cm]
+
+    \begin{minipage}[c]{0.45\linewidth}
+        \hspace{-2cm}\includegraphics[width=1.4\linewidth]{./assets/thales}
+    \end{minipage} \hfill
+    \begin{minipage}[c]{0.45\linewidth}
+        \includegraphics[width=1.4\linewidth]{./assets/inria}
+    \end{minipage}
+
+\end{titlepage}
+
+\newpage
+
+% =================================
+% MACRO 
+% =================================
+
+\newcommand{\norm}[1]{\left\lVert\: #1 \:\right\rVert}
+\newcommand\bsum{\mathlarger{\sum}}          % big summation
+\newcommand\discountedReward{\sum_{k=0}^{\infty} \gamma^kR_{t+k+1}}
+\newcommand\valueFunction{\mathbb{E_\pi}\bigg(\sum_{k=0}^{\infty} \gamma^kR_{t+k+1}  \:\bigg\vert\: s_t=s \bigg)}
+\newcommand\QFunction{\mathbb{E_\pi}\bigg(\sum_{k=0}^{\infty} \gamma^kR_{t+k+1}  \:\bigg\vert\: s_t=s, a_t=a \bigg)}
+
+% Policy with color to highlight the conditional probability (policy color -> policyc)
+\newcommand{\policyc}[1]{
+    \textcolor{#1}{
+        \underbrace{\pi(x\:,\:a)}_{p\:(a \:\vert\: s)}
+    }
+}
+
+\newcommand{\dynamicsc}[1]{
+    \textcolor{#1}{
+        \overbrace{T(s',r , s, a)}^{p(s',r \vert s, a)}
+    }
+}
+
+
+% =================================
+% Résumé - Remerciement
+% =================================
+
+
+% Just the default setting 
+\setmarginsrb{3 cm}{2.5 cm}{3 cm}{2.5 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+\thispagestyle{empty}
+\input{introduction/remerciements/remerciement.tex}
+\newpage
+\thispagestyle{empty}
+\input{introduction/resume/resume.tex}
+\newpage
+
+% =================================
+% Table des matières et autres
+% =================================
+
+\thispagestyle{empty}
+\listoffigures   \newpage
+
+\printglossary[type=\acronymtype]
+\printglossary
+
+\thispagestyle{empty}
+\tableofcontents \newpage
+
+
+% =================================
+% Corps du rapport
+% =================================
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{corps/introduction/context_stage.tex} 
+\input{corps/introduction/description_sujet_stage.tex}
+\input{corps/preliminaire/architecture_fonctionnement_rl.tex}
+\input{corps/preliminaire/TD_A3C_DeepQLearning.tex}
+\input{corps/preliminaire/presentation_outil_benchmarking.tex}
+\input{corps/preliminaire/deep_learning.tex}                    \newpage
+\input{corps/sestarInterfaceReseau/interface.tex}               \newpage
+\input{corps/Controleur/introduction.tex}                       \newpage     
+\input{corps/Controleur/curiosite.tex}                          \newpage     
+
+% =================================
+% Conclusion
+% =================================
+
+\section{Conclusion}                                            \newpage
+
+% =================================
+% Glossaire
+% =================================
+
+\printnoidxglossary\newpage
+
+% =================================
+% Références
+% =================================
+
+\bibliographystyle{unsrt}
+\bibliography{ref}
+
+% =================================
+% DELETE IN THE FUTURE
+% just a personal reminder
+% =================================
+
+\newpage\newpage
+
+\todo[inline]{The original todo note withouth changed colours.\newline Here's another line.}
+\lipsum[11]\unsure{Is this correct?}\unsure{I'm unsure about also!}
+\lipsum[11]\change{Change this!}
+\lipsum[11]\info{This can help me in chapter seven!}
+\lipsum[11]\improvement{This really needs to be improved!\newline\newline What was I thinking?!}
+\lipsum[11]
+\thiswillnotshow{This is hidden since option `disable' is chosen!}
+\improvement[inline]{The following section needs to be rewritten!}
+\lipsum[11]
+
+ 
+% =================================
+% Bibliographie
+% =================================
+
+\end{document}

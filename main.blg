@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+Database file #1: ref.bib
+Warning--entry type for "blogPerceptron" isn't style-file defined
+--line 35 of file ref.bib
+I was expecting a `,' or a `}'---line 214 of file ref.bib
+ :   
+ :   @article{REPLAY,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You've used 17 entries,
+            1791 wiz_defined-function locations,
+            545 strings with 7144 characters,
+and the built_in function-call counts, 3830 in all, are:
+= -- 256
+> -- 335
+< -- 1
++ -- 118
+- -- 101
+* -- 295
+:= -- 705
+add.period$ -- 49
+call.type$ -- 17
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 17
+duplicate$ -- 145
+empty$ -- 294
+format.name$ -- 101
+if$ -- 788
+int.to.chr$ -- 0
+int.to.str$ -- 17
+missing$ -- 15
+newline$ -- 86
+num.names$ -- 17
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 77
+stack$ -- 0
+substring$ -- 88
+swap$ -- 27
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 24
+width$ -- 19
+write$ -- 181
+(There was 1 error message)

@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+
+\bibitem{blogPerceptron}
+sebastian raschka.
+\newblock Single-layer neural networks and gradient descent, 2015.
+
+\bibitem{Watkins92q-learning}
+Christopher J. C.~H. Watkins and Peter Dayan.
+\newblock Q-learning.
+\newblock In {\em Machine Learning}, pages 279--292, 1992.
+
+\bibitem{2013arXiv1312.5602M}
+V.~{Mnih}, K.~{Kavukcuoglu}, D.~{Silver}, A.~{Graves}, I.~{Antonoglou},
+  D.~{Wierstra}, and M.~{Riedmiller}.
+\newblock {Playing Atari with Deep Reinforcement Learning}.
+\newblock {\em ArXiv e-prints}, December 2013.
+
+\bibitem{mnih-dqn-2015}
+Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei~A. Rusu, Joel Veness,
+  Marc~G. Bellemare, Alex Graves, Martin Riedmiller, Andreas~K. Fidjeland,
+  Georg Ostrovski, Stig Petersen, Charles Beattie, Amir Sadik, Ioannis
+  Antonoglou, Helen King, Dharshan Kumaran, Daan Wierstra, Shane Legg, and
+  Demis Hassabis.
+\newblock Human-level control through deep reinforcement learning.
+\newblock {\em Nature}, 518(7540):529--533, 02 2015.
+
+\bibitem{1606.01540}
+Greg Brockman, Vicki Cheung, Ludwig Pettersson, Jonas Schneider, John Schulman,
+  Jie Tang, and Wojciech Zaremba.
+\newblock Openai gym, 2016.
+
+\bibitem{DBLP:journals/corr/BeattieLTWWKLGV16}
+Charles Beattie, Joel~Z. Leibo, Denis Teplyashin, Tom Ward, Marcus Wainwright,
+  Heinrich K{\"{u}}ttler, Andrew Lefrancq, Simon Green, V{\'{\i}}ctor
+  Vald{\'{e}}s, Amir Sadik, Julian Schrittwieser, Keith Anderson, Sarah York,
+  Max Cant, Adam Cain, Adrian Bolton, Stephen Gaffney, Helen King, Demis
+  Hassabis, Shane Legg, and Stig Petersen.
+\newblock Deepmind lab.
+\newblock {\em CoRR}, abs/1612.03801, 2016.
+
+\bibitem{DBLP:journals/corr/KempkaWRTJ16}
+Michal Kempka, Marek Wydmuch, Grzegorz Runc, Jakub Toczek, and Wojciech
+  Jaskowski.
+\newblock Vizdoom: {A} doom-based {AI} research platform for visual
+  reinforcement learning.
+\newblock {\em CoRR}, abs/1605.02097, 2016.
+
+\bibitem{LSTM}
+Sepp Hochreiter and J\"{u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Comput.}, 9(8):1735--1780, November 1997.
+
+\bibitem{2017arXiv170504862C}
+A.~V. {Clemente}, H.~N. {Castej{\'o}n}, and A.~{Chandra}.
+\newblock {Efficient Parallel Methods for Deep Reinforcement Learning}.
+\newblock {\em ArXiv e-prints}, May 2017.
+
+\bibitem{DBLP:journals/corr/MnihBMGLHSK16}
+Volodymyr Mnih, Adri{\`{a}}~Puigdom{\`{e}}nech Badia, Mehdi Mirza, Alex Graves,
+  Timothy~P. Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu.
+\newblock Asynchronous methods for deep reinforcement learning.
+\newblock {\em CoRR}, abs/1602.01783, 2016.
+
+\bibitem{Merkel:2014:DLL:2600239.2600241}
+Dirk Merkel.
+\newblock Docker: Lightweight linux containers for consistent development and
+  deployment.
+\newblock {\em Linux J.}, 2014(239), March 2014.
+
+\bibitem{DDQN}
+Hado van Hasselt, Arthur Guez, and David Silver.
+\newblock Deep reinforcement learning with double q-learning.
+\newblock {\em CoRR}, abs/1509.06461, 2015.
+
+\bibitem{DUEL}
+Ziyu Wang, Nando de~Freitas, and Marc Lanctot.
+\newblock Dueling network architectures for deep reinforcement learning.
+\newblock {\em CoRR}, abs/1511.06581, 2015.
+
+\bibitem{REPLAY}
+Tom Schaul, John Quan, Ioannis Antonoglou, and David Silver.
+\newblock Prioritized experience replay.
+\newblock {\em CoRR}, abs/1511.05952, 2015.
+
+\bibitem{GAE}
+John Schulman, Philipp Moritz, Sergey Levine, Michael~I. Jordan, and Pieter
+  Abbeel.
+\newblock High-dimensional continuous control using generalized advantage
+  estimation.
+\newblock {\em CoRR}, abs/1506.02438, 2015.
+
+\bibitem{hierarchicalcuriosity}
+Nat Dilokthanakul, Christos Kaplanis, Nick Pawlowski, and Murray Shanahan.
+\newblock Feature control as intrinsic motivation for hierarchical
+  reinforcement learning.
+\newblock {\em CoRR}, abs/1705.06769, 2017.
+
+\bibitem{curiositydriven}
+Rein Houthooft, Xi~Chen, Yan Duan, John Schulman, Filip~De Turck, and Pieter
+  Abbeel.
+\newblock Curiosity-driven exploration in deep reinforcement learning via
+  bayesian neural networks.
+\newblock {\em CoRR}, abs/1605.09674, 2016.
+
+\end{thebibliography}
