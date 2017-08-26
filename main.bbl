@@ -102,4 +102,32 @@ Rein Houthooft, Xi~Chen, Yan Duan, John Schulman, Filip~De Turck, and Pieter
   bayesian neural networks.
 \newblock {\em CoRR}, abs/1605.09674, 2016.
 
+\bibitem{empowerment}
+Tobias Jung, Daniel Polani, and Peter Stone.
+\newblock Empowerment for continuous agent-environment systems.
+\newblock {\em CoRR}, abs/1201.6583, 2012.
+
+\bibitem{empowerment2}
+S.~{Mohamed} and D.~{Jimenez Rezende}.
+\newblock {Variational Information Maximisation for Intrinsically Motivated
+  Reinforcement Learning}.
+\newblock {\em ArXiv e-prints}, September 2015.
+
+\bibitem{empowerment3}
+C.~{Salge}, C.~{Glackin}, and D.~{Polani}.
+\newblock {Empowerment -- an Introduction}.
+\newblock {\em ArXiv e-prints}, October 2013.
+
+\bibitem{neuronebayes}
+C.~{Blundell}, J.~{Cornebise}, K.~{Kavukcuoglu}, and D.~{Wierstra}.
+\newblock {Weight Uncertainty in Neural Networks}.
+\newblock {\em ArXiv e-prints}, May 2015.
+
+\bibitem{VIME}
+Rein Houthooft, Xi~Chen, Yan Duan, John Schulman, Filip~De Turck, and Pieter
+  Abbeel.
+\newblock Curiosity-driven exploration in deep reinforcement learning via
+  bayesian neural networks.
+\newblock {\em CoRR}, abs/1605.09674, 2016.
+
 \end{thebibliography}

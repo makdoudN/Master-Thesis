@@ -120,7 +120,7 @@ Le module de curiosité est composé de plusieurs sous-modules:
         Le sous module inverse a pour but de trouver une compression permettant de réduire la dimensionnalité de l'état tout en étant capable de retrouver l'action qu'a effectué l'agent. Cela a pour but de travailler avec en entrée un nouvelle état qui est le plus pertinant possible. Imaginons le cas où l'agent se trouve devant un arbre, celui-ci aura les feuilles bougeants en permanence. Avec la stratégie de curiosité descrite précédemment il est alors aiséde voir que l'agent sera encouragé à ne pas bouger. Or, avec ce nouveau module de curiosité, comme l'agent ne peut agir sur les feuilles, ce sous module supprimer les feuilles et ainsi le module de curiosité aura un effet bien plus stable et ne sera pas sujet à des scénarios défavorables.
     \item \textbf{sous-module avant}\\
         Le sous module avant à pour but de déterminer la récompense intrinsèque qui sera donné à l'agent.
-        En utilisant les compressions des états à l'instant t et t+1 (que l'on nommera $\phi(s_t)$ et $\phi(s_{t+1}$), on peut appliquer la même stratégie que décrite dans le chapitre précédent. La récompense intrinsèques est donnée par la formule suivante:
+        En utilisant les compressions des états à l'instant t et t+1 que l'on nommera $\phi(s_t)$ et $\phi(s_{t+1}$), on peut appliquer la même stratégie que décrite dans le chapitre précédent. La récompense intrinsèques est donnée par la formule suivante:
 
 \begin{equation}\label{eqn:hierarchicalcuriosity}
     \text{récompense intrinsèque} = \tau\: \norm{ \phi(s_t) - \phi(s_{t+1}) }^2 
