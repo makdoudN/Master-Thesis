@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  23 AUG 2017 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  26 AUG 2017 15:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1385,20 +1385,20 @@ LaTeX Warning: Label `eqn:hierarchicalcuriosity' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count183
@@ -1481,7 +1481,7 @@ See the subcaption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.88 \begin{document}
+l.92 \begin{document}
                      
 If you do not understand this error, please take a closer look
 at the documentation of the `subcaption' package, especially the
@@ -1492,18 +1492,18 @@ If that doesn't work, type  X <return>  to quit.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 88.
+Package hyperref Info: Link coloring OFF on input line 92.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty)
 
-LaTeX Warning: You have requested, on input line 88, version
+LaTeX Warning: You have requested, on input line 92, version
                `2012/07/28' of package nameref,
                but only version
                `'
                is available.
 
-LaTeX Info: Redefining \ref on input line 88.
-LaTeX Info: Redefining \pageref on input line 88.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1512,7 +1512,7 @@ LaTeX Info: Redefining \pageref on input line 88.
 ! Undefined control sequence.
 <argument> \sf@counterlist 
                            
-l.88 \begin{document}
+l.92 \begin{document}
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1523,19 +1523,19 @@ and I'll forget about whatever was undefined.
 <./assets/ensem.png, id=183, 368.0952pt x 120.45pt>
 File: ./assets/ensem.png Graphic file (type png)
  <use ./assets/ensem.png>
-Package pdftex.def Info: ./assets/ensem.png used on input line 100.
+Package pdftex.def Info: ./assets/ensem.png used on input line 104.
 (pdftex.def)             Requested size: 257.66487pt x 84.3144pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 112.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 112.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 112.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 116.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1544,26 +1544,26 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 File: ./assets/thales.jpg Graphic file (type jpg)
 
 <use ./assets/thales.jpg>
-Package pdftex.def Info: ./assets/thales.jpg used on input line 125.
+Package pdftex.def Info: ./assets/thales.jpg used on input line 129.
 (pdftex.def)             Requested size: 263.77919pt x 65.16875pt.
 
-Overfull \hbox (18.45915pt too wide) in paragraph at lines 125--126
+Overfull \hbox (18.45915pt too wide) in paragraph at lines 129--130
 [] [] 
  []
 
 <./assets/inria.png, id=186, 1204.5pt x 591.20876pt>
 File: ./assets/inria.png Graphic file (type png)
  <use ./assets/inria.png>
-Package pdftex.def Info: ./assets/inria.png used on input line 128.
+Package pdftex.def Info: ./assets/inria.png used on input line 132.
 (pdftex.def)             Requested size: 263.77919pt x 129.47093pt.
 
-Overfull \hbox (75.36465pt too wide) in paragraph at lines 128--129
+Overfull \hbox (75.36465pt too wide) in paragraph at lines 132--133
 [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <142.26378> not available
-(Font)              size <24.88> substituted on input line 131.
+(Font)              size <24.88> substituted on input line 135.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1583,7 +1583,7 @@ might try typing `S' now just to see what is salvageable.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 \newpage
+l.172 \newpage
                [1] (./introduction/resume/resume.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
 
@@ -1715,9 +1715,9 @@ im-pliquent une d^^Secomposition
  []
 
 [4]) (./corps/preliminaire/architecture_fonctionnement_rl.tex [5]
-Overfull \hbox (23.55054pt too wide) in paragraph at lines 7--8
-\OT1/cmr/m/n/12 statis-tique (deep learn-ing) comme un moyen de pal-lier aux li
-m-i-ta-tions de l'apprentissage
+Overfull \hbox (9.71179pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/12 pro-fond (deep learn-ing) comme un moyen de pal-lier aux lim-i-
+ta-tions de l'apprentissage
  []
 
 [6]
@@ -1733,7 +1733,7 @@ ond clas-sique suit le sch^^Sema
  []
 
 
-Overfull \hbox (15.17159pt too wide) in paragraph at lines 55--56
+Overfull \hbox (15.17159pt too wide) in paragraph at lines 56--57
 []\OT1/cmr/m/n/12 Notre ob-jec-tif est de trou-ver la poli-tique $\OT1/cmr/bx/n
 /12 ^^E$ \OT1/cmr/m/n/12 tel que la somme pond^^Ser^^See des r^^Secompenses
  []
@@ -1742,7 +1742,7 @@ Overfull \hbox (15.17159pt too wide) in paragraph at lines 55--56
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1753,7 +1753,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1764,7 +1764,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1775,7 +1775,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1786,7 +1786,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1797,7 +1797,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1808,7 +1808,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1819,7 +1819,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1830,7 +1830,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1841,7 +1841,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1852,7 +1852,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1863,7 +1863,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1874,7 +1874,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1885,7 +1885,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1896,7 +1896,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1907,7 +1907,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1918,7 +1918,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1929,7 +1929,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.73 \end{gather}
+l.74 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1940,7 +1940,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1951,7 +1951,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1962,7 +1962,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1973,7 +1973,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1984,7 +1984,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1995,7 +1995,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2006,7 +2006,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2017,7 +2017,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2028,7 +2028,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2039,7 +2039,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2050,7 +2050,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2061,7 +2061,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.91 \end{gather}
+l.92 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2070,22 +2070,22 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
@@ -2735,7 +2735,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-<./assets/interfaceReseau/overviewInterface.png, id=561, 919.435pt x 446.66875p
+<./assets/interfaceReseau/overviewInterface.png, id=562, 919.435pt x 446.66875p
 t>
 File: ./assets/interfaceReseau/overviewInterface.png Graphic file (type png)
  <use ./assets/interfaceReseau/overviewInterface.png>
@@ -2763,7 +2763,7 @@ l.67 ... l'agent dans SE-STAR a été l'\gls{A3C}
 
 You need to define a glossary entry before you can use it.
 
-[29] <./assets/interfaceReseau/paaca3c.png, id=583, 1056.94875pt x 479.7925pt>
+[29] <./assets/interfaceReseau/paaca3c.png, id=584, 1056.94875pt x 479.7925pt>
 File: ./assets/interfaceReseau/paaca3c.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/paaca3c.png>
@@ -2792,7 +2792,7 @@ l.97 ...STAR sous Linux et d'utiliser l'\gls{A3C}.
 
 You need to define a glossary entry before you can use it.
 
-<./assets/interfaceReseau/docker.png, id=597, 467.7475pt x 310.15875pt>
+[31] <./assets/interfaceReseau/docker.png, id=604, 467.7475pt x 310.15875pt>
 File: ./assets/interfaceReseau/docker.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/docker.png>
@@ -2805,7 +2805,6 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 104.
 See the caption package documentation for explanation.
 
-[31]
 
 ! Package glossaries Error: Glossary entry `frameworks' has not been defined.
 
@@ -2832,7 +2831,7 @@ terfaceResume-eps-converted-to.pdf ./assets/interfaceReseau/interfaceResume.eps
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=604, 584.182
+<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=605, 584.182
 5pt x 733.74126pt>
 File: ./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2899,7 +2898,7 @@ Overfull \hbox (40.01376pt too wide) in paragraph at lines 38--59
 Overfull \vbox (10.19737pt too high) has occurred while \output is active []
 
 
-[36] <./assets/DeepLearning/cartpole.png, id=655, 431.6125pt x 279.0425pt>
+[36] <./assets/DeepLearning/cartpole.png, id=656, 431.6125pt x 279.0425pt>
 File: ./assets/DeepLearning/cartpole.png Graphic file (type png)
 
 <use ./assets/DeepLearning/cartpole.png>
@@ -2965,7 +2964,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/DQNResult/4.png, id=656, 578.16pt x 397.485pt>
+<./assets/DQNResult/4.png, id=657, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/4.png Graphic file (type png)
 
 <use ./assets/DQNResult/4.png>
@@ -3030,7 +3029,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/DQNResult/2.png, id=657, 578.16pt x 397.485pt>
+<./assets/DQNResult/2.png, id=658, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/2.png Graphic file (type png)
 
 <use ./assets/DQNResult/2.png>
@@ -3095,7 +3094,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/DQNResult/3.png, id=658, 578.16pt x 397.485pt>
+<./assets/DQNResult/3.png, id=659, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/3.png Graphic file (type png)
 
 <use ./assets/DQNResult/3.png>
@@ -3160,7 +3159,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/DQNResult/1.png, id=659, 578.16pt x 397.485pt>
+<./assets/DQNResult/1.png, id=660, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/1.png Graphic file (type png)
 
 <use ./assets/DQNResult/1.png>
@@ -3246,7 +3245,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/11.png, id=675, 433.62pt x 289.08pt>
+<./assets/A3CResult/11.png, id=676, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/11.png Graphic file (type png)
 
 <use ./assets/A3CResult/11.png>
@@ -3311,7 +3310,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/22.png, id=676, 433.62pt x 289.08pt>
+<./assets/A3CResult/22.png, id=677, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/22.png Graphic file (type png)
 
 <use ./assets/A3CResult/22.png>
@@ -3376,7 +3375,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/33.png, id=677, 433.62pt x 289.08pt>
+<./assets/A3CResult/33.png, id=678, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/33.png Graphic file (type png)
 
 <use ./assets/A3CResult/33.png>
@@ -3441,7 +3440,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/44.png, id=678, 433.62pt x 289.08pt>
+<./assets/A3CResult/44.png, id=679, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/44.png Graphic file (type png)
 
 <use ./assets/A3CResult/44.png>
@@ -3507,7 +3506,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/pong.png, id=687, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/pong.png, id=688, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/pong.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong.png>
@@ -3573,7 +3572,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/pong1.png, id=688, 452.69125pt x 586.19pt>
+<./assets/ATARI_RESULT/pong1.png, id=689, 452.69125pt x 586.19pt>
 File: ./assets/ATARI_RESULT/pong1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong1.png>
@@ -3639,7 +3638,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/Seaquest.png, id=689, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Seaquest.png, id=690, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Seaquest.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Seaquest.png>
@@ -3705,7 +3704,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/Sequest1.png, id=690, 424.58624pt x 555.07375pt>
+<./assets/ATARI_RESULT/Sequest1.png, id=691, 424.58624pt x 555.07375pt>
 File: ./assets/ATARI_RESULT/Sequest1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Sequest1.png>
@@ -3771,7 +3770,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/Spaceinvader.png, id=691, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Spaceinvader.png, id=692, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Spaceinvader.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader.png>
@@ -3837,10 +3836,810 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ATARI_RESULT/Spaceinvader1.png, id=692, 338.26375pt x 484.81125pt>
+<./assets/ATARI_RESULT/Spaceinvader1.png, id=693, 338.26375pt x 484.81125pt>
 File: ./assets/ATARI_RESULT/Spaceinvader1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader1.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Spaceinvader1.png used on input 
 line 177.
-(pdf
+(pdftex.def)             Requested size: 125.61182pt x 180.02834pt.
+ [40]
+Overfull \vbox (9.5611pt too high) has occurred while \output is active []
+
+
+[41 <./assets/ATARI_RESULT/pong.png> <./assets/ATARI_RESULT/pong1.png> <./asset
+s/ATARI_RESULT/Seaquest.png> <./assets/ATARI_RESULT/Sequest1.png> <./assets/ATA
+RI_RESULT/Spaceinvader.png> <./assets/ATARI_RESULT/Spaceinvader1.png>]
+Overfull \hbox (7.90163pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/12 notre ar-chi-tec-ture de contr^ole. Nous avons cr^^Se^^Se plusi
+eurs en-vi-ron-nements et plusieurs
+ []
+
+
+Overfull \hbox (22.53667pt too wide) in paragraph at lines 193--194
+\OT1/cmr/m/n/12 L'objectif de ce stage fut de contr^oler un agent ^^Ra travers 
+un en-vi-ron-nement labyrinthique
+ []
+
+<./assets/SESTAR/env_sestar_agent.png, id=710, 880.28876pt x 859.21pt>
+File: ./assets/SESTAR/env_sestar_agent.png Graphic file (type png)
+
+<use ./assets/SESTAR/env_sestar_agent.png>
+Package pdftex.def Info: ./assets/SESTAR/env_sestar_agent.png used on input lin
+e 202.
+(pdftex.def)             Requested size: 106.85788pt x 104.2938pt.
+
+<./assets/SESTAR/vue_agent_1.png, id=711, 462.528pt x 346.896pt>
+File: ./assets/SESTAR/vue_agent_1.png Graphic file (type png)
+
+<use ./assets/SESTAR/vue_agent_1.png>
+Package pdftex.def Info: ./assets/SESTAR/vue_agent_1.png used on input line 208
+.
+(pdftex.def)             Requested size: 138.91393pt x 104.18605pt.
+
+Overfull \hbox (8.7297pt too wide) in paragraph at lines 200--212
+ []$[]$$[]$ 
+ []
+
+[42 <./assets/SESTAR/env_sestar_agent.png> <./assets/SESTAR/vue_agent_1.png>]
+<./assets/SESTAR/se2.png, id=723, 1562.83875pt x 836.12375pt>
+File: ./assets/SESTAR/se2.png Graphic file (type png)
+
+<use ./assets/SESTAR/se2.png>
+Package pdftex.def Info: ./assets/SESTAR/se2.png used on input line 244.
+(pdftex.def)             Requested size: 234.4157pt x 125.41315pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[43pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
+8}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.250 
+      ]
+File: ./assets/SESTAR/env_sestar_color.png Graphic file (type png)
+ <use ./assets/SESTAR/env_sestar_color.png>
+Package pdftex.def Info: ./assets/SESTAR/env_sestar_color.png used on input lin
+e 257.
+(pdftex.def)             Requested size: 289.06754pt x 171.33273pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[44 <./assets/SESTAR/se2.png>]
+Overfull \hbox (3.7063pt too wide) in paragraph at lines 279--280
+\OT1/cmr/m/n/12 heureuse-ment, nous n'avons pas pu exp^^Serimenter au-tant de t
+emps que nous l'aurions
+ []
+
+) [45] (./corps/Controleur/curiosite.tex [46]
+! Double subscript.
+l.26 ...erset{t=1}{\overset{T}{\sum}}\: \big( r_a_
+                                                  *^t - r^t_{a_i} \big) $).
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 ...léatoire}, \textbf{greedy}, \bm{\epsilon}
+                                                  \textbf{-greedy}, et\ \tex...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[47]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.38 ...d'actions selon la méthode} \bm{\epsilon}
+                                                   \textbf{-greedy} \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 39.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.39     La\ mé
+                thode\ $\epsilon$-greedy est une variante de la méthode gre...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.39     La\ mé
+                thode\ $\epsilon$-greedy est une variante de la méthode gre...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no � in font cmex10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.39     La\ méthode\ $\epsilon
+                                $-greedy est une variante de la méthode gre...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! Package glossaries Error: Glossary entry `UCB' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42     \gls{UCB} 
+                   pour \emph{Upper-Confidence-Bound} repose sur le principe...
+
+You need to define a glossary entry before you can use it.
+
+
+! Package glossaries Error: Glossary entry `UCB' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...iner utilisé une variante de l'\gls{UCB} 
+                                                  dans le cadre de notre pro...
+
+You need to define a glossary entry before you can use it.
+
+
+! Package glossaries Error: Glossary entry `UCB' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 Sans pour autant utiliser \gls{UCB},
+                                          on pourra partir de cette idée de...
+
+You need to define a glossary entry before you can use it.
+
+[48]
+Overfull \hbox (28.56392pt too wide) in paragraph at lines 56--57
+\OT1/cmr/m/n/12 repr^^Sesentation par-tielle de l'environnement. En ef-fet, l'a
+gent ne voit qu'un repr^^Sesentation
+ []
+
+<./assets/CURIOSITY/curiosity.png, id=762, 491.8375pt x 475.7775pt>
+File: ./assets/CURIOSITY/curiosity.png Graphic file (type png)
+
+<use ./assets/CURIOSITY/curiosity.png>
+Package pdftex.def Info: ./assets/CURIOSITY/curiosity.png used on input line 67
+.
+(pdftex.def)             Requested size: 245.91814pt x 237.88815pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49]
+! Undefined control sequence.
+\reserved@b ->\T@ref 
+                     
+l.87 L'équation ~\ref{
+                       eqn:intrinsicmotivation} est trop simple pour être u...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\reserved@b ->\T@ref 
+                     
+l.87 ... alors selon l'équation \eqref{eq:simple}
+                                                   l'agent serait encouragé...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[50 <./assets/CURIOSITY/curiosity.png>]
+! Undefined control sequence.
+\reserved@b ->\T@ref 
+                     
+l.94 L'équation \ref{
+                      eqn:hierarchicalcuriosity} montre comment utilisé seu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<./assets/CURIOSITY/A3C_auxiliaire.png, id=776, 598.235pt x 576.1525pt>
+File: ./assets/CURIOSITY/A3C_auxiliaire.png Graphic file (type png)
+
+<use ./assets/CURIOSITY/A3C_auxiliaire.png>
+Package pdftex.def Info: ./assets/CURIOSITY/A3C_auxiliaire.png used on input li
+ne 103.
+(pdftex.def)             Requested size: 209.38538pt x 201.65639pt.
+ [51 <./assets/CURIOSITY/A3C_auxiliaire.png>] [52]
+<./assets/CURIOSITY/curiosity2.png, id=790, 755.82375pt x 599.23875pt>
+File: ./assets/CURIOSITY/curiosity2.png Graphic file (type png)
+
+<use ./assets/CURIOSITY/curiosity2.png>
+Package pdftex.def Info: ./assets/CURIOSITY/curiosity2.png used on input line 1
+38.
+(pdftex.def)             Requested size: 302.32414pt x 239.69125pt.
+) [53 <./assets/CURIOSITY/curiosity2.png>] [54] [55]
+Overfull \hbox (1.4426pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/12 En anglais: \OT1/cmr/m/it/12 Graph-ics Pro-cess-ing Unit\OT1/
+cmr/m/n/12 , est un com-posant nor-male-ment utilis^^Se
+ []
+
+[56] (./main.bbl
+Underfull \hbox (badness 4872) in paragraph at lines 59--63
+[]\OT1/cmr/m/n/12 Volodymyr Mnih, Adri^^Ra Puig-dom^^Renech Ba-dia, Mehdi Mirza
+, Alex
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 59--63
+\OT1/cmr/m/n/12 Graves, Tim-o-thy P. Lil-l-i-crap, Tim Harley, David Sil-ver, a
+nd Ko-ray
+ []
+
+[57]) [58]
+
+LaTeX Warning: Marginpar on page 59 moved.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `OliveGreen'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 ...\info{This can help me in chapter seven!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 ...d!\newline\newline What was I thinking?!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 ...following section needs to be rewritten!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 ...following section needs to be rewritten!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 ...following section needs to be rewritten!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `Plum'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 ...following section needs to be rewritten!}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[59]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3E3761A0180AC4EDCF4A55DF1AAF98B9;4303.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 117.38377pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 26663 strings out of 492995
+ 486950 string characters out of 6132704
+ 733534 words of memory out of 5000000
+ 29333 multiletter control sequences out of 15000+600000
+ 20271 words of font info for 76 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,17n,87p,2011b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (67 pages, 3599624 bytes).
+PDF statistics:
+ 962 PDF objects out of 1000 (max. 8388607)
+ 783 compressed objects within 8 object streams
+ 232 named destinations out of 1000 (max. 500000)
+ 580 words of extra memory for PDF output out of 10000 (max. 10000000)
+

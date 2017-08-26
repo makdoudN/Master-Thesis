@@ -126,7 +126,7 @@ Un problème en apprentissage par renforcement est la représentation de la fonc
 
 Nous préférons donc utiliser des fonctions paramétrées par un ensemble de poids (noté $\theta$) tel que $f_\theta = \overset{\sim}{Q} \sim Q$. 
 
-Précédemment, nous avions introduit une méthode par optimisation d'une fonction de perte pour permettre de trouver l'ensemble $\theta$ tel que $f_\theta = \overset{\sim}{Q} \sim Q$. 
+Précédemment, nous avions introduit une méthode par minimisation d'une fonction de perte pour permettre de trouver l'ensemble $\theta$ tel que $f_\theta = \overset{\sim}{Q} \sim Q$. 
 
 Imaginons maintenant que notre agent joue dans l'environnement et récolte des transitions (un ensemble composé de l'état courant, de l'état précédent, de l'action jouée et de la récompense obtenu que l'on notera $e_i$ pour la ième transition). L'agent stockera ces transitions dans une mémoire que l'on notera $\mathcal{D}$. Soit $\mathcal{D} = \big(e_0, ..., e_N\big)$ 
 

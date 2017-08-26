@@ -4,7 +4,7 @@
 Dans cette partie, nous allons passer en revue les principales explications du fonctionnement de notre contrôleur. 
 En particulier, nous expliquerons comment fonctionne l'apprentissage par renforcement, les intérêts de cette technologie et ses limites.  
 
-Nous mettrons en relation l'apprentissage par renforcement avec l'apprentissage statistique (deep learning) comme un moyen de pallier aux limitations de l'apprentissage par renforcement et ses autres bénéfices.
+Nous mettrons en relation l'apprentissage par renforcement avec l'apprentissage profond (deep learning) comme un moyen de pallier aux limitations de l'apprentissage par renforcement et ses autres bénéfices.
 
 Enfin, nous discuterons des moyens mis en place pour tester nos algorithmes sur des cas moins complexes pour s'assurer du fonctionnement de nos codes.
 
@@ -12,7 +12,7 @@ Enfin, nous discuterons des moyens mis en place pour tester nos algorithmes sur 
 
 L'apprentissage par renforcement est une sous partie de l'apprentissage automatique. Elle fait référence à un apprentissage qui est à partir d'expériences de façon à optimiser un récompense en cours du temps. A chaque action effectuée par l'agent, l'environnement attribut à celui ci une récompense. L'objectif est de trouver la séquence d'actions qui mène à la plus grande accumulation de récompenses. L'agent va être uniquement guider par son expérience et devrait apprendre de ses erreurs. Imaginons le cas suivant: nous devons apprendre un nouveau tour à notre chien néanmoins, il est impossible de lui exprimer clairement ce que nous souhaitons de lui. Notre seul levier est la quantité de récompenses ou au contraire de punition que va recevoir le chien. Ce problème est connu sous le nom de: \emph{problème d'assignement du crédit}. 
 
-Une dès particularité de l'apprentissage par renforcement réside dans le fait que notre politique d'actions influencent grandement les états rencontrés. Prenons l'exemple d'un agent autonome dans un labyrinthe à la jonction entre deux salles différentes. Si la séquence d'actions fait se retrouver notre agent dans une des salles, il n'aura accès qu'a la vision de cette salle.
+Une des particularités de l'apprentissage par renforcement réside dans le fait que notre politique d'actions influencent grandement les états rencontrés. Prenons l'exemple d'un agent autonome dans un labyrinthe à la jonction entre deux salles différentes. Si la séquence d'actions fait se retrouver notre agent dans une des salles, il n'aura accès qu'a la vision de cette salle.
 
 \subsubsection{Formalisation de l'approche par renforcement}
 
@@ -50,7 +50,8 @@ Nous considérerons:
 Ainsi un problème d'apprentissage par renforcement profond classique suit le schéma suivant. A chaque pas de temps t, l'agent va percevoir un état $\bm{s_t \in \mathbb{S}}$. L'agent va choisir l'action à effectuer $\bm{a \in A(s_t)}$ et va recevoir une récompense $\bm{r_{t+1}}$. Notre objectif va donc être de maximiser la somme pondérée des récompenses obtenues par notre séquence d'actions. 
 
 
-On définira notre problème sous la forme d'un processus décisionnel de Markov, soit un 5-tuple $\bm{\big(\mathbb{S}, \mathbb{A}, \mathbb{T}, \mathbb{R}, \gamma \big)}$.
+On définira notre problème sous la forme d'un processus décisionnel de Markov, soit un 5-tuple $\bm{\big(\mathbb{S}, \mathbb{A}, \mathbb{T}, \mathbb{R}, \gamma \big)}$. Le paramètre $\gamma$ qui intervient dans la définition de notre problème est important car c'est lui qui va pondérer l'importance d'un récompense au cours du temps. Il existe de multitudes choix pour la spécification de ce paramètre, néanmois dans notre cas $\gamma$ sera égale à .99. Cela pour deux raisons, la première est que nous souhaitons que les récompenses tardives soient prisent en compte mais de façon plus faible que celle qui sont immédiates. Deuxièmement, pour des raisons de stabilité, il est important théoriquement que le paramètre $\gamma$ soit inférieur à 1.
+
 
 Notre objectif est de trouver la politique $\bm{\Pi}$ tel que la somme pondérée des récompenses (notée $\bm{G_t}$) soit maximale avec:
 
@@ -111,5 +112,5 @@ On peut dès lors en trouvant une fonction d'états (ou d'états-action) optimal
 Sauf cas jouet, les fonctions d'états (états-actions) sont inconnus, notre objectif va être de trouver une façon de les approximer pour permettre l'établissement d'algorithme de contrôle par apprentissage par renforcement.\\
 
 
-Enfin, nous montrerons que nous ne sommes pas obliger de passer par ce proxy pour déterminer la politique optimale tout en insistant que la connaissance des fonctions d'états est un atout quelque soit l'approche utilisé.
+Enfin, nous montrerons que nous ne sommes pas obliger de passer par ce intermédiare pour déterminer la politique optimale tout en insistant sur l'importance de la connaissance des fonctions d'états est un atout quelque soit l'approche utilisé.
 \end{tcolorbox}
