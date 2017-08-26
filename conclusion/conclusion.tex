@@ -1,0 +1,23 @@
+\section{Conclusion}
+\subsection{Contributions}
+
+Durant ce stage, nous avons mise au point une interface entre SE-STAR et les principaux algorithmes d'apprentissage profond. Une asservissement d'un agent, naviguant de l'environnement simulé par SE-STAR grâce à notre interface, a été construit. Notre asservissement à comme particularité d'être doté d'un module de curiosité exploitant des mécanismes \emph{"assimilable de façon lointaine à la curiosité humaines"} dans le but de résoudre le dilemme exploitation / exploration.
+
+
+\subsection{Discussions et travail futur}
+
+Plusieurs autres directions pourraient être intéressantes à explorer. Nous parlerons exclusivement des pistes pour améliorer notre contrôleur dans cette partie. La première piste à explorer serait l'introduction de mécanismes utilisants la dynamique de l'environnement dans notre contrôle. En effet, actuellement, notre apprentissage repose sur des algorithmes ne requierant pas de modèle. Pourtant, il existe des algorithmes utilisants la dynamque du modèle pour créer des modules similaire à notre module de curiosité. Nous pouvons d'ailleurs à bien des égards voir notre module de curiosité comme une module se servant d'une partie de la dynamque du modèle. 
+
+En se basant sur l'idée d'utiliser le modèle pour y extraire des entrées auxiliaires intéressantes, il en ressort deux grandes voies empruntables:
+
+\begin{itemize}
+\item \textbf{Théorie de l'information: Empowerment, entropie relative:}\\
+A travers se stage, il en ressort une tentative de formalisation du concept de curiosité dans l'espoir qu'il aide l'agent à parcourir l'environnement pour en extraire une politique optimale. Les approches de constructions de motivations auxiliaires basées sur la théorie de l'information utilise des notions mesurant l'incertude d'une variable aléatoire sachant la connaissance d'une autre variable aléatoire (entropie mutelle). Se basant sur ces mesures, nous pouvons utiliser comme récompenses auxiliaires l'information donnée par une séquence d'action sur un état future. L'idée sous jacente étant non seulement de pousser l'agent a exploré l'environnement mais aussi d'encourager l'environnement à prendre contrôle de l'environnement (reposant sur le concept d'empowerment \cite{empowerment}, \cite{empowerment2}, \cite{empowerment3}). Les principaux contrôles basés sur ces notions sont utilisés sur des cas simples, il est impossible de calculer l'entropie mutuelle (ou l'empowerment) dans les cas où la dimensionnalité de l'état est haute (ou continue). Des approches basées sur des approximations variationnelles se mettent en place (\cite{controleempowerment}). C'est donc une voie à ne pas négliger dans la conception d'un module de curiosité qui soit le plus béfénique pour l'agent possible. 
+\item \textbf{Probabilité bayésienne, incertitude et curiosité}\\
+Une façon simple de définir l'incertitude est de la considérer comme état une mésure de la réduction de l'incertitude de l'agent sur un certain espace (d'état futur, du modèle ...). Pourtant, les réseaux de neurones sont pour la plupart déterministique ( à une entrée A nous avons une sortie B). Or, ils serait interessant de pouvoir encoder directement dans le réseau de neurone l'incertitude (sur un espace) de l'agent. Pour cela, nous pouvons faire appel au probabilité bayésienne qui donne un cadre formelle parfait pour prendre en compte l'incertitude. L'intégration de réseau de neurone bayésien est un champ de la recherche très active (\cite{neuronebayes}). Une récompense auxilaire pourrait être proportionnelle à la réduction d'incertitude concernant la dynamique du modèle (à supposer que l'agent garde en mémoire une estimé de la dynamique) \cite{VIME}
+\end{itemize}
+
+Il y aurait beaucoups d'approches à explorer, et ces approches sont bien moins découpées qu'il semblerait. L'approche du contrôle utilisant des mécanismes motivationnelles intrinsèques est prometteuse. Particulièrement, dans dès cas où les approches usuelles ne fonctionnent pas. 
+
+Ce stage m'aura donc permis d'explorer à travers un objectif concrêt, l'asservissement d'un agent simulé via des motivations intrinsèques intégrées à un contrôle par apprentissage par renforcement profond.
+
