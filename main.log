@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  26 AUG 2017 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  26 AUG 2017 17:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1314,73 +1314,7 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 \c@@todonotes@numberoftodonotes=\count182
 ) (./glossary.tex) (./main.aux
 
-LaTeX Warning: Label `main:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:a' multiply defined.
-
-
-LaTeX Warning: Label `main:b' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:b' multiply defined.
-
-
-LaTeX Warning: Label `main:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:a' multiply defined.
-
-
-LaTeX Warning: Label `main:b' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:b' multiply defined.
-
-
-LaTeX Warning: Label `main:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:a' multiply defined.
-
-
-LaTeX Warning: Label `main:b' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:b' multiply defined.
-
-
 LaTeX Warning: Label `fig:main' multiply defined.
-
-
-LaTeX Warning: Label `main:b' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:b' multiply defined.
-
-
-LaTeX Warning: Label `main:a' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:a' multiply defined.
-
-
-LaTeX Warning: Label `main:b' multiply defined.
-
-
-LaTeX Warning: Label `sub@main:b' multiply defined.
-
-
-LaTeX Warning: Label `fig:main' multiply defined.
-
-
-LaTeX Warning: Label `fig:test1' multiply defined.
-
-
-LaTeX Warning: Label `fig:test2' multiply defined.
-
-
-LaTeX Warning: Label `eqn:hierarchicalcuriosity' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1604,18 +1538,18 @@ Overfull \hbox (4.37778pt too wide) in paragraph at lines 45--46
  [] 
  []
 
-[3]) [4 <./assets/globale.png>] (./main.lof)
+[3]) [4 <./assets/globale.png>] (./main.lof [5])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [5]
+ [6]
 No file main.acr.
 No file main.gls.
-(./main.toc [6])
+(./main.toc [7])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [7] (./corps/introduction/context_stage.tex
+ [8] (./corps/introduction/context_stage.tex
 Overfull \hbox (9.28246pt too wide) in paragraph at lines 3--4
 \OT1/cmr/m/n/12 Dans le cadre de ma for-ma-tion d'ing^^Senieur ^^Ra l'[]\OT1/cm
 r/m/it/12 Ecole Na-tionale Sup^^Serieure d'^^Selectricit^^Se
@@ -1658,7 +1592,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-<./assets/thales_chiffres.jpg, id=369, 640.3925pt x 360.34625pt>
+<./assets/thales_chiffres.jpg, id=385, 640.3925pt x 360.34625pt>
 File: ./assets/thales_chiffres.jpg Graphic file (type jpg)
 
 <use ./assets/thales_chiffres.jpg>
@@ -1676,7 +1610,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/SESTAR/env_sestar_color.png, id=374, 1927.2pt x 1142.2675pt>
+<./assets/SESTAR/env_sestar_color.png, id=390, 1927.2pt x 1142.2675pt>
 File: ./assets/SESTAR/env_sestar_color.png Graphic file (type png)
 
 <use ./assets/SESTAR/env_sestar_color.png>
@@ -1684,7 +1618,7 @@ Package pdftex.def Info: ./assets/SESTAR/env_sestar_color.png used on input lin
 e 17.
 (pdftex.def)             Requested size: 192.34286pt x 113.98943pt.
 
-<./assets/SESTAR/sestar_metro.png, id=375, 679.53876pt x 349.305pt>
+<./assets/SESTAR/sestar_metro.png, id=391, 679.53876pt x 349.305pt>
 File: ./assets/SESTAR/sestar_metro.png Graphic file (type png)
 
 <use ./assets/SESTAR/sestar_metro.png>
@@ -1940,7 +1874,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1951,7 +1885,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1962,7 +1896,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1973,7 +1907,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1984,7 +1918,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1995,7 +1929,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2006,7 +1940,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2017,7 +1951,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2028,7 +1962,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2039,7 +1973,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2050,7 +1984,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2061,7 +1995,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \bsum ->\mathlarger 
                     {\sum }
-l.92 \end{gather}
+l.88 \end{gather}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2069,27 +2003,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-) (./corps/preliminaire/TD_A3C_DeepQLearning.tex [10]
+[9] [10]) (./corps/preliminaire/TD_A3C_DeepQLearning.tex
 ! Undefined control sequence.
 <recently read> \textcal 
                          
@@ -2196,15 +2110,16 @@ Overfull \hbox (18.58948pt too wide) in paragraph at lines 62--63
 du mod^^Rele de l'environnement
  []
 
-[13]
+
 Overfull \hbox (12.77565pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/12 Nous pou-vons g^^Sen^^Serer des ^^Sepisodes en com-men^^Xcant
  par les ^^Setats nous int^^Seressant
  []
 
+[13]
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 78.
-[14] [15]
+ [14] [15]
 ! Undefined control sequence.
 <argument> ...athbb {E}_{\text {s'} \sim \Epsilon 
                                                   }\big [r + \underset {a'}{...
@@ -2233,35 +2148,35 @@ Overfull \hbox (35.48329pt too wide) in paragraph at lines 15--17
 ge of em-pire, ...). l'organisation
  []
 
-[17] <./assets/GYM/gym2.png, id=492, 998.73125pt x 263.98625pt>
+<./assets/GYM/gym2.png, id=499, 998.73125pt x 263.98625pt>
 File: ./assets/GYM/gym2.png Graphic file (type png)
 
 <use ./assets/GYM/gym2.png>
 Package pdftex.def Info: ./assets/GYM/gym2.png used on input line 32.
 (pdftex.def)             Requested size: 376.82907pt x 99.60283pt.
 
-<./assets/GYM/gym.png, id=493, 551.05875pt x 310.15875pt>
+<./assets/GYM/gym.png, id=500, 551.05875pt x 310.15875pt>
 File: ./assets/GYM/gym.png Graphic file (type png)
 
 <use ./assets/GYM/gym.png>
 Package pdftex.def Info: ./assets/GYM/gym.png used on input line 37.
 (pdftex.def)             Requested size: 376.82907pt x 212.10251pt.
 
-<./assets/GYM/deepmindlab.png, id=494, 1104.125pt x 735.74875pt>
+<./assets/GYM/deepmindlab.png, id=501, 1104.125pt x 735.74875pt>
 File: ./assets/GYM/deepmindlab.png Graphic file (type png)
 
 <use ./assets/GYM/deepmindlab.png>
 Package pdftex.def Info: ./assets/GYM/deepmindlab.png used on input line 42.
 (pdftex.def)             Requested size: 251.22363pt x 167.39993pt.
 ) (./corps/preliminaire/deep_learning.tex
-[18] [19 <./assets/GYM/gym2.png> <./assets/GYM/gym.png> <./assets/GYM/deepmindl
+[17] [18 <./assets/GYM/gym2.png> <./assets/GYM/gym.png> <./assets/GYM/deepmindl
 ab.png (PNG copy)>]
 Overfull \hbox (16.37006pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/n/12 nous ap-pro-fondirons ce point plus tard, mais il est ^^Ra note
 r que selon l'architecture
  []
 
-<./assets/DeepLearning/dl.png, id=509, 540.0175pt x 400.49625pt>
+[19] <./assets/DeepLearning/dl.png, id=523, 540.0175pt x 400.49625pt>
 File: ./assets/DeepLearning/dl.png Graphic file (type png)
 
 <use ./assets/DeepLearning/dl.png>
@@ -2273,14 +2188,14 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 29.
 See the caption package documentation for explanation.
 
-[20 <./assets/DeepLearning/dl.png>]
+
 Overfull \hbox (15.04236pt too wide) in paragraph at lines 34--35
 []\OT1/cmr/m/n/12 Un probl^^Reme est main-tenant de d^^Sefinir com-ment va ^etr
 e g^^Sen^^Serer $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12 j []\OM
 L/cmm/m/it/12 ; []$
  []
 
-<./assets/DeepLearning/dl2.png, id=515, 695.59875pt x 502.87875pt>
+<./assets/DeepLearning/dl2.png, id=524, 695.59875pt x 502.87875pt>
 File: ./assets/DeepLearning/dl2.png Graphic file (type png)
 
 <use ./assets/DeepLearning/dl2.png>
@@ -2292,28 +2207,8 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 38.
 See the caption package documentation for explanation.
 
-
-! LaTeX Error: \begin{document} ended by \end{center}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 \end{center}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.40 \end{center}
-                 
-Things are pretty mixed up, but I think the worst is over.
-
-
-Overfull \hbox (25.0172pt too wide) in paragraph at lines 42--44
+[20 <./assets/DeepLearning/dl.png> <./assets/DeepLearning/dl2.png>]
+Overfull \hbox (25.0172pt too wide) in paragraph at lines 41--42
 []\OT1/cmr/m/n/12 Dans la par-tie suiv-ante, nous ex-pli-querons les m^^Secanis
 mes re-spon-s-ables de l'optimisation
  []
@@ -2321,7 +2216,7 @@ mes re-spon-s-ables de l'optimisation
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52   +1 \text{si} W^
+l.49   +1 \text{si} W^
                       TX > \theta &  \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2329,7 +2224,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.52   +1 \text{si} W^TX > \theta &
+l.49   +1 \text{si} W^TX > \theta &
                                      \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2340,7 +2235,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.55 $
+l.52 $
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2348,24 +2243,23 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[21 <./assets/DeepLearning/dl2.png>]
-<./assets/DeepLearning/perceptron_node.png, id=522, 657.45625pt x 319.1925pt>
+<./assets/DeepLearning/perceptron_node.png, id=531, 657.45625pt x 319.1925pt>
 File: ./assets/DeepLearning/perceptron_node.png Graphic file (type png)
 
 <use ./assets/DeepLearning/perceptron_node.png>
 Package pdftex.def Info: ./assets/DeepLearning/perceptron_node.png used on inpu
-t line 58.
+t line 55.
 (pdftex.def)             Requested size: 230.28726pt x 111.80183pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 59.
+(caption)                particular \caption on input line 56.
 See the caption package documentation for explanation.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.65   1  \text{si} x \in
+l.62   1  \text{si} x \in
                           \text{Chien}  &  \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2373,7 +2267,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.65   1  \text{si} x \in \text{Chien}  &
+l.62   1  \text{si} x \in \text{Chien}  &
                                            \\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2384,7 +2278,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.66   -1 \text{si} x \in
+l.63   -1 \text{si} x \in
                           \text{Chat}&
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2392,7 +2286,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.66   -1 \text{si} x \in \text{Chat}&
+l.63   -1 \text{si} x \in \text{Chat}&
                                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2403,7 +2297,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.68 $
+l.65 $
       , cela nous permet donc de définir la façon dont on va optimiser les...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2411,121 +2305,58 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Overfull \hbox (25.71222pt too wide) in paragraph at lines 74--75
+[21 <./assets/DeepLearning/perceptron_node.png>]
+Overfull \hbox (25.71222pt too wide) in paragraph at lines 71--72
 \OT1/cmr/m/n/12 ^^Ra un en-sem-ble de entr^^Sees et sor-ties as-soci^^Sees que 
 l'on notera $\OMS/cmsy/m/n/12 D \OT1/cmr/m/n/12 = [](\OML/cmm/m/it/12 x[]; y[]\
 OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; 
 y[]\OT1/cmr/m/n/12 )[]$.
  []
 
-[22 <./assets/DeepLearning/perceptron_node.png>]
-Overfull \hbox (1.51744pt too wide) in paragraph at lines 76--77
+
+Overfull \hbox (1.51744pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/n/12 Pourtant, en l'^^Setat nous sommes in-ca-pables d'approximer 
 des fonc-tions non lin^^Seaire.
  []
 
-<./assets/DeepLearning/Dense.png, id=529, 786.94pt x 571.13374pt>
+<./assets/DeepLearning/Dense.png, id=538, 786.94pt x 571.13374pt>
 File: ./assets/DeepLearning/Dense.png Graphic file (type png)
 
 <use ./assets/DeepLearning/Dense.png>
-Package pdftex.def Info: ./assets/DeepLearning/Dense.png used on input line 82.
+Package pdftex.def Info: ./assets/DeepLearning/Dense.png used on input line 79.
 
 (pdftex.def)             Requested size: 236.08382pt x 171.34145pt.
- [23 <./assets/DeepLearning/Dense.png>]
-Overfull \hbox (18.91586pt too wide) in paragraph at lines 90--91
+ [22]
+Overfull \hbox (18.91586pt too wide) in paragraph at lines 87--88
 \OT1/cmr/m/n/12 le r^^Seseaux de neu-rones ^^Ra con-vo-lu-tions utilise l'op^^S
 eration de con-vo-lu-tion pour d^^Seterminer
  []
 
-<./assets/DeepLearning/conv.png, id=535, 795.97375pt x 706.64pt>
+[23 <./assets/DeepLearning/Dense.png>]
+<./assets/DeepLearning/conv.png, id=548, 795.97375pt x 706.64pt>
 File: ./assets/DeepLearning/conv.png Graphic file (type png)
 
 <use ./assets/DeepLearning/conv.png>
-Package pdftex.def Info: ./assets/DeepLearning/conv.png used on input line 104.
+Package pdftex.def Info: ./assets/DeepLearning/conv.png used on input line 101.
 
 (pdftex.def)             Requested size: 85.48499pt x 75.88684pt.
 
-
-! Package caption Error: No float type 'conv' defined.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105   \captionof{conv}{
-                         Opération de convolution dans un CNN}
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: No float type 'conv' defined.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 ...v}{Opération de convolution dans un CNN}
-                                                  
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<./assets/DeepLearning/convVSdense.png, id=536, 717.68124pt x 681.54625pt>
+<./assets/DeepLearning/convVSdense.png, id=549, 717.68124pt x 681.54625pt>
 File: ./assets/DeepLearning/convVSdense.png Graphic file (type png)
 
 <use ./assets/DeepLearning/convVSdense.png>
 Package pdftex.def Info: ./assets/DeepLearning/convVSdense.png used on input li
-ne 110.
+ne 106.
 (pdftex.def)             Requested size: 85.48499pt x 81.17885pt.
 
-
-! Package caption Error: No float type 'conv' defined.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111   \captionof{conv}{
-                         Activation de  $x_3$}
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: No float type 'conv' defined.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111   \captionof{conv}{Activation de  $x_3$}
-                                              
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (8.7297pt too wide) in paragraph at lines 102--114
+Overfull \hbox (8.7297pt too wide) in paragraph at lines 99--109
  []$[]$$[]$ 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2533,7 +2364,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2544,7 +2375,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2553,7 +2384,7 @@ So I'll assume that you meant to type \cr instead.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2561,7 +2392,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2572,7 +2403,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2581,7 +2412,7 @@ So I'll assume that you meant to type \cr instead.
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifdim \wdz@ >\totwidth@ \global \totwidth@ \wdz@ \fi \endtemp...
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2592,7 +2423,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2603,7 +2434,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2614,7 +2445,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2622,7 +2453,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2633,7 +2464,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2642,7 +2473,7 @@ So I'll assume that you meant to type \cr instead.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2650,7 +2481,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2661,7 +2492,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
@@ -2670,7 +2501,7 @@ So I'll assume that you meant to type \cr instead.
 ! Extra }, or forgotten \right.
 <template> }
             $}\calc@shift@gather \set@gather@field \endtemplate 
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2681,7 +2512,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2692,7 +2523,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.125 \end{gather*}
+l.120 \end{gather*}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2700,29 +2531,32 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[24] <./assets/DeepLearning/reccurent.png, id=542, 810.02625pt x 271.0125pt>
+<./assets/DeepLearning/reccurent.png, id=551, 810.02625pt x 271.0125pt>
 File: ./assets/DeepLearning/reccurent.png Graphic file (type png)
 
 <use ./assets/DeepLearning/reccurent.png>
 Package pdftex.def Info: ./assets/DeepLearning/reccurent.png used on input line
- 132.
+ 127.
 (pdftex.def)             Requested size: 405.01213pt x 135.5059pt.
- [25 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png> <
-./assets/DeepLearning/reccurent.png>]
-<./assets/DeepLearning/DP_EX.png, id=554, 853.1875pt x 570.13pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png>]
+<./assets/DeepLearning/DP_EX.png, id=560, 853.1875pt x 570.13pt>
 File: ./assets/DeepLearning/DP_EX.png Graphic file (type png)
 
 <use ./assets/DeepLearning/DP_EX.png>
-Package pdftex.def Info: ./assets/DeepLearning/DP_EX.png used on input line 151
+Package pdftex.def Info: ./assets/DeepLearning/DP_EX.png used on input line 146
 .
 (pdftex.def)             Requested size: 426.59271pt x 285.0643pt.
 
-Overfull \hbox (7.8909pt too wide) in paragraph at lines 151--152
+Overfull \hbox (7.8909pt too wide) in paragraph at lines 146--147
  [] 
  []
 
-) [26 <./assets/DeepLearning/DP_EX.png>]
-(./corps/sestarInterfaceReseau/interface.tex
+) [25 <./assets/DeepLearning/reccurent.png>] [26 <./assets/DeepLearning/DP_EX.p
+ng>] (./corps/sestarInterfaceReseau/interface.tex
 ! Undefined control sequence.
 \reserved@b ->\T@ref 
                      
@@ -2735,7 +2569,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-<./assets/interfaceReseau/overviewInterface.png, id=562, 919.435pt x 446.66875p
+<./assets/interfaceReseau/overviewInterface.png, id=574, 919.435pt x 446.66875p
 t>
 File: ./assets/interfaceReseau/overviewInterface.png Graphic file (type png)
  <use ./assets/interfaceReseau/overviewInterface.png>
@@ -2763,7 +2597,7 @@ l.67 ... l'agent dans SE-STAR a été l'\gls{A3C}
 
 You need to define a glossary entry before you can use it.
 
-[29] <./assets/interfaceReseau/paaca3c.png, id=584, 1056.94875pt x 479.7925pt>
+[29] <./assets/interfaceReseau/paaca3c.png, id=596, 1056.94875pt x 479.7925pt>
 File: ./assets/interfaceReseau/paaca3c.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/paaca3c.png>
@@ -2778,7 +2612,7 @@ Overfull \hbox (4.07019pt too wide) in paragraph at lines 85--86
 [30 <./assets/interfaceReseau/paaca3c.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\gls' on input line 94.
+(hyperref)                removing `\gls' on input line 96.
 
 
 ! Package glossaries Error: Glossary entry `A3C' has not been defined.
@@ -2787,22 +2621,22 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 ...STAR sous Linux et d'utiliser l'\gls{A3C}.
+l.99 ...STAR sous Linux et d'utiliser l'\gls{A3C}.
                                                    Nous avons remarqué des ...
 
 You need to define a glossary entry before you can use it.
 
-[31] <./assets/interfaceReseau/docker.png, id=604, 467.7475pt x 310.15875pt>
+[31] <./assets/interfaceReseau/docker.png, id=617, 467.7475pt x 310.15875pt>
 File: ./assets/interfaceReseau/docker.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/docker.png>
 Package pdftex.def Info: ./assets/interfaceReseau/docker.png used on input line
- 103.
-(pdftex.def)             Requested size: 187.09567pt x 124.0613pt.
+ 105.
+(pdftex.def)             Requested size: 233.87317pt x 155.079pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 104.
+(caption)                particular \caption on input line 106.
 See the caption package documentation for explanation.
 
 
@@ -2812,7 +2646,7 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.112 ...s applications. Or, les \gls{frameworks} 
+l.114 ...s applications. Or, les \gls{frameworks} 
                                                   d'apprentissage et les app...
 
 You need to define a glossary entry before you can use it.
@@ -2828,22 +2662,22 @@ ps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=./assets/interfaceReseau/in
 terfaceResume-eps-converted-to.pdf ./assets/interfaceReseau/interfaceResume.eps
 >
-(epstopdf)             \includegraphics on input line 118.
+(epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=605, 584.182
+<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=618, 584.182
 5pt x 733.74126pt>
 File: ./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf Graphic fil
 e (type pdf)
 
 <use ./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf>
 Package pdftex.def Info: ./assets/interfaceReseau/interfaceResume-eps-converted
--to.pdf used on input line 118.
+-to.pdf used on input line 120.
 (pdftex.def)             Requested size: 408.92496pt x 513.61539pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 119.
+(caption)                particular \caption on input line 121.
 See the caption package documentation for explanation.
 
 [32 <./assets/interfaceReseau/docker.png>]) [33 <./assets/interfaceReseau/inter
@@ -2898,7 +2732,7 @@ Overfull \hbox (40.01376pt too wide) in paragraph at lines 38--59
 Overfull \vbox (10.19737pt too high) has occurred while \output is active []
 
 
-[36] <./assets/DeepLearning/cartpole.png, id=656, 431.6125pt x 279.0425pt>
+[36] <./assets/DeepLearning/cartpole.png, id=668, 431.6125pt x 279.0425pt>
 File: ./assets/DeepLearning/cartpole.png Graphic file (type png)
 
 <use ./assets/DeepLearning/cartpole.png>
@@ -2914,57 +2748,13 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.80 \subfloat
-              []{\label{main:a}\includegraphics[width=1\linewidth]{./assets/...
+              [Comparaison: Famille DQN]{\includegraphics[width=1\linewidth]...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.80 ...[width=1\linewidth]{./assets/DQNResult/4}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.80 ...[width=1\linewidth]{./assets/DQNResult/4}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.80 ...[width=1\linewidth]{./assets/DQNResult/4}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.80 ...[width=1\linewidth]{./assets/DQNResult/4}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/DQNResult/4.png, id=657, 578.16pt x 397.485pt>
+<./assets/DQNResult/4.png, id=669, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/4.png Graphic file (type png)
 
 <use ./assets/DQNResult/4.png>
@@ -2979,57 +2769,13 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.84 \subfloat
-              []{\label{main:b}\includegraphics[width=1\linewidth]{./assets/...
+              [Comparaison: DQN / DDQN]{\includegraphics[width=1\linewidth]{...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.84 ...[width=1\linewidth]{./assets/DQNResult/2}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.84 ...[width=1\linewidth]{./assets/DQNResult/2}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.84 ...[width=1\linewidth]{./assets/DQNResult/2}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.84 ...[width=1\linewidth]{./assets/DQNResult/2}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/DQNResult/2.png, id=658, 578.16pt x 397.485pt>
+<./assets/DQNResult/2.png, id=670, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/2.png Graphic file (type png)
 
 <use ./assets/DQNResult/2.png>
@@ -3044,57 +2790,13 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.89 \subfloat
-              []{\label{main:a}\includegraphics[width=1\linewidth]{./assets/...
+              [Comparaison: DQN / Dueling]{\includegraphics[width=1\linewidt...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.89 ...[width=1\linewidth]{./assets/DQNResult/3}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.89 ...[width=1\linewidth]{./assets/DQNResult/3}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.89 ...[width=1\linewidth]{./assets/DQNResult/3}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.89 ...[width=1\linewidth]{./assets/DQNResult/3}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/DQNResult/3.png, id=659, 578.16pt x 397.485pt>
+<./assets/DQNResult/3.png, id=671, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/3.png Graphic file (type png)
 
 <use ./assets/DQNResult/3.png>
@@ -3109,80 +2811,35 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.93 \subfloat
-              []{\label{main:b}\includegraphics[width=1\linewidth]{./assets/...
+              [Comparaison: DQN / DQN-Target]{\includegraphics[width=1\linew...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.93 ...[width=1\linewidth]{./assets/DQNResult/1}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.93 ...[width=1\linewidth]{./assets/DQNResult/1}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.93 ...[width=1\linewidth]{./assets/DQNResult/1}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.93 ...[width=1\linewidth]{./assets/DQNResult/1}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/DQNResult/1.png, id=660, 578.16pt x 397.485pt>
+<./assets/DQNResult/1.png, id=672, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/1.png Graphic file (type png)
 
 <use ./assets/DQNResult/1.png>
 Package pdftex.def Info: ./assets/DQNResult/1.png used on input line 93.
 (pdftex.def)             Requested size: 209.3509pt x 143.9254pt.
 Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 97.
- [37 <./assets/DeepLearning/cartpole.png>]
+put line 96.
+
 ! Too many }'s.
-l.101 ...QN visant à stabiliser l'apprentissage}}
+l.100 ...QN visant à stabiliser l'apprentissage}}
                                                   . Ceci s'explique car les ...
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 
-Overfull \hbox (0.43942pt too wide) in paragraph at lines 101--103
+Overfull \hbox (0.43942pt too wide) in paragraph at lines 100--102
 \OT1/cmr/m/n/12 Target-Learning[][][]. Ceci s'explique car les d^^Seriv^^Ses du
  DQN sta-bilisent l'entra^^^Pnement
  []
 
-[38 <./assets/DQNResult/4.png> <./assets/DQNResult/2.png> <./assets/DQNResult/3
-.png> <./assets/DQNResult/1.png>]
-Overfull \hbox (8.73264pt too wide) in paragraph at lines 104--105
+[37 <./assets/DeepLearning/cartpole.png>]
+Overfull \hbox (8.73264pt too wide) in paragraph at lines 103--104
 []\OT1/cmr/m/n/12 Ce con-stat est corr^^Sel^^Se avec d'autres exp^^Serimentatio
 ns faites qui ne sont pas pr^^Sesentent
  []
@@ -3194,62 +2851,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.113 \subfloat
-               []{\label{main:a}\includegraphics[width=1\linewidth]{./assets...
+l.112 \subfloat
+               [Comparaison : Famille A3C]{\includegraphics[width=1\linewidt...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.113 ...idth=1\linewidth]{./assets/A3CResult/11}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.113 ...idth=1\linewidth]{./assets/A3CResult/11}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.113 ...idth=1\linewidth]{./assets/A3CResult/11}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.113 ...idth=1\linewidth]{./assets/A3CResult/11}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/A3CResult/11.png, id=676, 433.62pt x 289.08pt>
+<./assets/A3CResult/11.png, id=680, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/11.png Graphic file (type png)
 
 <use ./assets/A3CResult/11.png>
-Package pdftex.def Info: ./assets/A3CResult/11.png used on input line 113.
+Package pdftex.def Info: ./assets/A3CResult/11.png used on input line 112.
 (pdftex.def)             Requested size: 209.3509pt x 139.56844pt.
 
 
@@ -3259,63 +2872,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \subfloat
-               []{\label{main:b}\includegraphics[width=1\linewidth]{./assets...
+l.116 \subfloat
+               [Comparaison A3C-LSTM / A3C-LSTM-GAE avec 16 processus]{\incl...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.117 ...idth=1\linewidth]{./assets/A3CResult/22}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.117 ...idth=1\linewidth]{./assets/A3CResult/22}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.117 ...idth=1\linewidth]{./assets/A3CResult/22}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.117 ...idth=1\linewidth]{./assets/A3CResult/22}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/A3CResult/22.png, id=677, 433.62pt x 289.08pt>
+<./assets/A3CResult/22.png, id=681, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/22.png Graphic file (type png)
 
 <use ./assets/A3CResult/22.png>
-Package pdftex.def Info: ./assets/A3CResult/22.png used on input line 117.
+Package pdftex.def Info: ./assets/A3CResult/22.png used on input line 116.
 (pdftex.def)             Requested size: 209.3509pt x 139.56844pt.
+
+Underfull \hbox (badness 1038) in paragraph at lines 116--116
+[]\OT1/cmr/m/n/10 (b) |Com-para-i-son A3C-LSTM / A3C-LSTM-
+ []
 
 
 ! LaTeX Error: No counter 'subfigure@save' defined.
@@ -3324,8 +2897,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 \subfloat
-               []{\label{main:a}\includegraphics[width=1\linewidth]{./assets...
+l.121 \subfloat
+               [Comparaison A3C-LSTM / A3C-FF avec 8 processus]{\label{main:...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3334,7 +2907,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <recently read> \strip@period 
                               
-l.122 ...idth=1\linewidth]{./assets/A3CResult/33}}
+l.121 ...idth=1\linewidth]{./assets/A3CResult/33}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3345,7 +2918,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \sf@sub@label ...rip@period #1\relax .\relax \@@@ 
                                                   }\fi \sf@@sub@label {#2}
-l.122 ...idth=1\linewidth]{./assets/A3CResult/33}}
+l.121 ...idth=1\linewidth]{./assets/A3CResult/33}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3356,7 +2929,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \strip@period 
                               
-l.122 ...idth=1\linewidth]{./assets/A3CResult/33}}
+l.121 ...idth=1\linewidth]{./assets/A3CResult/33}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3367,7 +2940,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...urrentlabelname \relax .\relax \@@@ 
                                                   }{\@currentHref }{}}
-l.122 ...idth=1\linewidth]{./assets/A3CResult/33}}
+l.121 ...idth=1\linewidth]{./assets/A3CResult/33}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3375,11 +2948,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/33.png, id=678, 433.62pt x 289.08pt>
+<./assets/A3CResult/33.png, id=682, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/33.png Graphic file (type png)
 
 <use ./assets/A3CResult/33.png>
-Package pdftex.def Info: ./assets/A3CResult/33.png used on input line 122.
+Package pdftex.def Info: ./assets/A3CResult/33.png used on input line 121.
 (pdftex.def)             Requested size: 209.3509pt x 139.56844pt.
 
 
@@ -3389,65 +2962,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \subfloat
-               []{\label{main:b}\includegraphics[width=1\linewidth]{./assets...
+l.125 \subfloat
+               [Comparaison A3C-LSTM / A3C-FF avec 16 processus]{\includegra...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.126 ...idth=1\linewidth]{./assets/A3CResult/44}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.126 ...idth=1\linewidth]{./assets/A3CResult/44}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.126 ...idth=1\linewidth]{./assets/A3CResult/44}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.126 ...idth=1\linewidth]{./assets/A3CResult/44}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/A3CResult/44.png, id=679, 433.62pt x 289.08pt>
+<./assets/A3CResult/44.png, id=683, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/44.png Graphic file (type png)
 
 <use ./assets/A3CResult/44.png>
-Package pdftex.def Info: ./assets/A3CResult/44.png used on input line 126.
+Package pdftex.def Info: ./assets/A3CResult/44.png used on input line 125.
 (pdftex.def)             Requested size: 209.3509pt x 139.56844pt.
- [39 <./assets/A3CResult/11.png> <./assets/A3CResult/22.png> <./assets/A3CResul
-t/33.png> <./assets/A3CResult/44.png>]
+ [38 <./assets/DQNResult/4.png> <./assets/DQNResult/2.png> <./assets/DQNResult/
+3.png> <./assets/DQNResult/1.png>] [39 <./assets/A3CResult/11.png> <./assets/A3
+CResult/22.png> <./assets/A3CResult/33.png> <./assets/A3CResult/44.png>]
 
 ! LaTeX Error: No counter 'subfigure@save' defined.
 
@@ -3455,62 +2985,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \subfloat
-               []{\label{AAA}\includegraphics[width=1\linewidth]{./assets/AT...
+l.153 \subfloat
+               [Résultat de l'A3C sur PONG]{\includegraphics[width=1\linewi...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.154 ...newidth]{./assets/ATARI_RESULT/pong.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.154 ...newidth]{./assets/ATARI_RESULT/pong.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.154 ...newidth]{./assets/ATARI_RESULT/pong.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.154 ...newidth]{./assets/ATARI_RESULT/pong.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/pong.png, id=688, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/pong.png, id=700, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/pong.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong.png>
-Package pdftex.def Info: ./assets/ATARI_RESULT/pong.png used on input line 154.
+Package pdftex.def Info: ./assets/ATARI_RESULT/pong.png used on input line 153.
 
 (pdftex.def)             Requested size: 209.3509pt x 143.9254pt.
 
@@ -3521,62 +3007,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \subfloat
-               []{\label{BBB}\includegraphics[width=.6\linewidth]{./assets/A...
+l.157 \subfloat
+               [PONG]{\includegraphics[width=.6\linewidth]{./assets/ATARI_RE...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.158 ...ewidth]{./assets/ATARI_RESULT/pong1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.158 ...ewidth]{./assets/ATARI_RESULT/pong1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.158 ...ewidth]{./assets/ATARI_RESULT/pong1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.158 ...ewidth]{./assets/ATARI_RESULT/pong1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/pong1.png, id=689, 452.69125pt x 586.19pt>
+<./assets/ATARI_RESULT/pong1.png, id=701, 452.69125pt x 586.19pt>
 File: ./assets/ATARI_RESULT/pong1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong1.png>
-Package pdftex.def Info: ./assets/ATARI_RESULT/pong1.png used on input line 158
+Package pdftex.def Info: ./assets/ATARI_RESULT/pong1.png used on input line 157
 .
 (pdftex.def)             Requested size: 125.61182pt x 162.64728pt.
 
@@ -3587,63 +3029,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \subfloat
-               []{\label{main:Seaquest}\includegraphics[width=1\linewidth]{....
+l.162 \subfloat
+               [Résultat de l'A3C sur SEAQUEST]{\includegraphics[width=1\li...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.163 ...dth]{./assets/ATARI_RESULT/Seaquest.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.163 ...dth]{./assets/ATARI_RESULT/Seaquest.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.163 ...dth]{./assets/ATARI_RESULT/Seaquest.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.163 ...dth]{./assets/ATARI_RESULT/Seaquest.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/Seaquest.png, id=690, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Seaquest.png, id=702, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Seaquest.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Seaquest.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Seaquest.png used on input line 
-163.
+162.
 (pdftex.def)             Requested size: 209.3509pt x 143.9254pt.
 
 
@@ -3653,63 +3051,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \subfloat
-               []{\label{main:b}\includegraphics[width=.6\linewidth]{./asset...
+l.166 \subfloat
+               [SEAQUEST]{\includegraphics[width=.6\linewidth]{./assets/ATAR...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.167 ...dth]{./assets/ATARI_RESULT/Sequest1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.167 ...dth]{./assets/ATARI_RESULT/Sequest1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.167 ...dth]{./assets/ATARI_RESULT/Sequest1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.167 ...dth]{./assets/ATARI_RESULT/Sequest1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/Sequest1.png, id=691, 424.58624pt x 555.07375pt>
+<./assets/ATARI_RESULT/Sequest1.png, id=703, 424.58624pt x 555.07375pt>
 File: ./assets/ATARI_RESULT/Sequest1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Sequest1.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Sequest1.png used on input line 
-167.
+166.
 (pdftex.def)             Requested size: 125.61182pt x 164.21117pt.
 
 
@@ -3719,63 +3073,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \subfloat
-               []{\label{main:a}\includegraphics[width=1\linewidth]{./assets...
+l.172 \subfloat
+               [Résultat de l'A3C sur SPACEINVADERS]{\includegraphics[width...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.173 ...{./assets/ATARI_RESULT/Spaceinvader.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.173 ...{./assets/ATARI_RESULT/Spaceinvader.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.173 ...{./assets/ATARI_RESULT/Spaceinvader.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.173 ...{./assets/ATARI_RESULT/Spaceinvader.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/Spaceinvader.png, id=692, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Spaceinvader.png, id=704, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Spaceinvader.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Spaceinvader.png used on input l
-ine 173.
+ine 172.
 (pdftex.def)             Requested size: 209.3509pt x 143.9254pt.
 
 
@@ -3785,63 +3095,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177 \subfloat
-               []{\label{main:b}\includegraphics[width=.6\linewidth]{./asset...
+l.176 \subfloat
+               [SPACE INVADERSE]{\includegraphics[width=.6\linewidth]{./asse...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.177 ..../assets/ATARI_RESULT/Spaceinvader1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\sf@sub@label ...rip@period #1\relax .\relax \@@@ 
-                                                  }\fi \sf@@sub@label {#2}
-l.177 ..../assets/ATARI_RESULT/Spaceinvader1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \strip@period 
-                              
-l.177 ..../assets/ATARI_RESULT/Spaceinvader1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...urrentlabelname \relax .\relax \@@@ 
-                                                  }{\@currentHref }{}}
-l.177 ..../assets/ATARI_RESULT/Spaceinvader1.png}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<./assets/ATARI_RESULT/Spaceinvader1.png, id=693, 338.26375pt x 484.81125pt>
+<./assets/ATARI_RESULT/Spaceinvader1.png, id=705, 338.26375pt x 484.81125pt>
 File: ./assets/ATARI_RESULT/Spaceinvader1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader1.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Spaceinvader1.png used on input 
-line 177.
+line 176.
 (pdftex.def)             Requested size: 125.61182pt x 180.02834pt.
  [40]
 Overfull \vbox (9.5611pt too high) has occurred while \output is active []
@@ -3850,43 +3116,43 @@ Overfull \vbox (9.5611pt too high) has occurred while \output is active []
 [41 <./assets/ATARI_RESULT/pong.png> <./assets/ATARI_RESULT/pong1.png> <./asset
 s/ATARI_RESULT/Seaquest.png> <./assets/ATARI_RESULT/Sequest1.png> <./assets/ATA
 RI_RESULT/Spaceinvader.png> <./assets/ATARI_RESULT/Spaceinvader1.png>]
-Overfull \hbox (7.90163pt too wide) in paragraph at lines 189--190
+Overfull \hbox (7.90163pt too wide) in paragraph at lines 188--189
 \OT1/cmr/m/n/12 notre ar-chi-tec-ture de contr^ole. Nous avons cr^^Se^^Se plusi
 eurs en-vi-ron-nements et plusieurs
  []
 
 
-Overfull \hbox (22.53667pt too wide) in paragraph at lines 193--194
+Overfull \hbox (22.53667pt too wide) in paragraph at lines 192--193
 \OT1/cmr/m/n/12 L'objectif de ce stage fut de contr^oler un agent ^^Ra travers 
 un en-vi-ron-nement labyrinthique
  []
 
-<./assets/SESTAR/env_sestar_agent.png, id=710, 880.28876pt x 859.21pt>
+<./assets/SESTAR/env_sestar_agent.png, id=722, 880.28876pt x 859.21pt>
 File: ./assets/SESTAR/env_sestar_agent.png Graphic file (type png)
 
 <use ./assets/SESTAR/env_sestar_agent.png>
 Package pdftex.def Info: ./assets/SESTAR/env_sestar_agent.png used on input lin
-e 202.
+e 201.
 (pdftex.def)             Requested size: 106.85788pt x 104.2938pt.
 
-<./assets/SESTAR/vue_agent_1.png, id=711, 462.528pt x 346.896pt>
+<./assets/SESTAR/vue_agent_1.png, id=723, 462.528pt x 346.896pt>
 File: ./assets/SESTAR/vue_agent_1.png Graphic file (type png)
 
 <use ./assets/SESTAR/vue_agent_1.png>
-Package pdftex.def Info: ./assets/SESTAR/vue_agent_1.png used on input line 208
+Package pdftex.def Info: ./assets/SESTAR/vue_agent_1.png used on input line 207
 .
 (pdftex.def)             Requested size: 138.91393pt x 104.18605pt.
 
-Overfull \hbox (8.7297pt too wide) in paragraph at lines 200--212
+Overfull \hbox (8.7297pt too wide) in paragraph at lines 199--211
  []$[]$$[]$ 
  []
 
 [42 <./assets/SESTAR/env_sestar_agent.png> <./assets/SESTAR/vue_agent_1.png>]
-<./assets/SESTAR/se2.png, id=723, 1562.83875pt x 836.12375pt>
+<./assets/SESTAR/se2.png, id=735, 1562.83875pt x 836.12375pt>
 File: ./assets/SESTAR/se2.png Graphic file (type png)
 
 <use ./assets/SESTAR/se2.png>
-Package pdftex.def Info: ./assets/SESTAR/se2.png used on input line 244.
+Package pdftex.def Info: ./assets/SESTAR/se2.png used on input line 243.
 (pdftex.def)             Requested size: 234.4157pt x 125.41315pt.
 
 
@@ -3897,19 +3163,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.250 
+l.249 
       ]
 File: ./assets/SESTAR/env_sestar_color.png Graphic file (type png)
  <use ./assets/SESTAR/env_sestar_color.png>
 Package pdftex.def Info: ./assets/SESTAR/env_sestar_color.png used on input lin
-e 257.
+e 256.
 (pdftex.def)             Requested size: 289.06754pt x 171.33273pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [44 <./assets/SESTAR/se2.png>]
-Overfull \hbox (3.7063pt too wide) in paragraph at lines 279--280
+Overfull \hbox (3.7063pt too wide) in paragraph at lines 278--279
 \OT1/cmr/m/n/12 heureuse-ment, nous n'avons pas pu exp^^Serimenter au-tant de t
 emps que nous l'aurions
  []
@@ -3994,7 +3260,7 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 ...iner utilisé une variante de l'\gls{UCB} 
+l.48 ...iner utilisé une variante de l'\gls{UCB} 
                                                   dans le cadre de notre pro...
 
 You need to define a glossary entry before you can use it.
@@ -4006,22 +3272,22 @@ See the glossaries package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 Sans pour autant utiliser \gls{UCB},
+l.49 Sans pour autant utiliser \gls{UCB},
                                           on pourra partir de cette idée de...
 
 You need to define a glossary entry before you can use it.
 
 [48]
-Overfull \hbox (28.56392pt too wide) in paragraph at lines 56--57
+Overfull \hbox (28.56392pt too wide) in paragraph at lines 55--56
 \OT1/cmr/m/n/12 repr^^Sesentation par-tielle de l'environnement. En ef-fet, l'a
 gent ne voit qu'un repr^^Sesentation
  []
 
-<./assets/CURIOSITY/curiosity.png, id=762, 491.8375pt x 475.7775pt>
+<./assets/CURIOSITY/curiosity.png, id=774, 491.8375pt x 475.7775pt>
 File: ./assets/CURIOSITY/curiosity.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/curiosity.png>
-Package pdftex.def Info: ./assets/CURIOSITY/curiosity.png used on input line 67
+Package pdftex.def Info: ./assets/CURIOSITY/curiosity.png used on input line 66
 .
 (pdftex.def)             Requested size: 245.91814pt x 237.88815pt.
 
@@ -4030,10 +3296,57 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49]
 ! Undefined control sequence.
-\reserved@b ->\T@ref 
-                     
-l.87 L'équation ~\ref{
-                       eqn:intrinsicmotivation} est trop simple pour être u...
+<recently read> \@fourthoffive 
+                               
+l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
+                                                   est trop simple pour êtr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Package hyperref Warning: No autoref name for `{15}{50}' on input line 86.
+
+! Undefined control sequence.
+<recently read> \@fifthoffive 
+                              
+l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
+                                                   est trop simple pour êtr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@fourthoffive 
+                               
+l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
+                                                   est trop simple pour êtr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \@fifthoffive 
+                         {15}{50}\@empty \@empty \@empty 
+l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
+                                                   est trop simple pour êtr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \@firstoffive 
+                              
+l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
+                                                   est trop simple pour êtr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4043,8 +3356,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@b ->\T@ref 
                      
-l.87 ... alors selon l'équation \eqref{eq:simple}
-                                                   l'agent serait encouragé...
+l.86 ...rne en rond, alors selon l'équation \ref{
+                                                  eqn:intrinsicmotivation} l...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4055,36 +3368,36 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@b ->\T@ref 
                      
-l.94 L'équation \ref{
-                      eqn:hierarchicalcuriosity} montre comment utilisé seu...
+l.93 L'équation ~\eqref{hierarchicalcuriosity}
+                                                montre comment utilisé seul...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/CURIOSITY/A3C_auxiliaire.png, id=776, 598.235pt x 576.1525pt>
+<./assets/CURIOSITY/A3C_auxiliaire.png, id=789, 598.235pt x 576.1525pt>
 File: ./assets/CURIOSITY/A3C_auxiliaire.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/A3C_auxiliaire.png>
 Package pdftex.def Info: ./assets/CURIOSITY/A3C_auxiliaire.png used on input li
-ne 103.
+ne 102.
 (pdftex.def)             Requested size: 209.38538pt x 201.65639pt.
  [51 <./assets/CURIOSITY/A3C_auxiliaire.png>] [52]
-<./assets/CURIOSITY/curiosity2.png, id=790, 755.82375pt x 599.23875pt>
+<./assets/CURIOSITY/curiosity2.png, id=804, 755.82375pt x 599.23875pt>
 File: ./assets/CURIOSITY/curiosity2.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/curiosity2.png>
 Package pdftex.def Info: ./assets/CURIOSITY/curiosity2.png used on input line 1
-38.
+37.
 (pdftex.def)             Requested size: 302.32414pt x 239.69125pt.
-) [53 <./assets/CURIOSITY/curiosity2.png>] [54] [55]
+) [53 <./assets/CURIOSITY/curiosity2.png>] [54]
 Overfull \hbox (1.4426pt too wide) in paragraph at lines 218--218
 []\OT1/cmr/m/n/12 En anglais: \OT1/cmr/m/it/12 Graph-ics Pro-cess-ing Unit\OT1/
 cmr/m/n/12 , est un com-posant nor-male-ment utilis^^Se
  []
 
-[56] (./main.bbl
+[55] (./main.bbl
 Underfull \hbox (badness 4872) in paragraph at lines 59--63
 []\OT1/cmr/m/n/12 Volodymyr Mnih, Adri^^Ra Puig-dom^^Renech Ba-dia, Mehdi Mirza
 , Alex
@@ -4096,9 +3409,9 @@ Underfull \hbox (badness 1655) in paragraph at lines 59--63
 nd Ko-ray
  []
 
-[57]) [58]
+[56]) [57]
 
-LaTeX Warning: Marginpar on page 59 moved.
+LaTeX Warning: Marginpar on page 58 moved.
 
 
 ! Package xcolor Error: Undefined color `OliveGreen'.
@@ -4580,14 +3893,14 @@ l.241 ...following section needs to be rewritten!}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[59]
+[58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3E3761A0180AC4EDCF4A55DF1AAF98B9;4303.
+(rerunfilecheck)             Checksum: 0F74E0026CD2BB3FAE936337D2E7FC30;4303.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4598,10 +3911,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26663 strings out of 492995
- 486950 string characters out of 6132704
- 733534 words of memory out of 5000000
- 29333 multiletter control sequences out of 15000+600000
+ 26625 strings out of 492995
+ 486383 string characters out of 6132704
+ 734534 words of memory out of 5000000
+ 29294 multiletter control sequences out of 15000+600000
  20271 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,17n,87p,2011b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4636,10 +3949,10 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (67 pages, 3599624 bytes).
+Output written on main.pdf (67 pages, 3600639 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 783 compressed objects within 8 object streams
- 232 named destinations out of 1000 (max. 500000)
+ 971 PDF objects out of 1000 (max. 8388607)
+ 792 compressed objects within 8 object streams
+ 233 named destinations out of 1000 (max. 500000)
  580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

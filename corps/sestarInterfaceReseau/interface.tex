@@ -80,10 +80,12 @@ Nous allons cependant proposer une méthode qui reste intrusive mais permet de r
 
 La méthode qui sera développée se nomme: Efficient Parallel Methods for Deep Reinforcement Learning \cite{2017arXiv170504862C}. Nous ne rentrerons pas dans les détails de l'algorithme car il est similaire à l'A3C \cite{DBLP:journals/corr/MnihBMGLHSK16}. Néanmoins,il propose une approche synchrone permettant l'utilisation du GPU. L'idée de ce papier est de proposer une architecture synchrone permettant de décorréler les états utilisés pour l'entrainement. A chaque pas, le contrôleur va décider quelles actions vont effectuer un ensemble d'agents. Le contrôleur va récupérer l'ensemble des états et des récompenses pour l'apprentissage et le choix de la nouvelle action. Quand le contrôleur rentre en phase d'apprentissage, il a un ensemble de transitions (état précédant, état actuel, action, récompense) décorrélées (car venant d'agents différents). Les premiers essais sont encourageants mais l'apprentissage n'est pas assez stable.
 
-
+\begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=.4]{./assets/interfaceReseau/paaca3c}
+\caption{Comparatif des algorithmes PAAC / A3C en mettant l'accent sur les problématiques réseaux}
 \end{center}
+\end{figure}
 
 Nous remarquons que les principaux problèmes qui découlent de la stratégie asynchrone d'entrainement (A3C) sont liés à la communication réseau mais pas seulement. Un stratégie asynchrone exclue l'utilisation du \gls{GPU}. La stratégie synchrone de la \gls{PAAC} permet l'utilisation du GPU et impose que la simulation soit capable de gérér un ensemble d'actions en entrée. De plus, la question des transferts sur le réseau n'est pas résolue par cette approche. 
 
@@ -100,7 +102,7 @@ Deuxièmement, nous pouvons passer sous Wine pour utiliser une application Windo
 Nous allons présupposer que nous avons un moyen d'utiliser SE-STAR sous Linux. Nous exploiterons Docker (qui est un système de conteneurisation, qui groupe une application avec un environnement Linux léger configuré au préalable). Cela permet, en spécifiant les dépendances de SE-STAR, de pouvoir déployer dans un réseau n instances de SE-STAR et de simplement utilser le \emph{swarm mode} de docker pour avoir une gestion du réseau (load balancing, ...). Nous  pourrions imaginer déployer dans un cluster de cpu (ou gpu) plus de 1000 instances de SE-STAR gérées par le swarm mode de Docker. Ce genre d'architecture a déjà été utilisée.Cela pourra être mis en place dès que SE-STAR sera disponible sous Linux.
 
 \begin{center}
-\includegraphics[scale=.4]{./assets/interfaceReseau/docker}
+\includegraphics[scale=.5]{./assets/interfaceReseau/docker}
 \captionof{figure}{Simple vue d'ensemble de l'utilisation de Docker en swarm mode}
 \end{center}
 

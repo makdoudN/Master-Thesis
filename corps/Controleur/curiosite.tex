@@ -44,7 +44,6 @@ Le regret espéré avec la méthode aléatoire est égale à: $T \big(\:\mu^* - 
     avec $\text{Curiosité} = \sqrt\frac{2\log t}{N(a)}$. On peut montrer que le regret croit de façon logarithmique ce qui est mieux que les stratégies précédantes.
 \end{enumerate}
 
-::IMAGE RECAPITULATIF
 
 On pourrait donc imaginer utilisé une variante de l'\gls{UCB} dans le cadre de notre projet de contrôle. Néanmois, les formules données ci dessus ne sont valables que dans le cadre restreint au bandits. 
 Sans pour autant utiliser \gls{UCB}, on pourra partir de cette idée de nécessité une motivation auxiliaire poussant l'agent à explorer l'environnement. Dans la partie suivante, nous allons tacher de définir plus précisement ce que veut dire d'explorer un environnement et nous allons proposer un module de curiosité pour arriver au contrôle de notre agent.
@@ -84,14 +83,14 @@ Formellement sela consiste à prendre la différence entre deux états sucessifs
 \label{eqn:intrinsicmotivation}
 \end{equation}
 
-L'équation ~\ref{eqn:intrinsicmotivation} est trop simple pour être utiliser. En effet, prenons le cas d'un agent qui tourne en rond, alors selon l'équation \eqref{eq:simple} l'agent serait encouragé à tourner. Ce comportememt exclu donc l'utilisation de ce type d'approche naive. Nous allons décrire une méthodequi se base sur l'intuition que nous avons developpé en utilisant une approche hiérarchique. L'idée est que l'agent dévelope un mécanisme d'attention lui permettant de savoir qu'elle sous-partie de l'état est intéressante et avec laquelle on peut employer la stratégie simpliste.
+L'équation ~\autoref{eqn:intrinsicmotivation} est trop simple pour être utiliser. En effet, prenons le cas d'un agent qui tourne en rond, alors selon l'équation \ref{eqn:intrinsicmotivation} l'agent serait encouragé à tourner. Ce comportememt exclu donc l'utilisation de ce type d'approche naive. Nous allons décrire une méthodequi se base sur l'intuition que nous avons developpé en utilisant une approche hiérarchique. L'idée est que l'agent dévelope un mécanisme d'attention lui permettant de savoir qu'elle sous-partie de l'état est intéressante et avec laquelle on peut employer la stratégie simpliste.
 Formellement cela revient à apprendre la séquence des k tel quel:
 
-\begin{equation}\label{eqn:hierarchicalcuriosity}
-    \text{récompense intrinsèque} = \tau\: \frac{\norm{h_k \odot \big[ s_t - s_{t-1} \big]}^2}{\norm{s_t - s_{t-1}  }^2} 
+\begin{equation} 
+    \text{récompense intrinsèque} = \tau\: \frac{\norm{h_k \odot \big[ s_t - s_{t-1} \big]}^2}{\norm{s_t - s_{t-1}  }^2}  
 \end{equation}
 
-L'équation \ref{eqn:hierarchicalcuriosity} montre comment utilisé seulement une sous partie de l'entrée pour calculer la récompense intrinsèque. Cette formule est utilisé dans le papier \emph{Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning}\cite{hierarchicalcuriosity}
+L'équation ~\eqref{hierarchicalcuriosity} montre comment utilisé seulement une sous partie de l'entrée pour calculer la récompense intrinsèque. Cette formule est utilisé dans le papier \emph{Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning}\cite{hierarchicalcuriosity}
 Nous ne détaillerons pas la méthode pour déterminer la séquence de k car elle est extrêmment similaire à la façon de determiner la séquence d'action à effectuer. Nous avons aussi créer une méthode qui généralise la précédente qui au lieu de choisir un k, pondère par un facteur choisi par l'agent l'ensemble des sous ensembles de l'état pour calculer la récompense intrinsèque.
 
 Nous avions peur de déstabiliser le réseau avec ce genre de recompense, le choix des hyperparamètres ($\lambda$, $\tau$) nécessite du soin et de nombreux essais.

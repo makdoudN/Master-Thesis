@@ -75,11 +75,7 @@ Q_\pi(s_t, a_t) = \underset{s', r}{\bsum}\:\dynamicsc{red}\: \bigg[\: r + \gamma
 
 \bigskip
 
-les relations précédentes sont particulièrement intéressantes car elles nous permettent d'exprimer la valeur d'un état à partir de la valeur des états successifs à celui ci. Nous pouvons représenter sous forme d'un graphique la relation précédentes:
-
-:: IMAGE
-
-Ces deux relations sont à l'origine de nombreuses méthodes en apprentissage par renforcement. Notamment, elles seront à l'origine des méthodes appliquées pendant ce stage dans le contrôle d'un agent dans la simulation de Thales SE-STAR.
+les relations précédentes sont particulièrement intéressantes car elles nous permettent d'exprimer la valeur d'un état à partir de la valeur des états successifs à celui ci. Ces deux relations sont à l'origine de nombreuses méthodes en apprentissage par renforcement. Notamment, elles seront à l'origine des méthodes appliquées pendant ce stage dans le contrôle d'un agent dans la simulation de Thales SE-STAR.
 
 Pourtant, nous n'avons toujours pas explicité la forme de la politique optimale. Nous allons nous aider des fonction d'état, et d'état-action qui fournisse un indicateur sur la pertinence de la politique choisie. Ainsi, on pourra dire qu'une politique $\pi$ est meilleurs qu'une politique $\mu$ si $V_\pi(s) > V_\mu(s), \forall s $. Il parait donc intéressant de rechercher la politique maximisant la fonction d'état $ V_* = \underset{\pi}{\max} \:V_\pi(s) $. On peut faire la même chose avec la fonction d'état-action: $ Q_* = \underset{\pi}{\max} \:Q_\pi(s, a) $.
 
@@ -92,25 +88,21 @@ Q^*(s, a) = \underset{s', r}{\bsum} \: p(s',r \vert s, a) \bigg[\: r + \gamma \:
 \end{gather}
 \bigskip
 
-:: IMAGE
 
 A partir des fonctions état et état-action, il est relativement aisé de déterminer la politique optimale. Une fois qu'on a déterminé $V^*$ nous pouvons déterminer l'action optimal en faisant une recherche à un pas dans le temps. Ce qui est remarquable est qu'en apprentissage par renforcement, il y a un compromis fondamental entre un objectif à court et long terme pourtant nous venons d'affirmer qu'en exploitant $V^*$ et en faisant notre recherche à un pas nous avons pris compte des effets à long termes. Avec la fonction d'état-action c'est encore plus simple car il n'y a plus besoin de recherche auxiliaire car la fonction d'état-action encode déjà cette recherche, il suffit donc d'exploiter la fonction d'état-action optimale à chaque action pour obtenir la politique optimal: $\pi^*(s) = \underset{a}{\max}\:Q^*(s,a)$ 
 
 Malheureusement, il est, dans la plupart des cas, impossible de déterminer les fonctions d'états ou d'états-actions optimales car cela reviendrait à une recherche exhaustive de toutes les possibilités avec la connaissance de leurs probabilités d'apparaître et la connaissance du gain espéré associés. Néanmoins, les fonctions d'état et d'état-action sont utiles à l'apprentissage et au contrôle de notre agent. Dans la partie suivante nous allons expliquer comment approximer ces fonctions pour pouvoir commencer à établir des algorithmes de contrôle efficace.
-\bigskip
-\begin{tcolorbox}[colback=gray!5!white,colframe=red!65!white,title=L'apprentissage par renforcement en résumé, coltitle=black, fonttitle=\bfseries]
 
-L'apprentissage par renforcement propose de contrôler un agent grâce à des stimulis (récompenses) données par l'environnement ou l'expérimentateur. \\
+En résumé, l'apprentissage par renforcement propose de contrôler un agent grâce à des stimulis (récompenses) données par l'environnement ou l'expérimentateur. 
 
-L'objectif est de déterminer une politique (soit un fonction $\mathbb{S} \: \rightarrow \: \mathbb{A}$) qui maximise le gain cumulé pondéré (pondération utile pour favoriser l'importance des récompenses à court termes tout en prenant en compte les récompenses à long termes).\\ 
+L'objectif est de déterminer une politique (soit un fonction $\mathbb{S} \: \rightarrow \: \mathbb{A}$) qui maximise le gain cumulé pondéré (pondération utile pour favoriser l'importance des récompenses à court termes tout en prenant en compte les récompenses à long termes).
 
 
 Pour déterminer la politique optimale, nous nous aidons de deux fonctions (les fonctions d'états et d'états-actions) qui sont une mesure de la quantité de récompenses pouvant être espéré à un certain état (ou à un état en effectuant une certaine action) en suivant une politique. 
 
-On peut dès lors en trouvant une fonction d'états (ou d'états-action) optimales dérivé une politique optimale. \\
+On peut dès lors en trouvant une fonction d'états (ou d'états-action) optimales dérivé une politique optimale. 
 
-Sauf cas jouet, les fonctions d'états (états-actions) sont inconnus, notre objectif va être de trouver une façon de les approximer pour permettre l'établissement d'algorithme de contrôle par apprentissage par renforcement.\\
+Sauf cas jouet, les fonctions d'états (états-actions) sont inconnus, notre objectif va être de trouver une façon de les approximer pour permettre l'établissement d'algorithme de contrôle par apprentissage par renforcement.
 
 
 Enfin, nous montrerons que nous ne sommes pas obliger de passer par ce intermédiare pour déterminer la politique optimale tout en insistant sur l'importance de la connaissance des fonctions d'états est un atout quelque soit l'approche utilisé.
-\end{tcolorbox}

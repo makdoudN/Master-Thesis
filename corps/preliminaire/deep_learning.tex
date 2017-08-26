@@ -37,11 +37,8 @@ Un problème est maintenant de définir comment va être générer  $P(\text{act
 \includegraphics[width=.55\linewidth]{./assets/DeepLearning/dl2}
 \captionof{figure}{Représentation haut niveau de l'architecture classique en deep learning avec optimisation de la fonction de perte}
 \end{center}
-\end{center}
 
 Dans la partie suivante, nous expliquerons les mécanismes responsables de l'optimisation du de la fonction de perte pour véritable  définir ce que veut dire un apprentissage dans le contexte du deep learning. Nous commencerons par introduire ce qu'est un réseau de neurone dans sa forme la plus simple et nous expliquerons succinctement les évolutions utilisées (qui sont le réseau de neurone à convolution et les réseaux récurrents).
-\todo[inline]{Revoir - moins de itemize
-expliquer l'utilisation des fonctions de coût avant}
 
 \subsubsection{Architecture en apprentissage statistique et réseau de neurone linéaire}
 
@@ -102,14 +99,12 @@ Le réseau de convolution est composé d'un noyau qui est l'équivalent des poid
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.4\linewidth]{./assets/DeepLearning/conv.png}
-  \captionof{conv}{Opération de convolution dans un CNN}
-  \label{fig:test1}
+  \caption{Opération de convolution dans un CNN}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.4\linewidth]{./assets/DeepLearning/convVSdense.png}
-  \captionof{conv}{Activation de  $x_3$} 
-  \label{fig:test2}
+  \caption{Activation de  $x_3$} 
 \end{minipage}
 \end{figure}
 
@@ -146,7 +141,9 @@ Nous pouvons donc décomposer notre architecture d'apprentissage en deux partie.
 
 
 Voici une vue schématique de l'architecture réalisée dans le papier \emph{Human-level control through deep reinforcement learning}\cite{mnih-dqn-2015}
-
+\begin{figure}
 \begin{center}
     \includegraphics[scale=.5]{./assets/DeepLearning/DP_EX.png}
+    \caption{Schéma récapitulatif des différentes sous parties dans un réseau de neurone utilisé pour de l'apprentissage par renforcement}
 \end{center}
+\end{figure}

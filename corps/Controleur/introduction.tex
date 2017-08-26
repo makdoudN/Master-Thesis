@@ -73,27 +73,26 @@ Les résultats sont issus d'expérimentations sur l'environnement de contrôle c
     \includegraphics[scale=.5]{./assets/DeepLearning/cartpole.png}
 \end{center}
 
-\begin{figure}[H]
+\begin{figure}[ht!]
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/DQNResult/4}}
+\subfloat[Comparaison: Famille DQN]{\includegraphics[width=1\linewidth]{./assets/DQNResult/4}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=1\linewidth]{./assets/DQNResult/2}}
+\subfloat[Comparaison: DQN / DDQN]{\includegraphics[width=1\linewidth]{./assets/DQNResult/2}}
 \end{minipage}\par\medskip
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/DQNResult/3}}
+\subfloat[Comparaison: DQN / Dueling]{\includegraphics[width=1\linewidth]{./assets/DQNResult/3}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=1\linewidth]{./assets/DQNResult/1}}
+\subfloat[Comparaison: DQN / DQN-Target]{\includegraphics[width=1\linewidth]{./assets/DQNResult/1}}
 \end{minipage}\par\medskip
 \caption{Résultats du Deep Q learning sur CartPole}
-\label{fig:main}
 \end{figure}
 
 A travers ces premiers résultats, nous pouvons comparer les différents algorithmes issues de la famille du Q Learning.
@@ -106,24 +105,24 @@ Ce constat est corrélé avec d'autres expérimentations faites qui ne sont pas 
 
 \subsubsection{Les algorithmes issus de la famille de l'A3C}
 
-\begin{figure}[h]
+\begin{figure}[ht!]
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/A3CResult/11}}
+\subfloat[Comparaison : Famille A3C]{\includegraphics[width=1\linewidth]{./assets/A3CResult/11}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=1\linewidth]{./assets/A3CResult/22}}
+\subfloat[Comparaison A3C-LSTM / A3C-LSTM-GAE avec 16 processus]{\includegraphics[width=1\linewidth]{./assets/A3CResult/22}}
 \end{minipage}\par\medskip
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/A3CResult/33}}
+\subfloat[Comparaison A3C-LSTM / A3C-FF avec 8 processus]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/A3CResult/33}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=1\linewidth]{./assets/A3CResult/44}}
+\subfloat[Comparaison A3C-LSTM / A3C-FF avec 16 processus]{\includegraphics[width=1\linewidth]{./assets/A3CResult/44}}
 \end{minipage}\par\medskip
 
 \caption{Résultats de l'A3C sur CartPole}
@@ -151,30 +150,30 @@ La première est qu'il y a un nombre élevé d'actions (douze en moyenne), la de
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{AAA}\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/pong.png}}
+\subfloat[Résultat de l'A3C sur PONG]{\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/pong.png}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{BBB}\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/pong1.png}}
+\subfloat[PONG]{\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/pong1.png}}
 \end{minipage}\par\medskip
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:Seaquest}\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/Seaquest.png}}
+\subfloat[Résultat de l'A3C sur SEAQUEST]{\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/Seaquest.png}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/Sequest1.png}}
+\subfloat[SEAQUEST]{\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/Sequest1.png}}
 \end{minipage}\par\medskip
 
 
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:a}\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/Spaceinvader.png}}
+\subfloat[Résultat de l'A3C sur SPACEINVADERS]{\includegraphics[width=1\linewidth]{./assets/ATARI_RESULT/Spaceinvader.png}}
 \end{minipage}%
 \begin{minipage}{.5\linewidth}
 \centering
-\subfloat[]{\label{main:b}\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/Spaceinvader1.png}}
+\subfloat[SPACE INVADERSE]{\includegraphics[width=.6\linewidth]{./assets/ATARI_RESULT/Spaceinvader1.png}}
 \end{minipage}\par\medskip
 
 
