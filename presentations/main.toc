@@ -1,1 +1,2 @@
 \select@language {french}
+\beamer@sectionintoc {1}{Architecture classique en apprentissage profond}{4}{0}{1}
