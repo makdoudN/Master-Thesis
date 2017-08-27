@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  27 AUG 2017 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  27 AUG 2017 21:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1924,9 +1924,7 @@ Overfull \vbox (13.79993pt too high) detected at line 61
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./main.toc) [2
 
-] (./sujet/sujet.tex [3
-
-]) (./architecturevanilla/vanilla.tex
+] (./sujet/sujet.tex
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 1.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmss.fd
@@ -1988,10 +1986,15 @@ LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <7> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <5> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 1.
- [4
+ [3
+
+] [4
+
+])
+(./architecturevanilla/vanilla.tex [5
 
 ]
-<./architecturevanilla/vanilla.png, id=82, 1050.92625pt x 178.6675pt>
+<./architecturevanilla/vanilla.png, id=93, 1050.92625pt x 178.6675pt>
 File: ./architecturevanilla/vanilla.png Graphic file (type png)
 
 <use ./architecturevanilla/vanilla.png>
@@ -2003,10 +2006,10 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 8--8
  [] 
  []
 
-[5
+[6
 
  <./architecturevanilla/vanilla.png>]
-<./architecturevanilla/stage-0.png, id=90, 1050.92625pt x 298.11375pt>
+<./architecturevanilla/stage-0.png, id=101, 1050.92625pt x 298.11375pt>
 File: ./architecturevanilla/stage-0.png Graphic file (type png)
 
 <use ./architecturevanilla/stage-0.png>
@@ -2018,10 +2021,10 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 15--15
  [] 
  []
 
-[6
+[7
 
  <./architecturevanilla/stage-0.png>]
-<./architecturevanilla/stage-1.png, id=96, 1050.92625pt x 357.335pt>
+<./architecturevanilla/stage-1.png, id=108, 1050.92625pt x 357.335pt>
 File: ./architecturevanilla/stage-1.png Graphic file (type png)
 
 <use ./architecturevanilla/stage-1.png>
@@ -2033,10 +2036,10 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 23--23
  [] 
  []
 
-[7
+[8
 
  <./architecturevanilla/stage-1.png>]
-<./architecturevanilla/stage-2.png, id=103, 1050.92625pt x 282.05376pt>
+<./architecturevanilla/stage-2.png, id=114, 1050.92625pt x 282.05376pt>
 File: ./architecturevanilla/stage-2.png Graphic file (type png)
 
 <use ./architecturevanilla/stage-2.png>
@@ -2048,10 +2051,10 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 31--31
  [] 
  []
 
-[8
+[9
 
  <./architecturevanilla/stage-2.png>]
-<./architecturevanilla/stage-3.png, id=109, 1050.92625pt x 428.60126pt>
+<./architecturevanilla/stage-3.png, id=120, 1050.92625pt x 428.60126pt>
 File: ./architecturevanilla/stage-3.png Graphic file (type png)
 
 <use ./architecturevanilla/stage-3.png>
@@ -2063,10 +2066,10 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 38--38
  [] 
  []
 
-[9
+[10
 
  <./architecturevanilla/stage-3.png>]
-<./architecturevanilla/stage-4.png, id=115, 1050.92625pt x 357.335pt>
+<./architecturevanilla/stage-4.png, id=126, 1050.92625pt x 357.335pt>
 File: ./architecturevanilla/stage-4.png Graphic file (type png)
 
 <use ./architecturevanilla/stage-4.png>
@@ -2078,7 +2081,7 @@ Overfull \hbox (7.99043pt too wide) in paragraph at lines 46--46
  [] 
  []
 
-[10
+[11
 
  <./architecturevanilla/stage-4.png>])
 \tf@nav=\write8
@@ -2096,13 +2099,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F703A7470A71617927E1283A34FB1573;82.
+(rerunfilecheck)             Checksum: 41DD291F51F556E2F43096B1D96CC885;153.
  ) 
 Here is how much of TeX's memory you used:
- 47173 strings out of 492995
- 1092689 string characters out of 6132704
+ 47182 strings out of 492995
+ 1092770 string characters out of 6132704
  1275405 words of memory out of 5000000
- 49828 multiletter control sequences out of 15000+600000
+ 49834 multiletter control sequences out of 15000+600000
  69379 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,13n,120p,10500b,702s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2112,10 +2115,10 @@ texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/20
 ist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/t
 ype1/public/lm/lmss9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmssbx10.pfb>
-Output written on main.pdf (10 pages, 394068 bytes).
+Output written on main.pdf (11 pages, 396447 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 233 words of extra memory for PDF output out of 10000 (max. 10000000)
 
