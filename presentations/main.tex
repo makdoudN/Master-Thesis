@@ -1,0 +1,69 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{appendixnumberbeamer}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{calrsfs}
+\usepackage{mathtools}
+\usepackage{xspace}
+\usepackage{array,multirow}
+\usepackage{amsmath,bm}
+\usepackage[cal=boondoxo, calscaled=1.2]{mathalfa}
+\usepackage{empheq}
+\usepackage[most]{tcolorbox}
+\usepackage{url}
+
+% Box for math equation
+\newtcbox{\math1}[1][]{%
+    nobeforeafter, math upper, tcbox raise base,
+    enhanced, colframe=black!30!black,
+    colback=black!30, boxrule=1pt,
+    #1}
+
+
+\usepgfplotslibrary{dateplot}
+\pgfplotsset{compat=newest}
+
+
+% Some minor options 
+\definecolor{Purple}{HTML}{3498db}
+\definecolor{Orange}{HTML}{CF4A30}
+
+\setbeamercolor{alerted text}{fg=Orange}
+\setbeamercolor{frametitle}{bg=Purple}
+\setbeamercolor{progress bar}{bg=Purple}
+\setbeamercolor{title separator}{bg=Purple}
+\setbeamercolor{progress bar in head/foot}{bg=Purple}
+\setbeamercolor{progress bar in section page}{bg=Purple}
+
+% Title and co
+\title{Contrôle d'un agent par apprentissage par renforcement profond}
+\subtitle{Présentation de mon stage à THALES dans l'équipe AS\&BSIM}
+\date{\today}
+\author{Nizam Makdoud}
+\institute{THALES}
+
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+    \tableofcontents
+\end{frame}
+
+
+\end{document}
+\end{document}
