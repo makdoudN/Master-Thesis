@@ -26,6 +26,10 @@
 \usepackage[most]{tcolorbox}
 \usepackage{url}
 
+\definecolor{vipw}{RGB}{46, 204, 113}
+
+\newcommand{\vip}[1]{\textbf{\textcolor{vipw}{#1}}}
+
 % Box for math equation
 \newtcbox{\math1}[1][]{%
     nobeforeafter, math upper, tcbox raise base,
@@ -66,6 +70,7 @@
 
 
 \input{./sujet/sujet.tex}
+\input{./reinforcementlearning/rl.tex}
 \input{./architecturevanilla/vanilla.tex}
-
+\input{./curiosity/curiosity.tex}
 \end{document}

@@ -1,3 +1,5 @@
 \select@language {french}
 \beamer@sectionintoc {1}{Objectifs et D\IeC {\'e}fis technologiques}{3}{0}{1}
-\beamer@sectionintoc {2}{Architecture classique en apprentissage profond}{5}{0}{2}
+\beamer@sectionintoc {2}{Apprentissage Profond}{8}{0}{2}
+\beamer@sectionintoc {3}{Architecture classique en apprentissage profond}{11}{0}{3}
+\beamer@sectionintoc {4}{Module de curiosit\IeC {\'e} appliqu\IeC {\'e} au contr\IeC {\^o}le}{18}{0}{4}
