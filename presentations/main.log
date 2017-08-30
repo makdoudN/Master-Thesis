@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  29 AUG 2017 15:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  29 AUG 2017 21:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2145,16 +2145,18 @@ Package pdftex.def Info: ./curiosity/3.png used on input line 27.
 <./curiosity/2.png, id=209, 587.19376pt x 344.28625pt>
 File: ./curiosity/2.png Graphic file (type png)
  <use ./curiosity/2.png>
-Package pdftex.def Info: ./curiosity/2.png used on input line 53.
+Package pdftex.def Info: ./curiosity/2.png used on input line 55.
 (pdftex.def)             Requested size: 140.92938pt x 82.63039pt.
-File: ./curiosity/3.png Graphic file (type png)
 
-<use ./curiosity/3.png>
-Package pdftex.def Info: ./curiosity/3.png used on input line 53.
-(pdftex.def)             Requested size: 121.35431pt x 83.41226pt.
- [20
+<./curiosity/4.png, id=210, 1184.425pt x 700.6175pt>
+File: ./curiosity/4.png Graphic file (type png)
+ <use ./curiosity/4.png>
+Package pdftex.def Info: ./curiosity/4.png used on input line 55.
+(pdftex.def)             Requested size: 118.44943pt x 70.06584pt.
 
- <./curiosity/2.png>])
+[20
+
+ <./curiosity/2.png> <./curiosity/4.png>])
 \tf@nav=\write8
 \openout8 = `main.nav'.
 
@@ -2177,10 +2179,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 47419 strings out of 492995
- 1098461 string characters out of 6132704
+ 47424 strings out of 492995
+ 1098553 string characters out of 6132704
  1281499 words of memory out of 5000000
- 50034 multiletter control sequences out of 15000+600000
+ 50038 multiletter control sequences out of 15000+600000
  87067 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,14n,120p,10500b,706s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2205,10 +2207,10 @@ texmf-dist/fonts/type1/public/lm/lmsso8.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /type1/public/boondox/zxxbw8a.pfb>
-Output written on main.pdf (20 pages, 775303 bytes).
+Output written on main.pdf (20 pages, 932279 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
+ 296 PDF objects out of 1000 (max. 8388607)
  206 compressed objects within 3 object streams
  45 named destinations out of 1000 (max. 500000)
- 269 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
