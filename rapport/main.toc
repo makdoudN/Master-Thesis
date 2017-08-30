@@ -11,36 +11,38 @@
 \contentsline {subsubsection}{\numberline {2.1.2}Introduction des principales approches en apprentissage par renforcement}{11}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}TD Learning: la base des algorithmes pour le contr\IeC {\^o}leur}{14}{subsubsection.2.1.3}
 \contentsline {subsubsection}{\numberline {2.1.4}Du TD Learning au Deep Q Learning}{15}{subsubsection.2.1.4}
-\contentsline {subsubsection}{\numberline {2.1.5}Platforme utilisables pour garantir le fonctionnement de nos algorithmes}{16}{subsubsection.2.1.5}
-\contentsline {subsection}{\numberline {2.2}Utilisation et int\IeC {\'e}r\IeC {\^e}t de l'apprentissage statistique - Deep Learning }{19}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Motivation et objectif de l'apprentissage statistique}{19}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Architecture en apprentissage statistique et r\IeC {\'e}seau de neurone lin\IeC {\'e}aire}{21}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}R\IeC {\'e}seau de neurones dense}{22}{subsubsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.4}R\IeC {\'e}seau de convolution et r\IeC {\'e}current}{23}{subsubsection.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.5}Utilisation du deep learning dans le cadre de l'apprentissage par renforcement}{24}{subsubsection.2.2.5}
-\contentsline {section}{\numberline {3}Interface entre SE-STAR et le contr\IeC {\^o}leur}{27}{section.3}
-\contentsline {subsection}{\numberline {3.1}Analyse fonctionnelle de l'\gls {API} choisie}{27}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Principales limites et contraintes}{29}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Compromis et solutions envisag\IeC {\'e}es}{30}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Solutions id\IeC {\'e}ales}{31}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}SE-STAR sous linux via \gls {Wine}}{31}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Une architecture scalable d'entrainement via Docker}{31}{subsubsection.3.4.2}
-\contentsline {subsection}{\numberline {3.5}Conclusion sur les questions d'interfaces et de r\IeC {\'e}seaux}{32}{subsection.3.5}
-\contentsline {section}{\numberline {4}Contr\IeC {\^o}le d'un agent via la simulation SE-STAR par renforcement profond}{34}{section.4}
-\contentsline {subsection}{\numberline {4.1}Le choix d'un algorithme efficace pour le contr\IeC {\^o}le d'un agent dans SE-STAR.}{34}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Comparaison entre les m\IeC {\'e}thodes issues de la famille du DQN et de l'A3C}{37}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Les algorithmes issus de la famille du Deep Q Learning}{37}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Les algorithmes issus de la famille de l'A3C}{38}{subsubsection.4.2.2}
-\contentsline {subsection}{\numberline {4.3}Sp\IeC {\'e}cification des diff\IeC {\'e}rents environnements cr\IeC {\'e}\IeC {\'e}s par SE-STAR}{42}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Environnement labyrinthique simple cr\IeC {\'e}\IeC {\'e} par SE-STAR}{42}{subsubsection.4.3.1}
-\contentsline {subsection}{\numberline {4.4}Module de curiosit\IeC {\'e}}{46}{subsection.4.4}
-\contentsline {subsubsection}{\numberline {4.4.1}La th\IeC {\'e}orie des bandits \IeC {\`a} plusieurs bras}{46}{subsubsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.2}Exploration et Motivation auxiliaire}{48}{subsubsection.4.4.2}
-\contentsline {subsection}{\numberline {4.5}Motivations auxiliaires et motivations}{49}{subsection.4.5}
-\contentsline {subsubsection}{\numberline {4.5.1}Motivations auxiliaires sp\IeC {\'e}cifiques au environnements 3D}{49}{subsubsection.4.5.1}
-\contentsline {subsection}{\numberline {4.6}Module de curiosit\IeC {\'e} g\IeC {\'e}n\IeC {\'e}rique int\IeC {\'e}gr\IeC {\'e} au contr\IeC {\^o}le}{52}{subsection.4.6}
-\contentsline {section}{\numberline {5}Conclusion}{54}{section.5}
-\contentsline {subsection}{\numberline {5.1}Contributions}{54}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Discussions et travail futur}{54}{subsection.5.2}
-\contentsline {section}{Glossaire}{56}{section*.26}
-\contentsline {section}{References}{57}{section*.28}
+\contentsline {subsubsection}{\numberline {2.1.5}Architecture de base A2C/A3C utilis\IeC {\'e}e pour le contr\IeC {\^o}le}{16}{subsubsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.6}de l'A2C \IeC {\`a} A3C}{18}{subsubsection.2.1.6}
+\contentsline {subsubsection}{\numberline {2.1.7}Platforme utilisables pour garantir le fonctionnement de nos algorithmes}{18}{subsubsection.2.1.7}
+\contentsline {subsection}{\numberline {2.2}Utilisation et int\IeC {\'e}r\IeC {\^e}t de l'apprentissage statistique - Deep Learning }{21}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Motivation et objectif de l'apprentissage statistique}{21}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Architecture en apprentissage statistique et r\IeC {\'e}seau de neurone lin\IeC {\'e}aire}{23}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}R\IeC {\'e}seau de neurones dense}{24}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}R\IeC {\'e}seau de convolution et r\IeC {\'e}current}{25}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Utilisation du deep learning dans le cadre de l'apprentissage par renforcement}{26}{subsubsection.2.2.5}
+\contentsline {section}{\numberline {3}Interface entre SE-STAR et le contr\IeC {\^o}leur}{29}{section.3}
+\contentsline {subsection}{\numberline {3.1}Analyse fonctionnelle de l'\gls {API} choisie}{29}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Principales limites et contraintes}{31}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Compromis et solutions envisag\IeC {\'e}es}{32}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Solutions id\IeC {\'e}ales}{33}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}SE-STAR sous linux via \gls {Wine}}{33}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Une architecture scalable d'entrainement via Docker}{33}{subsubsection.3.4.2}
+\contentsline {subsection}{\numberline {3.5}Conclusion sur les questions d'interfaces et de r\IeC {\'e}seaux}{34}{subsection.3.5}
+\contentsline {section}{\numberline {4}Contr\IeC {\^o}le d'un agent via la simulation SE-STAR par renforcement profond}{36}{section.4}
+\contentsline {subsection}{\numberline {4.1}Le choix d'un algorithme efficace pour le contr\IeC {\^o}le d'un agent dans SE-STAR.}{36}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Comparaison entre les m\IeC {\'e}thodes issues de la famille du DQN et de l'A3C}{39}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Les algorithmes issus de la famille du Deep Q Learning}{39}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Les algorithmes issus de la famille de l'A3C}{40}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Sp\IeC {\'e}cification des diff\IeC {\'e}rents environnements cr\IeC {\'e}\IeC {\'e}s par SE-STAR}{44}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Environnement labyrinthique simple cr\IeC {\'e}\IeC {\'e} par SE-STAR}{44}{subsubsection.4.3.1}
+\contentsline {subsection}{\numberline {4.4}Module de curiosit\IeC {\'e}}{48}{subsection.4.4}
+\contentsline {subsubsection}{\numberline {4.4.1}La th\IeC {\'e}orie des bandits \IeC {\`a} plusieurs bras}{48}{subsubsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.2}Exploration et Motivation auxiliaire}{50}{subsubsection.4.4.2}
+\contentsline {subsection}{\numberline {4.5}Motivations auxiliaires et motivations}{51}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Motivations auxiliaires sp\IeC {\'e}cifiques au environnements 3D}{51}{subsubsection.4.5.1}
+\contentsline {subsection}{\numberline {4.6}Module de curiosit\IeC {\'e} g\IeC {\'e}n\IeC {\'e}rique int\IeC {\'e}gr\IeC {\'e} au contr\IeC {\^o}le}{54}{subsection.4.6}
+\contentsline {section}{\numberline {5}Conclusion}{56}{section.5}
+\contentsline {subsection}{\numberline {5.1}Contributions}{56}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Discussions et travail futur}{56}{subsection.5.2}
+\contentsline {section}{Glossaire}{58}{section*.24}
+\contentsline {section}{References}{59}{section*.26}

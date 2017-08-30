@@ -75,7 +75,6 @@ Les méthodes d'approximation de la fonction d'état possèdent quelques avantag
 Néanmoins, l'approche par Monte Carlo possède aussi des désavantages tels que le fait d'être obligé de jouer un épisode entier pour pouvoir estimer la fonction d'état. Cela pourra être problématique dans le cas où l'épisode est  long . De plus, il parait pertinent de pouvoir itérer à partir d'estimations antérieures ce qui n'est pas le cas avec les méthodes de Monte Carlo. 
 
 \subsubsection{TD Learning: la base des algorithmes pour le contrôleur}
-\todo[inline]{explain temporal difference --> td}
 En se basant sur l'approximation décrite précédemment en utilisant l'approche de Monte-Carlo, pour un environnement non stationnaire (qui change en fonction du temps), nous pouvons trouver une formule approximant la fonction d'état:
  
  \begin{equation}
@@ -137,3 +136,51 @@ y_i = \mathbb{E}_{\text{s'} \sim \Epsilon}\big[r + \underset{a'}{\max}f_{\theta_
 \end{align}
 
 Avec $\rho(s, a)$ la distribution sur la séquence d'états et d'actions.
+
+\subsubsection{Architecture de base A2C/A3C utilisée pour le contrôle}
+Après avoir représenté le \emph{Deep-Q-Learning}, nous allons introduire une architecture classique en apprentissage par renforcement profond qui se dénome A3C\cite{DBLP:journals/corr/MnihBMGLHSK16}\footnote{Asynchronous Methods for Deep Reinforcement Learning, dans la suite de ce rapport nous utiliserons le terme A3C}. 
+Pour arriver à expliquer le fonctionnement de l'A3C, il convient de partir du constat qu'il serait aisé de trouver la politique optimale (paramétrisée par un ensemble de poids $\omega$) en maximisant une fonction de performance (notée $\eta$). Formellement cela reviendrais à mettre à jour les poids $\omega$ selon ;a formule suivante:
+
+\begin{equation}
+    \omega_{t+1} = \omega_t + \alpha \nabla \eta(\omega_t)
+\end{equation}
+
+Si l'approche présentée  est naturelle, elle reste néanmoins incomplète car nous n'avons pas encore explicité notre fonction de performance. Dans notre cas, la fonction de performance sera la fonction d'état $v_{\pi_\omega}$(qui donne un estimé de la récompense obtenue en étant à un certain état et en utilisant une certaine politique). Il est facile de voir que plus la politique est bonne plus la fonction d'état (pour un état $s$) est bonne. Cela correspond donc à une bonne métrique de la qualité de la politque.
+
+
+Le problème réside maintenant dans notre capacité à expliciter $\nabla\eta(\omega_t)$. Ce problème a été résolue dans notre définition de $\eta$. En utilisant la méthode de Monte-Carlo REINFORCE \cite{Williams1992} (qui se base sur le théorème du gradient de la politque \cite{policygradient} qui explicite le gradient de la fonction d'état selon les poids $\omega$) 
+
+On obtient alors:
+
+\begin{equation}
+    \omega_{t+1} = \omega_t + \alpha \gamma^t G_t \nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)
+\end{equation}
+
+Un dès default de la méthode REINFORCE\cite{Williams1992} est que l'estimateur du gradient qu'elle génére est hautement bruité. Pour pallier à cela, plusieurs méthodes ont été mise au points.
+La façon la plus simple de réduire la variance du gradient estimé, on utilise la formule suivante qui utilise la fonction d'état:
+
+\begin{equation}
+    \omega_{t+1} = \omega_t + \alpha \gamma^t (G_t - \hat{v}(S_t, \theta_t))\nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)\footnote{La mise à jour de $\theta$ pour la fonction d'état a été omise pour la clarté}
+\end{equation}
+
+
+Comme nous l'avons précédemment décrit, les méthodes issuent de la famille de Monte-Carlo sont connues pour être lente à converger (malgré l'introduction de notre stratégie pour réduire la variance de l'estimateur du gradient). Pour accélerer la vitesse de convergence, nous allons donc nous servir du TD Learning pour introduire une nouvelle stratégie qui se base sur le gradient de la politique (comme pour REINFORCE) et qui utilise à la place du gain cumulé, une mise à jour se basant sur celle du TD-Learning. Soit:
+
+\[
+    G_t \longleftrightarrow r_t + \gamma^t \hat{v}(S_{t+1}, \theta_t)
+\]
+
+Donnant l'algorithme Actor Advantage Critic (A2C)\footnote{Advantage car $r_t$: est un estimateur de la fonction d'état-action(Q), on utilise donc la fonction d'avantage($A=Q-V$)}
+
+
+\begin{equation}
+    \omega_{t+1} = \omega_t + \alpha \gamma^t (r_t + \hat{v}(S_{t+1}, \theta_t) - \hat{v}(S_{t}, \theta_t)) \nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)
+\end{equation}
+
+\subsubsection{de l'A2C à A3C}
+
+l'asynchronous advantage actor-critic (A3C) augmente A2C en utilisant n agents en parallèles (et n environnements) qui apprennent de manière asynchrone. Le réseau est copié et donné à chaque agent ce qui permet de n'avoir qu'un seul réseau et non n différents. A chaque mise à jour, les gradients sont envoyés au réseau principales qui à chaque nouvel épisode se copie pour les n agents. 
+
+L'avantage de cette méthode est donc d'accéléré l'apprentissage de l'agent (en utlisant les n agents) mais le principal avantage de cette méthode est la décorrellation des gradients car les gradients sont issues des n agents. Cette problèmatique est la même que celle pour le deep-q-learning (DQN), contrairement à la mémoire utilisée dans le DQN qui utilise une partie des ressources de l'ordinateur, s'il est possible de générer n environnements en parallèle alors cette dernière méthode permet de sauvegarder des ressources. Néanmois, avec cette méthode sans module, il n'y a pas de réutilisation des résultats possibles, cela implique qu'il faudra un grand nombre d'episodes pour stabiliser un apprentissage. Un autre avantage qui vient des n agents qui apprennent en parallèle est que cela encourage l'exploration de l'environnement car les agents auront un comportement différents les uns des autres. 
+
+L'A3C sera donc l'algorithme de base pour le contrôle d'un agent dans SE-STAR. Il sera par la suite augmenté de plusieurs modules décrits au cours de ce rapport.

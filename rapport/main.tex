@@ -35,16 +35,9 @@
 \usepackage{lipsum}                                 
 \usepackage[nottoc]{tocbibind}
 \usepackage[firstpage]{draftwatermark}
-\SetWatermarkText{DRAFT}
-\SetWatermarkScale{4}
-\SetWatermarkColor[rgb]{0.7,0.1,0.2}
-\usepackage[pdftex,dvipsnames]{xcolor}  % Coloured text etc.
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
-\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
-\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
-\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
-\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
-\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+\SetWatermarkText{DRAFT - ALPHA}
+\SetWatermarkScale{3}
+\SetWatermarkColor[rgb]{0.7,0.2,0.7}
 % }
 
 \setlength{\parindent}{0pt}     % Annule indentation automatique
@@ -221,29 +214,7 @@
 % Références
 % =================================
 
-\bibliographystyle{unsrt}
+\bibliographystyle{siam}
 \bibliography{ref}
-
-% =================================
-% DELETE IN THE FUTURE
-% just a personal reminder
-% =================================
-
-\newpage\newpage
-
-\todo[inline]{The original todo note withouth changed colours.\newline Here's another line.}
-\lipsum[11]\unsure{Is this correct?}\unsure{I'm unsure about also!}
-\lipsum[11]\change{Change this!}
-\lipsum[11]\info{This can help me in chapter seven!}
-\lipsum[11]\improvement{This really needs to be improved!\newline\newline What was I thinking?!}
-\lipsum[11]
-\thiswillnotshow{This is hidden since option `disable' is chosen!}
-\improvement[inline]{The following section needs to be rewritten!}
-\lipsum[11]
-
- 
-% =================================
-% Bibliographie
-% =================================
 
 \end{document}

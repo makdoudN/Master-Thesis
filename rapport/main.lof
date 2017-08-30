@@ -1,40 +1,40 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces THALES en quelques chiffres\relax }}{2}{figure.caption.6}
 \contentsline {figure}{\numberline {2}{\ignorespaces Exemple d'utilisation de SE-STAR\relax }}{3}{figure.caption.7}
-\contentsline {figure}{\numberline {3}{\ignorespaces Exemple d'environnements GYM (Open AI)\relax }}{18}{figure.caption.9}
-\contentsline {figure}{\numberline {4}{\ignorespaces Exemple d'environnements Universe (Open AI)\relax }}{18}{figure.caption.9}
-\contentsline {figure}{\numberline {5}{\ignorespaces Exemple d'environnements DeepmindLab (Deepmind (Google)) \relax }}{18}{figure.caption.9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning\relax }}{20}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning avec optimisation de la fonction de perte\relax }}{20}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning avec optimisation de la fonction de perte \cite {blogPerceptron}\relax }}{21}{figure.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Sch\IeC {\'e}ma d'un mod\IeC {\`e}le dense et de la r\IeC {\'e}alisation d'un r\IeC {\'e}seau dense\relax }}{23}{figure.caption.10}
-\contentsline {figure}{\numberline {10}{\ignorespaces Op\IeC {\'e}ration de convolution dans un CNN\relax }}{24}{figure.caption.11}
-\contentsline {figure}{\numberline {11}{\ignorespaces Activation de $x_3$\relax }}{24}{figure.caption.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Sch\IeC {\'e}ma r\IeC {\'e}capitulatif des diff\IeC {\'e}rentes sous parties dans un r\IeC {\'e}seau de neurone utilis\IeC {\'e} pour de l'apprentissage par renforcement\relax }}{26}{figure.caption.13}
-\contentsline {figure}{\numberline {13}{\ignorespaces Vue globale de l'interaction entre le contr\IeC {\^o}leur et SE-STAR\relax }}{28}{figure.caption.14}
-\contentsline {figure}{\numberline {14}{\ignorespaces Comparatif des algorithmes PAAC / A3C en mettant l'accent sur les probl\IeC {\'e}matiques r\IeC {\'e}seaux\relax }}{30}{figure.caption.15}
-\contentsline {figure}{\numberline {15}{\ignorespaces Simple vue d'ensemble de l'utilisation de Docker en swarm mode\relax }}{32}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Vue d'ensemble de l'architecture partiellement mise en place dans le cadre de l'apprentissage de l'algorithme\relax }}{33}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces R\IeC {\'e}sultats du Deep Q learning sur CartPole\relax }}{38}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparaison: Famille DQN}}}{38}{subfigure.17.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparaison: DQN / DDQN}}}{38}{subfigure.17.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Comparaison: DQN / Dueling}}}{38}{subfigure.17.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Comparaison: DQN / DQN-Target}}}{38}{subfigure.17.4}
-\contentsline {figure}{\numberline {18}{\ignorespaces R\IeC {\'e}sultats de l'A3C sur CartPole\relax }}{39}{figure.caption.17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparaison : Famille A3C}}}{39}{subfigure.18.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparaison A3C-LSTM / A3C-LSTM-GAE avec 16 processus}}}{39}{subfigure.18.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Comparaison A3C-LSTM / A3C-FF avec 8 processus}}}{39}{subfigure.18.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Comparaison A3C-LSTM / A3C-FF avec 16 processus}}}{39}{subfigure.18.4}
-\contentsline {figure}{\numberline {19}{\ignorespaces R\IeC {\'e}sultats de l'A3C sur des environnements ATARI\relax }}{41}{figure.caption.18}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur PONG}}}{41}{subfigure.19.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PONG}}}{41}{subfigure.19.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur SEAQUEST}}}{41}{subfigure.19.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {SEAQUEST}}}{41}{subfigure.19.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur SPACEINVADERS}}}{41}{subfigure.19.5}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {SPACE INVADERSE}}}{41}{subfigure.19.6}
-\contentsline {figure}{\numberline {20}{\ignorespaces Environnement A en 3D\relax }}{42}{figure.caption.19}
-\contentsline {figure}{\numberline {21}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Environnement A par l'agent}\relax }}{42}{figure.caption.19}
-\contentsline {figure}{\numberline {22}{\ignorespaces Repr\IeC {\'e}sentation 3D de l'environnement\relax }}{44}{figure.caption.21}
-\contentsline {figure}{\numberline {23}{\ignorespaces Repr\IeC {\'e}sentation 3D de l'environnement B\relax }}{45}{figure.caption.22}
-\contentsline {figure}{\numberline {24}{\ignorespaces Structure d'un module de curiosit\IeC {\'e}\relax }}{50}{figure.caption.23}
-\contentsline {figure}{\numberline {25}{\ignorespaces R\IeC {\'e}sultats des motivations auxiliaires sur Pong (Gym-OpenAI)\relax }}{51}{figure.caption.24}
-\contentsline {figure}{\numberline {26}{\ignorespaces Sch\IeC {\'e}ma finale du module de curiosit\IeC {\'e} mise en place\relax }}{53}{figure.caption.25}
+\contentsline {figure}{\numberline {3}{\ignorespaces Exemple d'environnements GYM (Open AI)\relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Exemple d'environnements Universe (Open AI)\relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {5}{\ignorespaces Exemple d'environnements DeepmindLab (Deepmind (Google)) \relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {6}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning\relax }}{22}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning avec optimisation de la fonction de perte\relax }}{22}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Repr\IeC {\'e}sentation haut niveau de l'architecture classique en deep learning avec optimisation de la fonction de perte \cite {blogPerceptron}\relax }}{23}{figure.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Sch\IeC {\'e}ma d'un mod\IeC {\`e}le dense et de la r\IeC {\'e}alisation d'un r\IeC {\'e}seau dense\relax }}{25}{figure.caption.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Op\IeC {\'e}ration de convolution dans un CNN\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Activation de $x_3$\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {12}{\ignorespaces Sch\IeC {\'e}ma r\IeC {\'e}capitulatif des diff\IeC {\'e}rentes sous parties dans un r\IeC {\'e}seau de neurone utilis\IeC {\'e} pour de l'apprentissage par renforcement\relax }}{28}{figure.caption.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Vue globale de l'interaction entre le contr\IeC {\^o}leur et SE-STAR\relax }}{30}{figure.caption.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Comparatif des algorithmes PAAC / A3C en mettant l'accent sur les probl\IeC {\'e}matiques r\IeC {\'e}seaux\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Simple vue d'ensemble de l'utilisation de Docker en swarm mode\relax }}{34}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Vue d'ensemble de l'architecture partiellement mise en place dans le cadre de l'apprentissage de l'algorithme\relax }}{35}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces R\IeC {\'e}sultats du Deep Q learning sur CartPole\relax }}{40}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparaison: Famille DQN}}}{40}{subfigure.17.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparaison: DQN / DDQN}}}{40}{subfigure.17.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Comparaison: DQN / Dueling}}}{40}{subfigure.17.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Comparaison: DQN / DQN-Target}}}{40}{subfigure.17.4}
+\contentsline {figure}{\numberline {18}{\ignorespaces R\IeC {\'e}sultats de l'A3C sur CartPole\relax }}{41}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Comparaison : Famille A3C}}}{41}{subfigure.18.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Comparaison A3C-LSTM / A3C-LSTM-GAE avec 16 processus}}}{41}{subfigure.18.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Comparaison A3C-LSTM / A3C-FF avec 8 processus}}}{41}{subfigure.18.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Comparaison A3C-LSTM / A3C-FF avec 16 processus}}}{41}{subfigure.18.4}
+\contentsline {figure}{\numberline {19}{\ignorespaces R\IeC {\'e}sultats de l'A3C sur des environnements ATARI\relax }}{43}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur PONG}}}{43}{subfigure.19.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {PONG}}}{43}{subfigure.19.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur SEAQUEST}}}{43}{subfigure.19.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {SEAQUEST}}}{43}{subfigure.19.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {R\IeC {\'e}sultat de l'A3C sur SPACEINVADERS}}}{43}{subfigure.19.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {SPACE INVADERSE}}}{43}{subfigure.19.6}
+\contentsline {figure}{\numberline {20}{\ignorespaces Environnement A en 3D\relax }}{44}{figure.caption.18}
+\contentsline {figure}{\numberline {21}{\ignorespaces \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \topsep \z@ \parsep \parskip \itemsep \z@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Environnement A par l'agent}\relax }}{44}{figure.caption.18}
+\contentsline {figure}{\numberline {22}{\ignorespaces Repr\IeC {\'e}sentation 3D de l'environnement\relax }}{46}{figure.caption.19}
+\contentsline {figure}{\numberline {23}{\ignorespaces Repr\IeC {\'e}sentation 3D de l'environnement B\relax }}{47}{figure.caption.20}
+\contentsline {figure}{\numberline {24}{\ignorespaces Structure d'un module de curiosit\IeC {\'e}\relax }}{52}{figure.caption.21}
+\contentsline {figure}{\numberline {25}{\ignorespaces R\IeC {\'e}sultats des motivations auxiliaires sur Pong (Gym-OpenAI)\relax }}{53}{figure.caption.22}
+\contentsline {figure}{\numberline {26}{\ignorespaces Sch\IeC {\'e}ma finale du module de curiosit\IeC {\'e} mise en place\relax }}{55}{figure.caption.23}

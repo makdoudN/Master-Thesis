@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  27 AUG 2017 23:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.12)  30 AUG 2017 14:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1285,66 +1285,39 @@ Package: everypage 2007/06/20 1.1 Hooks to run on every page
 \sc@wm@vcenter=\skip85
 \sc@wm@fontsize=\skip86
 )
-
-! LaTeX Error: Option clash for package xcolor.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 \usepackage
-                [colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
-The package xcolor has already been loaded with options:
-  [table]
-There has now been an attempt to load it with options
-  [pdftex,dvipsnames]
-Adding the global options:
-  table,pdftex,dvipsnames
-to your \documentclass declaration may fix this.
-Try typing  <return>  to proceed.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
-Package: todonotes 2012/07/25
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-)
-\c@@todonotes@numberoftodonotes=\count182
-) (./glossary.tex) (./main.aux
+(./glossary.tex) (./main.aux
 
 LaTeX Warning: Label `fig:main' multiply defined.
 
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
  (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count183
+\scratchcounter=\count182
 \scratchdimen=\dimen271
 \scratchbox=\box58
-\nofMPsegments=\count184
-\nofMParguments=\count185
+\nofMPsegments=\count183
+\nofMParguments=\count184
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count186
+\MPscratchCnt=\count185
 \MPscratchDim=\dimen272
-\MPnumerator=\count187
-\makeMPintoPDFobject=\count188
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
 \everyMPtoPDFconversion=\toks66
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1415,7 +1388,7 @@ See the subcaption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 \begin{document}
+l.85 \begin{document}
                      
 If you do not understand this error, please take a closer look
 at the documentation of the `subcaption' package, especially the
@@ -1426,18 +1399,18 @@ If that doesn't work, type  X <return>  to quit.
 Package caption Info: End \AtBeginDocument code.
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 92.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty)
 
-LaTeX Warning: You have requested, on input line 92, version
+LaTeX Warning: You have requested, on input line 85, version
                `2012/07/28' of package nameref,
                but only version
                `'
                is available.
 
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
 (./main.out) (./main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
@@ -1446,7 +1419,7 @@ LaTeX Info: Redefining \pageref on input line 92.
 ! Undefined control sequence.
 <argument> \sf@counterlist 
                            
-l.92 \begin{document}
+l.85 \begin{document}
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1454,22 +1427,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/ensem.png, id=191, 368.0952pt x 120.45pt>
+<./assets/ensem.png, id=199, 368.0952pt x 120.45pt>
 File: ./assets/ensem.png Graphic file (type png)
  <use ./assets/ensem.png>
-Package pdftex.def Info: ./assets/ensem.png used on input line 104.
+Package pdftex.def Info: ./assets/ensem.png used on input line 97.
 (pdftex.def)             Requested size: 257.66487pt x 84.3144pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+LaTeX Font Info:    Try loading font information for U+msa on input line 109.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 116.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 109.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1482,36 +1455,36 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120             Jé
+l.113             Jé
                       rome Kodjabachian\\
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/thales.jpg, id=193, 2055.68pt x 507.8975pt>
+<./assets/thales.jpg, id=201, 2055.68pt x 507.8975pt>
 File: ./assets/thales.jpg Graphic file (type jpg)
 
 <use ./assets/thales.jpg>
-Package pdftex.def Info: ./assets/thales.jpg used on input line 129.
+Package pdftex.def Info: ./assets/thales.jpg used on input line 122.
 (pdftex.def)             Requested size: 263.77919pt x 65.16875pt.
 
-Overfull \hbox (18.45915pt too wide) in paragraph at lines 129--130
+Overfull \hbox (18.45915pt too wide) in paragraph at lines 122--123
 [] [] 
  []
 
-<./assets/inria.png, id=194, 1204.5pt x 591.20876pt>
+<./assets/inria.png, id=202, 1204.5pt x 591.20876pt>
 File: ./assets/inria.png Graphic file (type png)
  <use ./assets/inria.png>
-Package pdftex.def Info: ./assets/inria.png used on input line 132.
+Package pdftex.def Info: ./assets/inria.png used on input line 125.
 (pdftex.def)             Requested size: 263.77919pt x 129.47093pt.
 
-Overfull \hbox (75.36465pt too wide) in paragraph at lines 132--133
+Overfull \hbox (75.36465pt too wide) in paragraph at lines 125--126
 [][] 
  []
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <142.26378> not available
-(Font)              size <24.88> substituted on input line 135.
+(Font)              size <24.88> substituted on input line 128.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1531,7 +1504,7 @@ might try typing `S' now just to see what is salvageable.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 \newpage
+l.165 \newpage
                [1] (./introduction/resume/resume.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 19.
 
@@ -1541,7 +1514,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
  [2] [3]
-<./assets/globale.png, id=222, 846.16125pt x 729.72626pt>
+<./assets/globale.png, id=230, 846.16125pt x 729.72626pt>
 File: ./assets/globale.png Graphic file (type png)
 
 <use ./assets/globale.png>
@@ -1606,7 +1579,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-<./assets/thales_chiffres.jpg, id=399, 640.3925pt x 360.34625pt>
+<./assets/thales_chiffres.jpg, id=409, 640.3925pt x 360.34625pt>
 File: ./assets/thales_chiffres.jpg Graphic file (type jpg)
 
 <use ./assets/thales_chiffres.jpg>
@@ -1624,7 +1597,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/SESTAR/env_sestar_color.png, id=404, 1927.2pt x 1142.2675pt>
+<./assets/SESTAR/env_sestar_color.png, id=414, 1927.2pt x 1142.2675pt>
 File: ./assets/SESTAR/env_sestar_color.png Graphic file (type png)
 
 <use ./assets/SESTAR/env_sestar_color.png>
@@ -1632,7 +1605,7 @@ Package pdftex.def Info: ./assets/SESTAR/env_sestar_color.png used on input lin
 e 17.
 (pdftex.def)             Requested size: 192.34286pt x 113.98943pt.
 
-<./assets/SESTAR/sestar_metro.png, id=405, 679.53876pt x 349.305pt>
+<./assets/SESTAR/sestar_metro.png, id=415, 679.53876pt x 349.305pt>
 File: ./assets/SESTAR/sestar_metro.png Graphic file (type png)
 
 <use ./assets/SESTAR/sestar_metro.png>
@@ -2130,14 +2103,11 @@ Overfull \hbox (12.77565pt too wide) in paragraph at lines 72--73
  par les ^^Setats nous int^^Seressant
  []
 
-[13]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 78.
- [14] [15]
+[13] [14] [15]
 ! Undefined control sequence.
 <argument> ...athbb {E}_{\text {s'} \sim \Epsilon 
                                                   }\big [r + \underset {a'}{...
-l.137 \end{align}
+l.136 \end{align}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2148,7 +2118,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...athbb {E}_{\text {s'} \sim \Epsilon 
                                                   }\big [r + \underset {a'}{...
-l.137 \end{align}
+l.136 \end{align}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2156,41 +2126,48 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./corps/preliminaire/presentation_outil_benchmarking.tex [16]
+[16]
+Overfull \hbox (4.82687pt too wide) in paragraph at lines 151--152
+[]\OT1/cmr/m/n/12 Le probl^^Reme r^^Seside main-tenant dans notre ca-pacit^^Se 
+^^Ra ex-pliciter $\OMS/cmsy/m/n/12 r\OML/cmm/m/it/12 ^^Q\OT1/cmr/m/n/12 (\OML/c
+mm/m/it/12 ![]\OT1/cmr/m/n/12 )$. Ce probl^^Reme
+ []
+
+[17]) (./corps/preliminaire/presentation_outil_benchmarking.tex [18]
 Overfull \hbox (35.48329pt too wide) in paragraph at lines 15--17
 \OT1/cmr/m/n/12 r^^Secents et de-mande une cer-taines r^^Seflexions (Por-tal, a
 ge of em-pire, ...). l'organisation
  []
 
-<./assets/GYM/gym2.png, id=513, 998.73125pt x 263.98625pt>
+<./assets/GYM/gym2.png, id=549, 998.73125pt x 263.98625pt>
 File: ./assets/GYM/gym2.png Graphic file (type png)
 
 <use ./assets/GYM/gym2.png>
 Package pdftex.def Info: ./assets/GYM/gym2.png used on input line 32.
 (pdftex.def)             Requested size: 376.82907pt x 99.60283pt.
 
-<./assets/GYM/gym.png, id=514, 551.05875pt x 310.15875pt>
+<./assets/GYM/gym.png, id=550, 551.05875pt x 310.15875pt>
 File: ./assets/GYM/gym.png Graphic file (type png)
 
 <use ./assets/GYM/gym.png>
 Package pdftex.def Info: ./assets/GYM/gym.png used on input line 37.
 (pdftex.def)             Requested size: 376.82907pt x 212.10251pt.
 
-<./assets/GYM/deepmindlab.png, id=515, 1104.125pt x 735.74875pt>
+<./assets/GYM/deepmindlab.png, id=551, 1104.125pt x 735.74875pt>
 File: ./assets/GYM/deepmindlab.png Graphic file (type png)
 
 <use ./assets/GYM/deepmindlab.png>
 Package pdftex.def Info: ./assets/GYM/deepmindlab.png used on input line 42.
 (pdftex.def)             Requested size: 251.22363pt x 167.39993pt.
 ) (./corps/preliminaire/deep_learning.tex
-[17] [18 <./assets/GYM/gym2.png> <./assets/GYM/gym.png> <./assets/GYM/deepmindl
+[19] [20 <./assets/GYM/gym2.png> <./assets/GYM/gym.png> <./assets/GYM/deepmindl
 ab.png (PNG copy)>]
 Overfull \hbox (16.37006pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/n/12 nous ap-pro-fondirons ce point plus tard, mais il est ^^Ra note
 r que selon l'architecture
  []
 
-[19] <./assets/DeepLearning/dl.png, id=537, 540.0175pt x 400.49625pt>
+[21] <./assets/DeepLearning/dl.png, id=574, 540.0175pt x 400.49625pt>
 File: ./assets/DeepLearning/dl.png Graphic file (type png)
 
 <use ./assets/DeepLearning/dl.png>
@@ -2209,7 +2186,7 @@ e g^^Sen^^Serer $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12 j []\OM
 L/cmm/m/it/12 ; []$
  []
 
-<./assets/DeepLearning/dl2.png, id=538, 695.59875pt x 502.87875pt>
+<./assets/DeepLearning/dl2.png, id=575, 695.59875pt x 502.87875pt>
 File: ./assets/DeepLearning/dl2.png Graphic file (type png)
 
 <use ./assets/DeepLearning/dl2.png>
@@ -2221,7 +2198,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 38.
 See the caption package documentation for explanation.
 
-[20 <./assets/DeepLearning/dl.png> <./assets/DeepLearning/dl2.png>]
+[22 <./assets/DeepLearning/dl.png> <./assets/DeepLearning/dl2.png>]
 Overfull \hbox (25.0172pt too wide) in paragraph at lines 41--42
 []\OT1/cmr/m/n/12 Dans la par-tie suiv-ante, nous ex-pli-querons les m^^Secanis
 mes re-spon-s-ables de l'optimisation
@@ -2257,7 +2234,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<./assets/DeepLearning/perceptron_node.png, id=545, 657.45625pt x 319.1925pt>
+<./assets/DeepLearning/perceptron_node.png, id=582, 657.45625pt x 319.1925pt>
 File: ./assets/DeepLearning/perceptron_node.png Graphic file (type png)
 
 <use ./assets/DeepLearning/perceptron_node.png>
@@ -2319,7 +2296,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[21 <./assets/DeepLearning/perceptron_node.png>]
+[23 <./assets/DeepLearning/perceptron_node.png>]
 Overfull \hbox (25.71222pt too wide) in paragraph at lines 71--72
 \OT1/cmr/m/n/12 ^^Ra un en-sem-ble de entr^^Sees et sor-ties as-soci^^Sees que 
 l'on notera $\OMS/cmsy/m/n/12 D \OT1/cmr/m/n/12 = [](\OML/cmm/m/it/12 x[]; y[]\
@@ -2333,21 +2310,21 @@ Overfull \hbox (1.51744pt too wide) in paragraph at lines 73--74
 des fonc-tions non lin^^Seaire.
  []
 
-<./assets/DeepLearning/Dense.png, id=553, 786.94pt x 571.13374pt>
+<./assets/DeepLearning/Dense.png, id=589, 786.94pt x 571.13374pt>
 File: ./assets/DeepLearning/Dense.png Graphic file (type png)
 
 <use ./assets/DeepLearning/Dense.png>
 Package pdftex.def Info: ./assets/DeepLearning/Dense.png used on input line 79.
 
 (pdftex.def)             Requested size: 236.08382pt x 171.34145pt.
- [22]
+ [24]
 Overfull \hbox (18.91586pt too wide) in paragraph at lines 87--88
 \OT1/cmr/m/n/12 le r^^Seseaux de neu-rones ^^Ra con-vo-lu-tions utilise l'op^^S
 eration de con-vo-lu-tion pour d^^Seterminer
  []
 
-[23 <./assets/DeepLearning/Dense.png>]
-<./assets/DeepLearning/conv.png, id=562, 795.97375pt x 706.64pt>
+[25 <./assets/DeepLearning/Dense.png>]
+<./assets/DeepLearning/conv.png, id=598, 795.97375pt x 706.64pt>
 File: ./assets/DeepLearning/conv.png Graphic file (type png)
 
 <use ./assets/DeepLearning/conv.png>
@@ -2355,7 +2332,7 @@ Package pdftex.def Info: ./assets/DeepLearning/conv.png used on input line 101.
 
 (pdftex.def)             Requested size: 85.48499pt x 75.88684pt.
 
-<./assets/DeepLearning/convVSdense.png, id=563, 717.68124pt x 681.54625pt>
+<./assets/DeepLearning/convVSdense.png, id=599, 717.68124pt x 681.54625pt>
 File: ./assets/DeepLearning/convVSdense.png Graphic file (type png)
 
 <use ./assets/DeepLearning/convVSdense.png>
@@ -2545,7 +2522,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<./assets/DeepLearning/reccurent.png, id=565, 810.02625pt x 271.0125pt>
+<./assets/DeepLearning/reccurent.png, id=601, 810.02625pt x 271.0125pt>
 File: ./assets/DeepLearning/reccurent.png Graphic file (type png)
 
 <use ./assets/DeepLearning/reccurent.png>
@@ -2556,8 +2533,8 @@ Package pdftex.def Info: ./assets/DeepLearning/reccurent.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png>]
-<./assets/DeepLearning/DP_EX.png, id=574, 853.1875pt x 570.13pt>
+[26 <./assets/DeepLearning/conv.png> <./assets/DeepLearning/convVSdense.png>]
+<./assets/DeepLearning/DP_EX.png, id=610, 853.1875pt x 570.13pt>
 File: ./assets/DeepLearning/DP_EX.png Graphic file (type png)
 
 <use ./assets/DeepLearning/DP_EX.png>
@@ -2569,7 +2546,7 @@ Overfull \hbox (7.8909pt too wide) in paragraph at lines 146--147
  [] 
  []
 
-) [25 <./assets/DeepLearning/reccurent.png>] [26 <./assets/DeepLearning/DP_EX.p
+) [27 <./assets/DeepLearning/reccurent.png>] [28 <./assets/DeepLearning/DP_EX.p
 ng>] (./corps/sestarInterfaceReseau/interface.tex
 ! Undefined control sequence.
 \reserved@b ->\T@ref 
@@ -2583,7 +2560,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-<./assets/interfaceReseau/overviewInterface.png, id=588, 919.435pt x 446.66875p
+<./assets/interfaceReseau/overviewInterface.png, id=626, 919.435pt x 446.66875p
 t>
 File: ./assets/interfaceReseau/overviewInterface.png Graphic file (type png)
  <use ./assets/interfaceReseau/overviewInterface.png>
@@ -2598,7 +2575,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 22.
 
-[27] [28 <./assets/interfaceReseau/overviewInterface.png>]
+[29] [30 <./assets/interfaceReseau/overviewInterface.png>]
 
 ! Package glossaries Error: Glossary entry `A3C' has not been defined.
 
@@ -2611,7 +2588,7 @@ l.67 ... l'agent dans SE-STAR a été l'\gls{A3C}
 
 You need to define a glossary entry before you can use it.
 
-[29] <./assets/interfaceReseau/paaca3c.png, id=610, 1056.94875pt x 479.7925pt>
+[31] <./assets/interfaceReseau/paaca3c.png, id=647, 1056.94875pt x 479.7925pt>
 File: ./assets/interfaceReseau/paaca3c.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/paaca3c.png>
@@ -2623,7 +2600,7 @@ Overfull \hbox (4.07019pt too wide) in paragraph at lines 85--86
  [] 
  []
 
-[30 <./assets/interfaceReseau/paaca3c.png>]
+[32 <./assets/interfaceReseau/paaca3c.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\gls' on input line 96.
@@ -2640,7 +2617,7 @@ l.99 ...STAR sous Linux et d'utiliser l'\gls{A3C}.
 
 You need to define a glossary entry before you can use it.
 
-[31] <./assets/interfaceReseau/docker.png, id=631, 467.7475pt x 310.15875pt>
+[33] <./assets/interfaceReseau/docker.png, id=667, 467.7475pt x 310.15875pt>
 File: ./assets/interfaceReseau/docker.png Graphic file (type png)
 
 <use ./assets/interfaceReseau/docker.png>
@@ -2679,7 +2656,7 @@ terfaceResume-eps-converted-to.pdf ./assets/interfaceReseau/interfaceResume.eps
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=632, 584.182
+<./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf, id=668, 584.182
 5pt x 733.74126pt>
 File: ./assets/interfaceReseau/interfaceResume-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2694,7 +2671,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 121.
 See the caption package documentation for explanation.
 
-[32 <./assets/interfaceReseau/docker.png>]) [33 <./assets/interfaceReseau/inter
+[34 <./assets/interfaceReseau/docker.png>]) [35 <./assets/interfaceReseau/inter
 faceResume-eps-converted-to.pdf>] (./corps/Controleur/introduction.tex
 Overfull \hbox (3.28592pt too wide) in paragraph at lines 1--1
 []\OT1/cmr/bx/n/17.28 Contr^ole d'un agent via la sim-u-la-tion SE-STAR
@@ -2706,7 +2683,7 @@ Overfull \hbox (46.5143pt too wide) in paragraph at lines 6--7
 aire men-tion des probl^^Sematiques
  []
 
-[34]
+[36]
 Overfull \hbox (26.19218pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/m/n/12 Les principes sur lesquels re-posent ces deux al-go-rithmes o
 nt ^^Set^^Se d^^Sevelopp^^Se pr^^Sec^^Sedemment
@@ -2742,11 +2719,11 @@ Overfull \hbox (40.01376pt too wide) in paragraph at lines 38--59
  [] 
  []
 
-[35]
+[37]
 Overfull \vbox (10.19737pt too high) has occurred while \output is active []
 
 
-[36] <./assets/DeepLearning/cartpole.png, id=682, 431.6125pt x 279.0425pt>
+[38] <./assets/DeepLearning/cartpole.png, id=717, 431.6125pt x 279.0425pt>
 File: ./assets/DeepLearning/cartpole.png Graphic file (type png)
 
 <use ./assets/DeepLearning/cartpole.png>
@@ -2768,7 +2745,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/DQNResult/4.png, id=683, 578.16pt x 397.485pt>
+<./assets/DQNResult/4.png, id=718, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/4.png Graphic file (type png)
 
 <use ./assets/DQNResult/4.png>
@@ -2789,7 +2766,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/DQNResult/2.png, id=684, 578.16pt x 397.485pt>
+<./assets/DQNResult/2.png, id=719, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/2.png Graphic file (type png)
 
 <use ./assets/DQNResult/2.png>
@@ -2810,7 +2787,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/DQNResult/3.png, id=685, 578.16pt x 397.485pt>
+<./assets/DQNResult/3.png, id=720, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/3.png Graphic file (type png)
 
 <use ./assets/DQNResult/3.png>
@@ -2831,7 +2808,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/DQNResult/1.png, id=686, 578.16pt x 397.485pt>
+<./assets/DQNResult/1.png, id=721, 578.16pt x 397.485pt>
 File: ./assets/DQNResult/1.png Graphic file (type png)
 
 <use ./assets/DQNResult/1.png>
@@ -2852,7 +2829,7 @@ Overfull \hbox (0.43942pt too wide) in paragraph at lines 100--102
  DQN sta-bilisent l'entra^^^Pnement
  []
 
-[37 <./assets/DeepLearning/cartpole.png>]
+[39 <./assets/DeepLearning/cartpole.png>]
 Overfull \hbox (8.73264pt too wide) in paragraph at lines 103--104
 []\OT1/cmr/m/n/12 Ce con-stat est corr^^Sel^^Se avec d'autres exp^^Serimentatio
 ns faites qui ne sont pas pr^^Sesentent
@@ -2872,7 +2849,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/A3CResult/11.png, id=694, 433.62pt x 289.08pt>
+<./assets/A3CResult/11.png, id=730, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/11.png Graphic file (type png)
 
 <use ./assets/A3CResult/11.png>
@@ -2893,7 +2870,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/A3CResult/22.png, id=695, 433.62pt x 289.08pt>
+<./assets/A3CResult/22.png, id=731, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/22.png Graphic file (type png)
 
 <use ./assets/A3CResult/22.png>
@@ -2962,7 +2939,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/A3CResult/33.png, id=696, 433.62pt x 289.08pt>
+<./assets/A3CResult/33.png, id=732, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/33.png Graphic file (type png)
 
 <use ./assets/A3CResult/33.png>
@@ -2983,14 +2960,14 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/A3CResult/44.png, id=697, 433.62pt x 289.08pt>
+<./assets/A3CResult/44.png, id=733, 433.62pt x 289.08pt>
 File: ./assets/A3CResult/44.png Graphic file (type png)
 
 <use ./assets/A3CResult/44.png>
 Package pdftex.def Info: ./assets/A3CResult/44.png used on input line 125.
 (pdftex.def)             Requested size: 209.3509pt x 139.56844pt.
- [38 <./assets/DQNResult/4.png> <./assets/DQNResult/2.png> <./assets/DQNResult/
-3.png> <./assets/DQNResult/1.png>] [39 <./assets/A3CResult/11.png> <./assets/A3
+ [40 <./assets/DQNResult/4.png> <./assets/DQNResult/2.png> <./assets/DQNResult/
+3.png> <./assets/DQNResult/1.png>] [41 <./assets/A3CResult/11.png> <./assets/A3
 CResult/22.png> <./assets/A3CResult/33.png> <./assets/A3CResult/44.png>]
 
 ! LaTeX Error: No counter 'subfigure@save' defined.
@@ -3006,7 +2983,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/pong.png, id=715, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/pong.png, id=751, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/pong.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong.png>
@@ -3028,7 +3005,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/pong1.png, id=716, 452.69125pt x 586.19pt>
+<./assets/ATARI_RESULT/pong1.png, id=752, 452.69125pt x 586.19pt>
 File: ./assets/ATARI_RESULT/pong1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/pong1.png>
@@ -3050,7 +3027,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/Seaquest.png, id=717, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Seaquest.png, id=753, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Seaquest.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Seaquest.png>
@@ -3072,7 +3049,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/Sequest1.png, id=718, 424.58624pt x 555.07375pt>
+<./assets/ATARI_RESULT/Sequest1.png, id=754, 424.58624pt x 555.07375pt>
 File: ./assets/ATARI_RESULT/Sequest1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Sequest1.png>
@@ -3094,7 +3071,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/Spaceinvader.png, id=719, 578.16pt x 397.485pt>
+<./assets/ATARI_RESULT/Spaceinvader.png, id=755, 578.16pt x 397.485pt>
 File: ./assets/ATARI_RESULT/Spaceinvader.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader.png>
@@ -3116,18 +3093,18 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<./assets/ATARI_RESULT/Spaceinvader1.png, id=720, 338.26375pt x 484.81125pt>
+<./assets/ATARI_RESULT/Spaceinvader1.png, id=756, 338.26375pt x 484.81125pt>
 File: ./assets/ATARI_RESULT/Spaceinvader1.png Graphic file (type png)
 
 <use ./assets/ATARI_RESULT/Spaceinvader1.png>
 Package pdftex.def Info: ./assets/ATARI_RESULT/Spaceinvader1.png used on input 
 line 176.
 (pdftex.def)             Requested size: 125.61182pt x 180.02834pt.
- [40]
+ [42]
 Overfull \vbox (9.5611pt too high) has occurred while \output is active []
 
 
-[41 <./assets/ATARI_RESULT/pong.png> <./assets/ATARI_RESULT/pong1.png> <./asset
+[43 <./assets/ATARI_RESULT/pong.png> <./assets/ATARI_RESULT/pong1.png> <./asset
 s/ATARI_RESULT/Seaquest.png> <./assets/ATARI_RESULT/Sequest1.png> <./assets/ATA
 RI_RESULT/Spaceinvader.png> <./assets/ATARI_RESULT/Spaceinvader1.png>]
 Overfull \hbox (7.90163pt too wide) in paragraph at lines 188--189
@@ -3141,7 +3118,7 @@ Overfull \hbox (22.53667pt too wide) in paragraph at lines 192--193
 un en-vi-ron-nement labyrinthique
  []
 
-<./assets/SESTAR/env_sestar_agent.png, id=736, 880.28876pt x 859.21pt>
+<./assets/SESTAR/env_sestar_agent.png, id=772, 880.28876pt x 859.21pt>
 File: ./assets/SESTAR/env_sestar_agent.png Graphic file (type png)
 
 <use ./assets/SESTAR/env_sestar_agent.png>
@@ -3149,7 +3126,7 @@ Package pdftex.def Info: ./assets/SESTAR/env_sestar_agent.png used on input lin
 e 201.
 (pdftex.def)             Requested size: 106.85788pt x 104.2938pt.
 
-<./assets/SESTAR/vue_agent_1.png, id=737, 462.528pt x 346.896pt>
+<./assets/SESTAR/vue_agent_1.png, id=773, 462.528pt x 346.896pt>
 File: ./assets/SESTAR/vue_agent_1.png Graphic file (type png)
 
 <use ./assets/SESTAR/vue_agent_1.png>
@@ -3161,8 +3138,17 @@ Overfull \hbox (8.7297pt too wide) in paragraph at lines 199--211
  []$[]$$[]$ 
  []
 
-[42 <./assets/SESTAR/env_sestar_agent.png> <./assets/SESTAR/vue_agent_1.png>]
-<./assets/SESTAR/se2.png, id=749, 1562.83875pt x 836.12375pt>
+! Undefined control sequence.
+l.213 \todo
+           [inline]{Transformer en tiré ou tableau}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[44 <./assets/SESTAR/env_sestar_agent.png> <./assets/SESTAR/vue_agent_1.png>]
+<./assets/SESTAR/se2.png, id=784, 1562.83875pt x 836.12375pt>
 File: ./assets/SESTAR/se2.png Graphic file (type png)
 
 <use ./assets/SESTAR/se2.png>
@@ -3172,8 +3158,8 @@ Package pdftex.def Info: ./assets/SESTAR/se2.png used on input line 243.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[43pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
-8}) has been already used, duplicate ignored
+[45pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.
+11}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -3188,13 +3174,13 @@ e 256.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44 <./assets/SESTAR/se2.png>]
+[46 <./assets/SESTAR/se2.png>]
 Overfull \hbox (3.7063pt too wide) in paragraph at lines 278--279
 \OT1/cmr/m/n/12 heureuse-ment, nous n'avons pas pu exp^^Serimenter au-tant de t
 emps que nous l'aurions
  []
 
-) [45] (./corps/Controleur/curiosite.tex [46]
+) [47] (./corps/Controleur/curiosite.tex [48]
 ! Double subscript.
 l.26 ...erset{t=1}{\overset{T}{\sum}}\: \big( r_a_
                                                   *^t - r^t_{a_i} \big) $).
@@ -3216,7 +3202,7 @@ l.31
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[47]
+[49]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3291,13 +3277,13 @@ l.49 Sans pour autant utiliser \gls{UCB},
 
 You need to define a glossary entry before you can use it.
 
-[48]
+[50]
 Overfull \hbox (28.56392pt too wide) in paragraph at lines 55--56
 \OT1/cmr/m/n/12 repr^^Sesentation par-tielle de l'environnement. En ef-fet, l'a
 gent ne voit qu'un repr^^Sesentation
  []
 
-<./assets/CURIOSITY/curiosity.png, id=788, 491.8375pt x 475.7775pt>
+<./assets/CURIOSITY/curiosity.png, id=822, 491.8375pt x 475.7775pt>
 File: ./assets/CURIOSITY/curiosity.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/curiosity.png>
@@ -3308,7 +3294,7 @@ Package pdftex.def Info: ./assets/CURIOSITY/curiosity.png used on input line 66
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[49]
+[51]
 ! Undefined control sequence.
 <recently read> \@fourthoffive 
                                
@@ -3321,7 +3307,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Package hyperref Warning: No autoref name for `{15}{50}' on input line 86.
+Package hyperref Warning: No autoref name for `{19}{52}' on input line 86.
 
 ! Undefined control sequence.
 <recently read> \@fifthoffive 
@@ -3347,7 +3333,7 @@ and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 <argument> \@fifthoffive 
-                         {15}{50}\@empty \@empty \@empty 
+                         {19}{52}\@empty \@empty \@empty 
 l.86 ...quation ~\autoref{eqn:intrinsicmotivation}
                                                    est trop simple pour êtr...
 The control sequence at the end of the top line
@@ -3378,7 +3364,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[50 <./assets/CURIOSITY/curiosity.png>]
+[52 <./assets/CURIOSITY/curiosity.png>]
 ! Undefined control sequence.
 \reserved@b ->\T@ref 
                      
@@ -3390,542 +3376,46 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<./assets/CURIOSITY/A3C_auxiliaire.png, id=803, 598.235pt x 576.1525pt>
+<./assets/CURIOSITY/A3C_auxiliaire.png, id=838, 598.235pt x 576.1525pt>
 File: ./assets/CURIOSITY/A3C_auxiliaire.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/A3C_auxiliaire.png>
 Package pdftex.def Info: ./assets/CURIOSITY/A3C_auxiliaire.png used on input li
 ne 102.
 (pdftex.def)             Requested size: 209.38538pt x 201.65639pt.
- [51 <./assets/CURIOSITY/A3C_auxiliaire.png>] [52]
-<./assets/CURIOSITY/curiosity2.png, id=818, 755.82375pt x 599.23875pt>
+ [53 <./assets/CURIOSITY/A3C_auxiliaire.png>] [54]
+<./assets/CURIOSITY/curiosity2.png, id=852, 755.82375pt x 599.23875pt>
 File: ./assets/CURIOSITY/curiosity2.png Graphic file (type png)
 
 <use ./assets/CURIOSITY/curiosity2.png>
 Package pdftex.def Info: ./assets/CURIOSITY/curiosity2.png used on input line 1
 37.
 (pdftex.def)             Requested size: 302.32414pt x 239.69125pt.
-) [53 <./assets/CURIOSITY/curiosity2.png>] (./conclusion/conclusion.tex
+) [55 <./assets/CURIOSITY/curiosity2.png>] (./conclusion/conclusion.tex
 
-LaTeX Warning: Citation `controleempowerment' on page 54 undefined on input lin
+LaTeX Warning: Citation `controleempowerment' on page 56 undefined on input lin
 e 15.
 
-[54]
+[56]
 Overfull \hbox (9.90762pt too wide) in paragraph at lines 22--23
 []\OT1/cmr/m/n/12 Ce stage m'aura donc per-mis d'explorer ^^Ra travers un ob-je
 c-tif concr^et, l'asservissement
  []
 
-) [55]
-Overfull \hbox (1.4426pt too wide) in paragraph at lines 218--218
+) [57]
+Overfull \hbox (1.4426pt too wide) in paragraph at lines 211--211
 []\OT1/cmr/m/n/12 En anglais: \OT1/cmr/m/it/12 Graph-ics Pro-cess-ing Unit\OT1/
 cmr/m/n/12 , est un com-posant nor-male-ment utilis^^Se
  []
 
-[56] (./main.bbl
-Underfull \hbox (badness 4872) in paragraph at lines 59--63
-[]\OT1/cmr/m/n/12 Volodymyr Mnih, Adri^^Ra Puig-dom^^Renech Ba-dia, Mehdi Mirza
-, Alex
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 59--63
-\OT1/cmr/m/n/12 Graves, Tim-o-thy P. Lil-l-i-crap, Tim Harley, David Sil-ver, a
-nd Ko-ray
- []
-
-[57]) [58]
-
-LaTeX Warning: Marginpar on page 59 moved.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `OliveGreen'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 ...\info{This can help me in chapter seven!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 ...d!\newline\newline What was I thinking?!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 ...following section needs to be rewritten!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 ...following section needs to be rewritten!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 ...following section needs to be rewritten!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package xcolor Error: Undefined color `Plum'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.241 ...following section needs to be rewritten!}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[59]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+[58] (./main.bbl [59] [60]) [61]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 894AF22E7051629D1CF0B607532CAD90;4444.
+(rerunfilecheck)             Checksum: 0B29EFA15ADFCF22B31A1E0D15EACFF6;4641.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -3939,20 +3429,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 26652 strings out of 492995
- 486754 string characters out of 6132704
- 734534 words of memory out of 5000000
- 29308 multiletter control sequences out of 15000+600000
+ 26260 strings out of 492995
+ 477194 string characters out of 6132704
+ 717452 words of memory out of 5000000
+ 28919 multiletter control sequences out of 15000+600000
  20271 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,87p,2011b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.9} has been referenced but does not exi
-st, replaced by a fixed one
+ 55i,17n,87p,2011b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.12} has been referenced but does not ex
+ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.10} has been referenced but does not exis
+t, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb>
@@ -3961,26 +3451,28 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (69 pages, 3607671 bytes).
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (71 pages, 3630660 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 820 compressed objects within 9 object streams
- 242 named destinations out of 1000 (max. 500000)
- 596 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1035 PDF objects out of 1200 (max. 8388607)
+ 849 compressed objects within 9 object streams
+ 246 named destinations out of 1000 (max. 500000)
+ 612 words of extra memory for PDF output out of 10000 (max. 10000000)
 
