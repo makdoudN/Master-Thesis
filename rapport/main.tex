@@ -11,19 +11,18 @@
 \usepackage{vmargin}
 \usepackage{geometry}
 \usepackage{caption}
-\usepackage{subcaption}
+%\usepackage{subcaption}
 \usepackage{tcolorbox}                              % Beautiful box 
 \usepackage{hyperref}
 \usepackage{amsfonts,amsmath,amssymb,amsthm}        % all the math in one 
 \usepackage{amsfonts}
 \usepackage{tikz}                                   % drawing package
-\usepackage[acronym, toc]{glossaries}               % Module for glossary
-\usepackage{acronym}                                % Module for acronyms
+\usepackage[toc]{glossaries}                        % Module for glossary
 \usepackage{xargs}                                  % more than one args in cmd
 \usepackage{mathrsfs}                               % Cursive font
 \usepackage{afterpage}                              % https://ctan.org/pkg/afterpage
 \usepackage{float}                                  % Position of float
-\usepackage{subfig}
+\usepackage[lofdepth=1,lotdepth]{subfig}
 \usepackage{makecell}                               % \Xhline{NUM\arrayrulewidth}
 
 % https://tex.stackexchange.com/questions/20575/attractive-boxed-equations
@@ -81,9 +80,8 @@
 % https://tex.stackexchange.com/questions/5223/command-for-argmin-or-argmax
 \DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
 
-
-%\makenoidxglossaries
-%\input{glossary.tex}
+\makeglossaries
+\input{glossary.tex}
 
 % --------------------------------------------------------------------------
 %%                                  BEGIN
@@ -117,9 +115,9 @@
 			\begin{minipage}{0.4\textwidth}
 			\begin{flushright} \large
                 \emph{Tuteurs:} \\
-            Jérome Kodjabachian\\
-			Marc Schoenauer\\
-            Alexandre Kazmierowski						
+            Jerome Kodjabachian \\
+			Marc Schoenauer \\
+            Alexandre Kazmierowski
 		\end{flushright}
 	\end{minipage}\\[1.3 cm]
 	
@@ -181,9 +179,6 @@
 \thispagestyle{empty}
 \listoffigures   \newpage
 
-%\printglossary[type=\acronymtype]
-%\printglossary
-
 \thispagestyle{empty}
 \tableofcontents \newpage
 
@@ -195,12 +190,12 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
-\input{corps/introduction/context_stage.tex} 
-\input{corps/introduction/description_sujet_stage.tex}
-\input{corps/preliminaire/architecture_fonctionnement_rl.tex}
-\input{corps/preliminaire/TD_A3C_DeepQLearning.tex}
-\input{corps/preliminaire/presentation_outil_benchmarking.tex}
-\input{corps/preliminaire/deep_learning.tex}                    \newpage
+\input{corps/introduction/contextstage.tex} 
+\input{corps/introduction/descriptionsujetstage.tex}
+\input{corps/preliminaire/architecturefonctionnementrl.tex}
+\input{corps/preliminaire/TDA3CDeepQLearning.tex}
+\input{corps/preliminaire/presentationoutilbenchmarking.tex}
+\input{corps/preliminaire/deeplearning.tex}                    \newpage
 \input{corps/sestarInterfaceReseau/interface.tex}               \newpage
 \input{corps/Controleur/introduction.tex}                       \newpage     
 \input{corps/Controleur/curiosite.tex}                          \newpage     
@@ -215,7 +210,9 @@
 % Glossaire
 % =================================
 
-\printnoidxglossary\newpage
+\clearpage
+ 
+\printglossaries \newpage
 
 % =================================
 % Références

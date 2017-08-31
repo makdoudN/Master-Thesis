@@ -3,7 +3,7 @@
 # AUTHOR: MAKDOUD NIZAM
 # --------------------------------
 
-PAPER=main  
+PAPER=main
 SHELL=/bin/zsh   # for the while loop below
 SRC=$(wildcard *.tex)
 OPTS=--pdf --verbose --force
@@ -20,7 +20,7 @@ all: pdf
 pdf: 
 	rubber $(OPTS) $(PAPER) ; \
 	bibtex $(PAPER) ;
-
+	makeglossaries $(PAPER).glo
 draft:
 	rubber $(OPTS) $(PAPER)
 
