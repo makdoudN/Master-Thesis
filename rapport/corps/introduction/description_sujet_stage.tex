@@ -56,20 +56,19 @@ L'objectif de ce stage est de proposer un contrôle d'un agent de l'entrée de l
 
 Nous cherchons un algorithme de contrôle assez générique pour ne nécessiter en entrée que des images (tableaux de pixels). Un des défi de ce stage est de permettre à  l'agent d'être capable de trouver les repères les plus adaptés pour réussir sa mission quelque soit l'environnement.
 
-Cela implique que nous ne recherchons pas seulement une solution adaptée à un environnement particulier. Nous souhaitons un agent capable de généraliser à un ensemble d'environnements similaires la recherche d'une politique quasi optimale. 
+Cela implique que nous ne recherchons pas seulement une solution adaptée à un environnement particulier. Nous souhaitons un agent capable de généraliser à un ensemble d'environnements similaires. 
 
 Les nombreuses contraintes et les défis technologiques impliquent une décomposition de l'algorithme choisi en deux grandes étapes:
 
 \begin{enumerate}
     \item L'agent explore l'environnement et apprend simultanément une politique optimale pour arriver à la sortie.
-        % coeur -> e dans le o
-    \item Nous nous assurons que l'agent est capable de trouver une bonne politique sur des environnements similaires pour vérifier que l'agent n'a pas juste \emph{appris par coeur une solution}.
+    \item Nous nous assurons que l'agent est capable de trouver une bonne politique sur des environnements similaires pour vérifier que l'agent n'a pas juste \emph{appris par coeur une solution}\footnote{Nous reviendrons plus tard sur la signification de la généralisation qui est un problème central}.
 \end{enumerate}
 
 Se pose naturellement la question du choix de la technologie pour réaliser cet apprentissage.
 La contrainte de généralisation nous pousse à utiliser l'apprentissage profond (ou \emph{deep learning}). L'apprentissage profond a prouvé son efficacité dans sa capacité à être pertinent à un grand nombre d'entrées possibles.  
-La distinction entre généralisation et apprentissage par coeur des données est particulièrement importante dans ce domaine. Les méthodes qui en sont issues ont prouvé leurs capacité à trouver des solutions à des problèmes nouveaux (jamais utilisés en entrainement).
+La distinction entre généralisation et apprentissage par coeur des données est particulièrement importante dans ce domaine. Les méthodes qui en sont issues ont prouvé leurs capacités à trouver des solutions à des problèmes nouveaux (jamais utilisés en entrainement).
 
-Il nous faut un domaine s'attaquant à des environnements compliqués, observés de manières partielles, et possiblement changeant au cours du temps. L'apprentissage par renforcement propose une manière d'aborder ce genre d'environnement complexe. 
+Il nous faut un domaine s'attaquant à des environnements compliqués, observés de manières partielles, et possiblement changeant au cours du temps. L'apprentissage par renforcement propose une manière d'aborder ces d'environnements complexes. 
 
 Ainsi, nous avons proposé une méthode alliant l'apprentissage profond pour gérer les entrées du système avec l'apprentissage par renforcement pour réaliser un agent capable de naviguer dans un environnement pour y découvrir une sortie en ayant comme donnée unique sa vision.

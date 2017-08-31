@@ -26,9 +26,17 @@
 \usepackage{subfig}
 \usepackage{makecell}                               % \Xhline{NUM\arrayrulewidth}
 
-
 % https://tex.stackexchange.com/questions/20575/attractive-boxed-equations
 \usepackage{empheq}                         
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=magenta,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
 
 % { ..
 % ..TODO REMOVE WHEN READY
@@ -74,9 +82,8 @@
 \DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
 
 
-\makenoidxglossaries
-
-\input{glossary.tex}
+%\makenoidxglossaries
+%\input{glossary.tex}
 
 % --------------------------------------------------------------------------
 %%                                  BEGIN
@@ -174,8 +181,8 @@
 \thispagestyle{empty}
 \listoffigures   \newpage
 
-\printglossary[type=\acronymtype]
-\printglossary
+%\printglossary[type=\acronymtype]
+%\printglossary
 
 \thispagestyle{empty}
 \tableofcontents \newpage
