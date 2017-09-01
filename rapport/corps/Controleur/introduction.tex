@@ -9,9 +9,9 @@ Nous considérons SE-STAR comme un environnement sans faire mention des problém
 
 Il existe dans la littérature un panel très large d'algorithmes qui sont potentiellement puissants. Or, pour des questions de temps, nous n'avons pas été capable d'essayer tous les algorithmes. Nous avons donc dû faire un choix. 
 
-Nous allons à travers cette partie, donner les principaux réseaux qui nous ont poussé à nous diriger vers un apprentissage par renforcement profond. 
+Nous allons à travers cette partie, donner les principales raisons qui nous ont poussées à nous diriger vers un apprentissage par renforcement profond. 
 
-Tout d'abord, les spécificités de SE-STAR impliquent le non-usage des algorihtmes \emph{model based} (basés sur un modèle, soit la connaissance de la fonction de transition). Or, il est évident que dans le cas de SE-STAR, cette fonction est inconnue. Nous pouvons même aller plus loin, la fonction de transition dans le cas d'états sous forme d'un tableau de pixels est bien souvent insoluble. Cela reviendrai à avoir la connaissance d'une fonction qui, sachant l'etat courant et l'action donne la probabilité d'être dans un nouvel état. Voici le cheminement pour déterminer le nombre de combinaisons possibles d'états pour une image de 82x82 pixels. Un pixel est composé de trois nombres de 0 à 255. Chaque pixel a la capacité de produire théoriquement $256^3 = 16\ 777\ 216\ \text{couleurs}$. Ainsi, il y a $82 * 82 * 256^3 = 112\ 810\ 000\ 384 \text{ combinaisons d'images différentes possibles}$. Nous comprenons vite l'impossibilité d'utiliser un algorithme basé sur la fonction de transition. Malgré le fait que pendant ce stage nous n'avons pas utilisé d'algorithmes purement \emph{model based}, nous pourrions toujours approximer cette fonction en utilisant une architecture de Deep Learning et en trouvant une fonction de perte adéquate.Cela est possible, mais ne sera pas testé durant ce stage car l'approche \emph{model based} est difficilement applicable dans le cas d'états sous forme de pixels (nous passons toujours par une phase de compression de l'état pour permettre ce genre d'algorithmes). Il y a peu d'algorithmes suivant ce principe qui ont montré de bon résultats sur des environnements difficiles.
+Tout d'abord, les spécificités de SE-STAR impliquent le non-usage des algorithmes \emph{model based} (basés sur un modèle, soit la connaissance de la fonction de transition). Or, il est évident que dans le cas de SE-STAR, cette fonction est inconnue. Nous pouvons même aller plus loin, la fonction de transition dans le cas d'états sous forme d'un tableau de pixels est bien souvent insoluble. Cela reviendrais à avoir la connaissance d'une fonction qui, sachant l'etat courant et l'action donne la probabilité d'être dans un nouvel état. Voici le cheminement pour déterminer le nombre de combinaisons possibles d'états pour une image de 82x82 pixels. Un pixel est composé de trois nombres de 0 à 255. Chaque pixel a la capacité de produire théoriquement $256^3 = 16\ 777\ 216\ \text{couleurs}$. Ainsi, il y a $82 * 82 * 256^3 = 112\ 810\ 000\ 384 \text{ combinaisons d'images différentes possibles}$. Nous comprenons vite l'impossibilité d'utiliser un algorithme basé sur la fonction de transition. Malgré le fait que pendant ce stage nous n'avons pas utilisé d'algorithmes purement \emph{model based}, nous pourrions toujours approximer cette fonction en utilisant une architecture de Deep Learning et en trouvant une fonction de perte adéquate.Cela est possible, mais ne sera pas testé durant ce stage car l'approche \emph{model based} est difficilement applicable dans le cas d'états sous forme de pixels (nous passons toujours par une phase de compression de l'état pour permettre ce genre d'algorithmes). Il y a peu d'algorithmes suivant ce principe qui ont montrés de bon résultats sur des environnements difficiles.
 
 \begin{itemize}
     \item Notre algorithme d'apprentissage par renforcement appartiendra à la famille des \textbf{algorithmes sans modèle (\emph{Model Free})}
@@ -25,7 +25,7 @@ Au vue de la littérature, il y a deux méthodes qui ressortent:
 \item Asynchronous advantage critic (\bf{A3C})\footnote{Nous utiliserons A3C ou DQN dans la suite de ce rapport} \cite{DBLP:journals/corr/MnihBMGLHSK16}
 \end{enumerate}
 
-Les principes sur lesquels reposent ces deux algorithmes ont été développé précédemment dans ce rapport. Bien que nous avons testé ces deux algorithmes sur SE-STAR, nous avons déjà commencé par comparer ces deux algorithmes sur des cas plus simples. Néanmois, il est à noter que sur les expérimentations, que nous avons effectué, ont été utilisées des versions améliorées du DQN de l'A3C (non indiquées dans ce rapport). En effet, ces méthodes ont trouvé un echo dans la communauté scientifique et ont été améliorées de nombreuses manières. Il serait trop long d'expliciter toutes les améliorations existantes pour ces algorithmes mais nous allons tout de même les citer et donner une référence pour les lecteurs les plus curieux.
+Les principes sur lesquels reposent ces deux algorithmes ont été développés précédemment dans ce rapport. Bien que nous avons testé ces deux algorithmes sur SE-STAR, nous avons déjà commencé par comparer ces deux algorithmes sur des cas plus simples. Néanmois, il est à noter que sur les expérimentations, que nous avons effectué, ont utilisé des versions améliorées du DQN de l'A3C (non indiquées dans ce rapport). En effet, ces méthodes ont trouvé un echo dans la communauté scientifique et ont été améliorées de nombreuses manières. Il serait trop long d'expliciter toutes les améliorations existantes pour ces algorithmes mais nous allons tout de même les citer et donner une référence pour les lecteurs les plus curieux.
 
 % { -- GLOBAL CHANGE [[WARNING]]
 
@@ -37,7 +37,7 @@ Les principes sur lesquels reposent ces deux algorithmes ont été développé p
 {\rowcolors{2}{white!80!gray!50}{gray!50!white!60}
 \begin{tabular}{ |p{3.3cm}|p{11cm}|  }
 \hline
-\multicolumn{2}{|c|}{Algorithmes testés pendant le stage} \\
+\multicolumn{2}{|c|}{\textbf{Algorithmes testés pendant le stage}} \\
 \hline
 \multicolumn{2}{|c|}{\bf{Améliorations du Deep-Q-Network}} \\
 \hline 
@@ -46,7 +46,7 @@ Les principes sur lesquels reposent ces deux algorithmes ont été développé p
 
 \textbf{Dueling-Q-Learning} \: (D-DQN\cite{DUEL}) & Au lieu d'approximer la fonction d'état action ($\rightarrow$ DQN), nous préférons approximer \emph{la fonction d'avantage} qui se défini comme la différence de la fonction d'état et de la fonction d'état action. Cela a de nombreuses qualités car la fonction avantage permet de déterminer si une action mène à un gain positif par rapport à la moyenne des gains espérée ce qui est plus utile que simplement la fonction d'état action dans le cadre du contrôle (la fonction avantage donne une information plus fine et intéressante que la fonction d'état action )  \\\hline
 
-\textbf{Prioritized Replay}\cite{REPLAY} & Pour décoreller l'entraînement dans le cadre de l'apprentissage  en utilisant le DQN, nous sommes obligé de nous servir d'une mémoire pour stocker des transitions et pouvoir ensuite échantillonner celles-ci. La méthode de \emph{favorisation de la mémoire} consiste à échantillonner les transitions qui ont mené à la plus forte erreur (cf fonction de perte), ce qui correspond à des cas particulièrement intéressants dans le cadre de l'apprentissage.  \\\hline
+\textbf{Prioritized Replay}\cite{REPLAY} & Pour décoreller l'entraînement dans le cadre de l'apprentissage  en utilisant le DQN, nous sommes obligés de nous servir d'une mémoire pour stocker des transitions et pouvoir ensuite échantillonner celles-ci. La méthode de \emph{favorisation de la mémoire} consiste à échantillonner les transitions qui ont mené à la plus forte erreur (cf fonction de perte), ce qui correspond à des cas particulièrement intéressants dans le cadre de l'apprentissage.  \\\hline
 
 \multicolumn{2}{|c|}{\bf{Améliorations de l'A3C}} \\
 \hline 
@@ -65,7 +65,6 @@ Comparons empiriquement les méthodes dérivées du DQN et de l'A3C.
 
 \subsubsection{Les algorithmes issus de la famille du Deep Q Learning}
 
-% TODO -------------------------
 
 Les résultats sont issus d'expérimentations sur l'environnement de contrôle cartpole, où le but est de maintenir une barre sur un ensemble mobile le plus longtemps possible. L'ensembles des actions est composé de LEFT pour aller à gauche et RIGHT  pour aller à droite. L'agent reçoit une récompense de +1 à chaque pas de temps. L'environnement est réussi lorsque que l'agent a 200 points (nombre de points maximum).
 
@@ -97,7 +96,7 @@ Les résultats sont issus d'expérimentations sur l'environnement de contrôle c
 
 A travers ces premiers résultats, nous pouvons comparer les différents algorithmes issues de la famille du Q Learning.
 
-Nous pouvons remarquer que, quelque soit l'algorithme issu de la fammile du Q Learning, l'apprentissage est dans l'ensemble stable. En effet, Nous ne voyons pas, pour la majorité des algorithmes testés,  de chutes de performance durant l'apprentissage. Cependant, il y a de faibles différences concernant la dynamique d'apprentissage. L'algorithme le plus simple (\emph{le Deep-Q-Learning} a la dynamique la plus rapide pour arriver de façon quasiment stable à 200 points avec le Deep-Target-Learning\footnote{une version du DQN visant à stabiliser l'apprentissage}}. Ceci s'explique car les dérivés du DQN stabilisent l'entraînement au prix d'un apprentissage plus long. 
+Nous pouvons remarquer que, quelque soit l'algorithme issu de la famille du Q Learning, l'apprentissage est dans l'ensemble stable. En effet, Nous ne voyons pas, pour la majorité des algorithmes testés,  de chutes de performance durant l'apprentissage. Cependant, il y a de faibles différences concernant la dynamique d'apprentissage. L'algorithme le plus simple (\emph{le Deep-Q-Learning} a la dynamique la plus rapide pour arriver de façon quasiment stable à 200 points avec le Deep-Target-Learning\footnote{une version du DQN visant à stabiliser l'apprentissage}}. Ceci s'explique car les dérivés du DQN stabilisent l'entraînement au prix d'un apprentissage plus long. 
 Il est à noter que tous les autres algorihtmes issus du Q learning ont été testés dans la version avec \emph{Target}. Nous pouvons ainsi voir que, globalement, le DQN est un peu moins stable que les autres algorithmes (présence de pics avec un score faible). Enfin, nous pouvons constater que \emph{le dueling-Q-network} et le DQN avec target sont les plus stables et donc les plus adéquats.
 
 Ce constat est corrélé avec d'autres expérimentations faites qui ne sont pas présentent dans ce rapport.
@@ -132,7 +131,7 @@ Ce constat est corrélé avec d'autres expérimentations faites qui ne sont pas 
 Nous avons réalisé les mêmes expérimentations avec des algorithmes issus de la famille de l'A3C. Nous avons testé en particulier deux variantes de l'A3C.
 \begin{itemize}
     \item A3C-FF \\
-        Pour A3C Feedforward, cela fait référence au type de réseau de neurones utilisé en sortie du réseau de convolution. En particulier, le réseau de neurones correspond au modèle ldense précédement décrit.
+        Pour A3C Feedforward, cela fait référence au type de réseau de neurones utilisé en sortie du réseau de convolution. En particulier, le réseau de neurones correspond au modèle dense précédement décrit.
     \item A3C-LSTM \\
         LSTM correspond à un réseau de neurones récurrent qui a la particularité par rapport au réseau dense de prendre en compte les états précédents. Ce type de réseau est pertinant dans le cas où nous avons seulement une image partielle de l'environnement.
 \end{itemize}
@@ -210,7 +209,6 @@ Ci-dessous, une image de l'environnement créé et de la representation associé
 \end{minipage}
 \end{figure}
 
-\todo[inline]{Transformer en tiré ou tableau}
 Nous pouvons voir en rouge les coins où l'agent va recevoir une pénalité de -0.1, et en vert foncés les coins où l'agent va recevoir une récompense de +0.1. Le coin en vert clair représente l'arrivé souhaitée (avec une récompense de +1). Les lieux en noir sont des lieux où l'agent est très fortement pénalisé (par une pénalité de -1) et une interruption de l'environnement (équivalent à un game over\footnote{partie perdue dans un jeux video}). Quand l'agent passe dans une zone où il reçoit une récompense, toute la zone disparait pour éviter des stratégies où l'agent tournerait en rond dans une zone à récompenses. 
 
 Ci-dessous un tableau récapitulatif des spécifications de l'environnement:
@@ -245,8 +243,7 @@ Nous avons donc utilisé le même environnement avec une représentation. Ci-des
 \end{center}
 \end{figure}
 
-Comme le montre les figures au dessus, la vue est partielle et correspond à ce que voit l'agent. Les zones de récompenses sont maintenant visibles mais le résultat n'est pas satisfaisant. En effet, avec la nouvelle représentation qui est une vue 2D partielle est particulièrement difficile pour notre agent. Les environnements 3D avec une vue 2D donnés à un agent sont complexes pour des agents entraintés via A3C (ou DQN). Cela s'explique car ce genre d'algorithmes utilise une architecture qui cherche des éléments saillants dans l'environnement pour pouvoir approximer la Q fonction et trouver la politique optimale. Or dans notre environnement il y a peu d'élements possiblement interessants pour approximer la Q fonction. De plus, la Q fonction (ou fonction d'état-action) donne une estimation de la valeur d'une action suivant une politque. Le problème est que nous utilisons des actions qui dépendent fortement de l'orientation de l'agent. Si l'agent choisit d'avancer, selon l'orientation de celui-ci, l'action AVANCER aura un sens radicalement différent du point de vuede l'agent. Cela implique que l'approximation recherchée est quasiment impossible.
-
+Comme le montre les figures au dessus, la vue est partielle et correspond à ce que voit l'agent. Les zones de récompenses sont maintenant visibles mais le résultat n'est pas satisfaisant. En effet, avec la nouvelle représentation, qui est une vue 2D partielle, l'entrainement est tout aussi difficile pour notre agent. Les environnements 3D avec une vue 2D donnés à un agent sont complexes pour des agents entrainés via A3C (ou DQN). Cela s'explique car ce genre d'algorithmes utilise une architecture qui cherche des éléments saillants dans l'environnement pour pouvoir approximer la Q fonction et trouver la politique optimale. Or dans notre environnement il y a peu d'élements possiblement interessants pour approximer la Q fonction. De plus, la Q fonction (ou fonction d'état-action) donne une estimation de la valeur d'une action suivant une politique. Le problème est que nous utilisons des actions qui dépendent fortement de l'orientation de l'agent. Si l'agent choisit d'avancer, selon l'orientation de celui-ci, l'action AVANCER aura un sens radicalement différent du point de vue de celui-ci. Cela implique que l'approximation recherchée est quasiment impossible à trouver.
 
 Pour régler un maximum de problèmes, nous avons créé  un environnement similaire qui possède plus d'éléments caractéristiques  pour aider l'agent. Nous avons supprimé la dépendance par rapport à l'orientation de l'agent. 
 

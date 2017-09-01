@@ -1,6 +1,6 @@
 \subsubsection{Introduction des principales approches en apprentissage par renforcement}
 
-Après avoir introduit les principaux concepts de l'apprentissage par renforcement, il convient d'en extraire des algorithmes permettant de trouver notre politique optimale. Un difficulté majeure est que nous n'avons ni connaissance des fonctions d'états (et d'états-actions) ni connaissance de la dynamique du modèle (noté $\textcal{T}$).
+Après avoir introduit les principaux concepts de l'apprentissage par renforcement, il convient d'en extraire des algorithmes permettant de trouver une politique optimale pour résoudre un environnement. Une difficulté majeure est que nous n'avons ni connaissance des fonctions d'états (et d'états-actions) ni connaissance de la dynamique du modèle (noté $\textcal{T}$).
 
 La question est donc de savoir s'il est possible d'approximer ces fonctions, ou alors de s'en passer.
 
@@ -11,13 +11,13 @@ Avant de répondre à ces questions, il est important de faire la différence en
         Dans ce type d'approche, nous n'utilisons pas un modèle de l'environnement pour déterminer la politique optimale, uniquement une recherche basée sur notre expérience. Intuitivement, nous pourrions penser cette approche inférieure à l'approche \emph{Model Based} pourtant nous verrons que l'approche \emph{Model Free} est plus simple à mettre en place et est plus performante dans la plupart des cas que nous avons rencontrés. Cela s'explique par la difficulté d'apprentissage de la dynamique de l'environnement (qui dans bien est cas n'est pas stationnaire).
     
     \item \textbf{Model Based} (Apprentissage avec modèle): \\
-        Dans ce type d'approche, nous allons utiliser la connaissance du modèle (ou l'approximation interne du modèle par l'agent) pour déterminer la politique optimale. L'apprentissage avec modèle apparaît comme plus puissant mais est encore un problème non résolu (tout comme en Model Free mais des algorithmes ont déjà montré leur capacité à résoudre des environnements difficiles). La difficulté est que, bien souvent, l'entrée n'est pas très informative sur la dynamique de l'environnement. Ainsi, une image 2D représentant un monde 3D est une entrée dont il est difficile de tirer un modèle. 
+        Dans ce type d'approche, nous allons utiliser la connaissance du modèle (ou l'approximation interne du modèle par l'agent) pour déterminer la politique optimale. L'apprentissage avec modèle apparaît comme plus puissant mais est encore un problème non résolu (tout comme en Model Free mais des algorithmes ont déjà montré leur capacité à résoudre des environnements difficiles). La difficulté est que, bien souvent, l'entrée n'est pas très informative sur la dynamique de l'environnement. Ainsi, une image 2D représentant un monde 3D est une entrée dont il est difficile de tirer un modèle.
 \end{enumerate}
 
-Dans cette partie, nous allons nous concentrer sur l'établissement d'algorithmes \emph{Model Free}. 
+Dans cette partie, nous allons nous concentrer sur l'établissement d'algorithmes \emph{Model Free}.\footnote{Dans ce rapport nous ne parlerons pas d'algorithmes Model Based mais nous connecterons le module de curiosité à cette approche. Durant ce stage, nous avons néanmoins testé des algorithmes basés sur ce paradigme \cite{VIME}}
 
 
-Précédemment, nous avons établi que nous n'avions aucune connaissances des fonctions d'états, ni de la dynamique de l'environnement. Notre objectif est de trouver une approximation des fonctions optimales d'états qui nous permettrait d'établir une politique optimale. Pour ce faire nous devons trouver un moyen d'approximer la fonction d'état et de trouver un moyen d'établir à quel point notre approximation est loin de la fonction optimale.
+Précédemment, nous avons établi que nous n'avions aucunes connaissances des fonctions d'états, ni de la dynamique de l'environnement. Notre objectif est de trouver une approximation des fonctions optimales d'états qui nous permettrait d'établir une politique optimale. Pour ce faire nous devons trouver un moyen d'approximer la fonction d'état et de trouver un moyen d'établir à quel point notre approximation est loin de la fonction optimale.
 
 Nous expliquerons plus tard le mécanisme d'approximation de fonctions utilisé (réseau de neurones). Pour cette partie, nous considérerons juste la fonction $\omega, s \rightarrow \overset{\sim}{V_\omega}(s)$ qui associe une matrice $\omega$ et un état à une approximation de la fonction d'état. 
 
@@ -34,13 +34,13 @@ Nous pouvons donc, en utilisant une méthode d'optimisation telle que la descent
 
 \end{aligned}
 \end{equation}
-
 Cela nous pose un problème de taille car nous n'avons pas connaissance de la fonction d'état. Or, notre précédante équation repose sur la connaissance de celle-ci et il ne serait pas pertinant de chercher une approximation d'une fonction déjà connue. Il existe plusieurs méthodes pour l'approximer, nous allons en donner deux. Une méthode basée sur la méthode de Monte Carlo, et l'autre basée sur du \emph{bootstrapping} (le bootstrapping étant basé sur des processus itératifs convergeant vers la valeur qui est souhaitée)
 
 \bigskip 
 
 \begin{center}
 
+    \setlength\arrayrulewidth{1.5pt}
 \setlength{\tabcolsep}{10pt}
 \renewcommand{\arraystretch}{1.5}
  
@@ -59,20 +59,20 @@ Bootstrapping & $v_{k+1} =  \underset{a}{\sum}\: \pi(a, s)\: \underset{s', r}{\s
 
 \bigskip 
 
-Nous commencerons par envisager l'approche par bootstrapping. La première remarque est que le bootstrapping requiert la connaissance du modèle de l'environnement ce qui est particulièrement handicapant dans notre cas. Néanmoins, nous avons des garantis sur la convergence de notre approximation vers la fonction d'état. Ainsi, si nous sommes en capacité de connaître le modèle, il nous suffit d'itérer pour connaître la véritable fonction d'état. Pourtant, le véritable problème que nous avons avec cette méthode est un problème qui apparaîtra souvent et qui est dénommé \emph{la malédiction de la dimensionalité}. Plus la dimensionnalité de l'état est grande plus le coût de cette approche augmente (de façon exponentielle). Dans notre cas d'usage, l'état sera un tableau de pixels ce qui rend impossible l'utilisation de ce genre d'algorithmes.
+Nous commencerons par envisager l'approche par bootstrapping. La première remarque est que le bootstrapping requiert la connaissance du modèle de l'environnement ce qui est particulièrement handicapant dans notre cas. Néanmoins, nous avons des garanties sur la convergence de notre approximation vers la fonction d'état. Ainsi, si nous sommes en capacité de connaître le modèle, il nous suffit d'itérer pour connaître la véritable fonction d'état. Pourtant, le véritable problème que nous avons avec cette méthode est un problème qui apparaîtra souvent et qui est dénommée \emph{la malédiction de la dimensionalité}. Plus la dimensionnalité de l'état est grande plus le coût de cette approche augmente (de façon exponentielle). Dans notre cas d'usage, l'état sera un tableau de pixels ce qui rend impossible l'utilisation de ce genre d'algorithmes.
 
-Si l'approche précédente reste inapplicable, la philosophie du bootstrapping n'a pas à être jetée. Il n'est pas pertinent de rechercher à tendre vers la fonction d'état en itérant selon la formule de bellman. Cependant il sera intéressant de chercher à itérer d'une autre manière de façon à s'approcher de la véritable fonction d'état. Toute la question est de trouver une formule qui permet d'itérer (à faible coût) et qui garantie de tendre vers une approximation de la fonction d'état pertinente.
+Si l'approche précédente reste inapplicable, la philosophie du bootstrapping n'a pas à être jetée. Il n'est pas pertinent de rechercher à tendre vers la fonction d'état en itérant selon la formule de bellman. Cependant il sera intéressant de chercher à itérer d'une autre manière de façon à s'approcher de la véritable fonction d'état. Toute la question est de trouver une formule qui permet d'itérer (à faible coût) et qui garanti de tendre vers une approximation de la fonction d'état pertinente.
 
 
-Passons maintenant à la méthode via \emph{Monte Carlo}. Cette méthode s'intègre parfaitement dans l'esprit de l'apprentissage par renforcement. En effet, un agent va jouer un épisode et récupérer un ensemble d'actions, états et récompenses. A partir de cet ensemble, nous sommes en capacité d'approximer la fonction d'état tel que l'approximation de la fonction d'état pour un état s correspond aux récompenses obtenues dès la première visite de l'état s (\emph{First visite Monte Carlo}). Dans le cas où nous allons jouer plusieurs épisodes, nous pourrons affiner notre approximation en approchant notre fonction d'état pour un état s comme étant la moyenne des récompenses obtenues dès la première visite de l'état s sur l'ensemble des épisodes joués. 
+Passons maintenant à la méthode via \emph{Monte Carlo}. Cette méthode s'intègre parfaitement dans l'esprit de l'apprentissage par renforcement. En effet, un agent va jouer un épisode et récupérer un ensemble d'actions, d'états et de récompenses. A partir de cet ensemble, nous sommes en capacité d'approximer la fonction d'état tel que l'approximation de la fonction d'état pour un état s correspond aux récompenses obtenues dès la première visite de l'état s (\emph{First visite Monte Carlo}\cite{sutton98a}). Dans le cas où nous allons jouer plusieurs épisodes, nous pourrons affiner notre approximation en approchant notre fonction d'état pour un état s comme étant la moyenne des récompenses obtenues dès la première visite de l'état s sur l'ensemble des épisodes joués.
 Les méthodes d'approximation de la fonction d'état possèdent quelques avantages par rapport au bootstrapping:
 
 \begin{itemize}
-\item Insensible à la dimension de l'état ce qui est intéressant dans notre cas.
-\item Nous pouvons générer des épisodes en commençant par les états nous intéressant pour estimer leur fonction d'état ce qui n'est pas possible.
+    \item Insensibilité à la dimension de l'état ce qui est intéressant dans notre cas.
+    \item Nous pouvons générer des épisodes en commençant par les états nous intéresse pour estimer leur fonction d'état.
 \end{itemize}
 
-Néanmoins, l'approche par Monte Carlo possède aussi des désavantages tels que le fait d'être obligé de jouer un épisode entier pour pouvoir estimer la fonction d'état. Cela pourra être problématique dans le cas où l'épisode est  long . De plus, il parait pertinent de pouvoir itérer à partir d'estimations antérieures ce qui n'est pas le cas avec les méthodes de Monte Carlo. 
+Néanmoins, l'approche par Monte Carlo possède aussi des désavantages tels que le fait d'être obligé de jouer un épisode entier pour pouvoir estimer la fonction d'état. Cela pourra être problématique dans le cas où l'épisode est  long . De plus, il parait pertinent de pouvoir itérer à partir d'estimations antérieures ce qui n'est pas le cas avec les méthodes de Monte Carlo.
 
 \subsubsection{TD Learning: la base des algorithmes pour le contrôleur}
 En se basant sur l'approximation décrite précédemment en utilisant l'approche de Monte-Carlo, pour un environnement non stationnaire (qui change en fonction du temps), nous pouvons trouver une formule approximant la fonction d'état:
@@ -97,27 +97,27 @@ Nous pouvons en déduire une nouvelle formule pour estimer la fonction d'état:
 \overset{\sim}{V}_{\pi}(S_t) \leftarrow \overset{\sim}{V}_{\pi}(S_t) + \alpha \bigg(\textcolor{red}{r_{t+1} + \gamma V_{\pi}(S_{t+1})} - \overset{\sim}{V}_{\pi}(S_t)\bigg)
 \end{equation}
 
-Nous obtenons ainsi une formule se basant sur du bootstrapping car nous nous servons de la fonction d'état à $S_{t+1}$ et nous n'avons toujours pas besoin de la connaissance du modèle (Monte-Carlo).
+Nous obtenons une formule se basant sur du bootstrapping car nous nous servons de la fonction d'état à $S_{t+1}$ et nous n'avons toujours pas besoin de la connaissance du modèle (Monte-Carlo).
 
 La formule précédemment constitue la base sur laquelle nous allons nous appuyer pour créer notre contrôleur. Néanmoins, si la fonction d'état est importante, il est plus intéressant d'approximer la fonction d'état action dans le contexte d'un contrôle.
 
-Pour le contrôle, c'est donc la formule ci-dessous, qui se nomme SARSA (pour \emph{state action reward state action} \footnote{voir la formule ci-dessous pour comprendre pourquoi}, qui sera utilisée:
+Pour le contrôle, c'est donc la formule \ref{eq:sarsa}, qui se nomme SARSA (pour \emph{state action reward state action} \footnote{voir la formule ci-dessous pour comprendre pourquoi}, qui sera utilisée:
 
-\begin{equation}
+\begin{equation}\label{eq:sarsa}
 \overset{\sim}{Q}_{\pi}(S_t, A_t) \leftarrow \overset{\sim}{Q}_{\pi}(S_t, A_t) + \alpha \bigg(r_{t+1} + \gamma \overset{\sim}{Q}_{\pi}(S_{t+1}, A_{t+1}) - \overset{\sim}{Q}_{\pi}(S_t, A_t)\bigg)
 \end{equation}
 
-Il existe dans la littérature une pléthore de variations de SARSA en particulier, une des variations qui va nous intéresser est celle qui s'appelle Q-Learning \cite{Watkins92q-learning}: 
+Il existe dans la littérature une pléthore de variations de SARSA en particulier, une des variations qui va nous intéresser est celle qui s'appelle Q-Learning \cite{Watkins92q-learning}\footnote{Il existe d'importantes différences en SARSA et le Q-Learning mais pour introduire le Q-Learning cela suffit de le voir comme une variation de SARSA.}: 
 
-\begin{equation}
+\begin{equation}\label{eq:qlearning}
 \overset{\sim}{Q}_{\pi}(S_t, A_t) \leftarrow \overset{\sim}{Q}_{\pi}(S_t, A_t) + \alpha \bigg(r_{t+1} + \gamma \underset{a'}{\max}\overset{\sim}{Q}_{\pi}(S_{t+1}, a') - \overset{\sim}{Q}_{\pi}(S_t, A_t)\bigg)
 \end{equation}
 
-Malgré leur relative proximité, nous privilégierons le Q-Learning pour dès raison que nous expliquerons plus tard. 
+Malgré leur proximité, nous privilégierons le Q-Learning pour dès raison que nous expliquerons plus tard.
 
 Nous allons finir cette partie sur le TD Learning par expliquer la relation entre l'approximation de la fonction d'état par optimisation d'une fonction de perte et le Q learning. Cette introduction est importante car c'est l'algorithme le plus simple qui a été utilisé durant ce stage sur différents environnements. Nous allons expliquer comment fonctionne le Deep Q Learning \cite{2013arXiv1312.5602M} \cite{mnih-dqn-2015} (soit le premier algorithme d'apprentissage par renforcement profond). 
 
-Néanmoins, nous n'expliquerons pas totalement cet algorithme car il requiert quelques connaissances en deep learning pour la compréhension du mécanisme d'approximation de la fonction. Pourtant, il est important de le mentionner maintenant car il découle du TD Learning et en particulier de l'algorithme du Q-Learning et qu'il est fondamental pour la compréhension des autres algorithmes utilisés durant ce stage.
+Néanmoins, nous n'expliquerons pas totalement cet algorithme car il requiert quelques connaissances en deep learning que nous verrons dans la section suivante. Pourtant, il est important de le mentionner maintenant car il découle du TD Learning et en particulier de l'algorithme du Q-Learning et qu'il est fondamental pour la compréhension des autres algorithmes utilisés durant ce stage.
 
 \subsubsection{Du TD Learning au Deep Q Learning}
 
@@ -129,7 +129,7 @@ Précédemment, nous avions introduit une méthode par minimisation d'une foncti
 
 Imaginons maintenant que notre agent joue dans l'environnement et récolte des transitions (un ensemble composé de l'état courant, de l'état précédent, de l'action jouée et de la récompense obtenu que l'on notera $e_i$ pour la ième transition). L'agent stockera ces transitions dans une mémoire que l'on notera $\mathcal{D}$. Soit $\mathcal{D} = \big(e_0, ..., e_N\big)$ 
 
-La fonction de perte utilisée est: 
+La fonction de perte utilisée\footnote{On en parlera plus en profondeur dans la section suivante, pour l'instant la fonction de perte est la fonction qui va nous servir à mettre à jour les poids pour obtenir une approximation pertinant.} est: 
 \begin{align}
 L_i(\theta_i) = \mathbb{E_{\text{s}, \text{a} \sim \rho(.)}}\bigg[ \big( y_i - f_\theta(s, a; \theta)\big)^2 \bigg]\\
 y_i = \mathbb{E}_{\text{s'} \sim \Epsilon}\big[r + \underset{a'}{\max}f_{\theta_{i-1}}(s', a') \big] 
@@ -138,8 +138,8 @@ y_i = \mathbb{E}_{\text{s'} \sim \Epsilon}\big[r + \underset{a'}{\max}f_{\theta_
 Avec $\rho(s, a)$ la distribution sur la séquence d'états et d'actions.
 
 \subsubsection{Architecture de base A2C/A3C utilisée pour le contrôle}
-Après avoir représenté le \emph{Deep-Q-Learning}, nous allons introduire une architecture classique en apprentissage par renforcement profond qui se dénome A3C\cite{DBLP:journals/corr/MnihBMGLHSK16}\footnote{Asynchronous Methods for Deep Reinforcement Learning, dans la suite de ce rapport nous utiliserons le terme A3C}. 
-Pour arriver à expliquer le fonctionnement de l'A3C, il convient de partir du constat qu'il serait aisé de trouver la politique optimale (paramétrisée par un ensemble de poids $\omega$) en maximisant une fonction de performance (notée $\eta$). Formellement cela reviendrais à mettre à jour les poids $\omega$ selon ;a formule suivante:
+Après avoir représenté le \emph{Deep-Q-Learning}, nous allons introduire une architecture classique en apprentissage par renforcement profond qui se dénome \gls{A3C}\cite{DBLP:journals/corr/MnihBMGLHSK16}\footnote{Asynchronous Methods for Deep Reinforcement Learning, dans la suite de ce rapport nous utiliserons le terme \gls{A3C}}. 
+Pour arriver à expliquer le fonctionnement de l'\gls{A3C}, il convient de partir du constat qu'il serait aisé de trouver la politique optimale (paramétrisée par un ensemble de poids $\omega$) en maximisant une fonction de performance (notée $\eta$). Formellement cela reviendrais à mettre à jour les poids $\omega$ selon la formule suivante:
 
 \begin{equation}
     \omega_{t+1} = \omega_t + \alpha \nabla \eta(\omega_t)
@@ -152,19 +152,19 @@ Le problème réside maintenant dans notre capacité à expliciter $\nabla\eta(\
 
 On obtient alors:
 
-\begin{equation}
+\begin{equation}\label{eq:reinforce}
     \omega_{t+1} = \omega_t + \alpha \gamma^t G_t \nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)
 \end{equation}
 
-Un dès default de la méthode REINFORCE\cite{Williams1992} est que l'estimateur du gradient qu'elle génére est hautement bruité. Pour pallier à cela, plusieurs méthodes ont été mise au points.
-La façon la plus simple de réduire la variance du gradient estimé, on utilise la formule suivante qui utilise la fonction d'état:
+Un dès default de la méthode REINFORCE\cite{Williams1992} est que l'estimateur du gradient qu'elle génére est hautement bruitée. Pour pallier à cela, plusieurs méthodes ont été créées.
+La façon la plus simple de réduire la variance du gradient estimée est d'utiliser la formule suivante qui utilise la fonction d'état:
 
 \begin{equation}
     \omega_{t+1} = \omega_t + \alpha \gamma^t (G_t - \hat{v}(S_t, \theta_t))\nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)\footnote{La mise à jour de $\theta$ pour la fonction d'état a été omise pour la clarté}
 \end{equation}
 
 
-Comme nous l'avons précédemment décrit, les méthodes issuent de la famille de Monte-Carlo sont connues pour être lente à converger (malgré l'introduction de notre stratégie pour réduire la variance de l'estimateur du gradient). Pour accélerer la vitesse de convergence, nous allons donc nous servir du TD Learning pour introduire une nouvelle stratégie qui se base sur le gradient de la politique (comme pour REINFORCE) et qui utilise à la place du gain cumulé, une mise à jour se basant sur celle du TD-Learning. Soit:
+Comme nous l'avons précédemment décrit, les méthodes issuent de la famille de Monte-Carlo sont connues pour être lentes à converger (malgrés l'introduction de notre stratégie pour réduire la variance de l'estimateur du gradient). Pour accélerer la vitesse de convergence, nous allons donc nous servir du TD Learning pour introduire une nouvelle stratégie qui se base sur le gradient de la politique (comme pour REINFORCE) et qui utilise à la place du gain cumulé, une mise à jour se basant sur celle du TD-Learning. Soit:
 
 \[
     G_t \longleftrightarrow r_t + \gamma^t \hat{v}(S_{t+1}, \theta_t)
@@ -179,8 +179,8 @@ Donnant l'algorithme Actor Advantage Critic (A2C)\footnote{Advantage car $r_t$: 
 
 \subsubsection{de l'A2C à A3C}
 
-l'asynchronous advantage actor-critic (A3C) augmente A2C en utilisant n agents en parallèles (et n environnements) qui apprennent de manière asynchrone. Le réseau est copié et donné à chaque agent ce qui permet de n'avoir qu'un seul réseau et non n différents. A chaque mise à jour, les gradients sont envoyés au réseau principales qui à chaque nouvel épisode se copie pour les n agents. 
+l'asynchronous advantage actor-critic (\gls{A3C}) augmente A2C en utilisant n agents en parallèles (et n environnements) qui apprennent de manière asynchrone. Le réseau est copié et donné à chaque agent ce qui permet de n'avoir qu'un seul réseau et non n différents. A chaque mise à jour, les gradients sont envoyés au réseau principale qui à chaque nouvel épisode se copie pour les n agents. 
 
-L'avantage de cette méthode est donc d'accéléré l'apprentissage de l'agent (en utlisant les n agents) mais le principal avantage de cette méthode est la décorrellation des gradients car les gradients sont issues des n agents. Cette problèmatique est la même que celle pour le deep-q-learning (DQN), contrairement à la mémoire utilisée dans le DQN qui utilise une partie des ressources de l'ordinateur, s'il est possible de générer n environnements en parallèle alors cette dernière méthode permet de sauvegarder des ressources. Néanmois, avec cette méthode sans module, il n'y a pas de réutilisation des résultats possibles, cela implique qu'il faudra un grand nombre d'episodes pour stabiliser un apprentissage. Un autre avantage qui vient des n agents qui apprennent en parallèle est que cela encourage l'exploration de l'environnement car les agents auront un comportement différents les uns des autres. 
+L'avantage de cette méthode est donc d'accélérer l'apprentissage de l'agent (en utlisant les n agents) mais le principal avantage de cette méthode est la décorrellation des gradients car les gradients sont issus des n agents. Cette problèmatique est la même que celle pour le deep-q-learning (DQN), contrairement à la mémoire utilisée dans le DQN qui utilise une partie des ressources de l'ordinateur, s'il est possible de générer n environnements en parallèle alors cette dernière méthode permet de sauvegarder des ressources. Néanmois, avec cette méthode sans module, il n'y a pas de réutilisation des résultats possibles, cela implique qu'il faudra un grand nombre d'episodes pour stabiliser un apprentissage. Un autre avantage qui vient des n agents qui apprennent en parallèle est que cela encourage l'exploration de l'environnement car les agents auront un comportement différent les uns des autres. 
 
 L'A3C sera donc l'algorithme de base pour le contrôle d'un agent dans SE-STAR. Il sera par la suite augmenté de plusieurs modules décrits au cours de ce rapport.
