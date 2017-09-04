@@ -9,7 +9,7 @@ Enfin, nous discuterons des moyens mis en place pour tester nos algorithmes sur 
 
 \subsection{Fonctionnement de l'apprentissage par renforcement et intérêt}
 
-L'apprentissage par renforcement est une sous partie de l'apprentissage automatique. Il fait référence à un apprentissage se basant sur des des expériences de façon à optimiser la quantité de récompenses récue. A chaque action effectuée par l'agent, l'environnement attribut à celui ci une récompense. L'objectif est de trouver la séquence d'actions qui mène à la plus grande accumulation de récompenses. L'agent va être uniquement guider par son expérience et devra apprendre de ses erreurs. Imaginons le cas suivant: nous devons apprendre un nouveau tour à notre animal néanmoins, il est impossible de lui exprimer clairement ce que nous souhaitons de lui. Notre seul levier est la quantité de récompenses ou au contraire de punitions que va recevoir notre animal. Ce problème est connu sous le nom de: \emph{problème d'assignement du crédit}. 
+L'apprentissage par renforcement est une sous partie de l'apprentissage automatique. Il fait référence à un apprentissage se basant sur des des expériences de façon à optimiser la quantité de récompenses reçue. A chaque action effectuée par l'agent, l'environnement attribut à celui ci une récompense. L'objectif est de trouver la séquence d'actions qui mène à la plus grande accumulation de récompenses. L'agent va être uniquement guider par son expérience et devra apprendre de ses erreurs. Imaginons le cas suivant: nous devons apprendre un nouveau tour à notre animal néanmoins, il est impossible de lui exprimer clairement ce que nous souhaitons de lui. Notre seul levier est la quantité de récompenses ou au contraire de punitions que va recevoir notre animal. Ce problème est connu sous le nom de: \emph{problème d'assignement du crédit}. 
 
 Une des particularités de l'apprentissage par renforcement réside dans le fait que notre politique d'actions influence grandement les états rencontrés. Prenons l'exemple d'un agent autonome dans un labyrinthe à la jonction entre deux salles différentes. Si la séquence d'actions fait se retrouver notre agent dans une des salles, il n'aura accès qu'a la vision de cette salle.
 
@@ -22,7 +22,7 @@ Nous considérerons:
 \begin{itemize}
     \item Un ensemble d'états noté $\bm{\mathbb{S}}$
     
-        Cette ensemble d'états regroupe l'ensemble des états possibles pouvant être fournis par l'environnement. Dans le cas du jeux d'échecs, cela correspondrait au nombre de positions possibles atteignables ($\sim 10^{43}$ soit un nombre supérieur au nombre d'atomes dans l'univers)
+        Cette ensemble d'états regroupe l'ensemble des états possibles pouvant être fourni par l'environnement. Dans le cas du jeux d'échecs, cela correspondrait au nombre de positions possibles atteignables ($\sim 10^{43}$ soit un nombre supérieur au nombre d'atomes dans l'univers)
     
     \item Un ensemble d'actions noté $\bm{\mathbb{A}}$
     
@@ -30,7 +30,7 @@ Nous considérerons:
 
     \item Un ensemble de récompenses noté $\bm{\mathbb{R}}$
     
-        Cette ensemble regroupe les récompenses que peut fournir l'environnement. Ces récompenses peuvent être nul, négative ou positive (nous parlerons de récompense quelque soit la valeur de celle-ci). Les récompenses dépendent à la fois de l'état mais aussi de l'action effectuée par l'agent.
+        Cette ensemble regroupe les récompenses que peut fournir l'environnement. Ces récompenses peuvent être nul, négative ou positive (nous parlerons de récompense quelle que soit la valeur de celle-ci). Les récompenses dépendent à la fois de l'état mais aussi de l'action effectuée par l'agent.
     
         Selon le cas, il peut être à l'expérimentateur de définir la spécification des récompenses mais dans de nombreux cas l'ensemble des récompenses se fixe facilement. Dans le cas de notre labyrinthe l'agent reçoit +1 s'il trouve la sortie 0 sinon.
     \item La dynamique de l'environnement $\bm{\mathbb{T}}$
@@ -39,8 +39,9 @@ Nous considérerons:
     
     \item La politique d'actions $\bm{\Pi}$
     
-        La politique d'actions peut être définie  comme la probabilité, sachant que je suis dans un certain état $\bm{s_t \in \mathbb{S}}$, d'effectuer une action $\bm{a \in \mathbb{A(s_t)}}$.
-        Dans un soucis de généralité, nous considérons une politique stochastique néanmoins la politique peut être déterministe. En apprentissage par renforcement nous cherchons à optimiser notre politique d'action dans le but de maximiser la quantité de récompenses reçus (pondérée de manière à un mettre un poid plus important aux récompenses obtenues récemment).
+        La politique d'actions peut être définie  comme la probabilité, sachant que je suis dans un certain état $\bm{s_t \in \mathbb{S}}$, d'effectuer une action $\bm{a \in \mathbb{A}(s_t)}$.
+
+Dans un soucis de généralité, nous considérons une politique stochastique néanmoins la politique peut être déterministe. En apprentissage par renforcement nous cherchons à optimiser notre politique d'action dans le but de maximiser la quantité de récompenses reçus (pondérée de manière à un mettre un poid plus important aux récompenses obtenues récemment).
         
 
 \end{itemize}
@@ -48,7 +49,7 @@ Nous considérerons:
 Ainsi un problème d'apprentissage par renforcement profond classique suit le schéma suivant. A chaque pas de temps t, l'agent va percevoir un état $\bm{s_t \in \mathbb{S}}$. L'agent va choisir l'action à effectuer $\bm{a \in A(s_t)}$ et va recevoir une récompense $\bm{r_{t+1}}$. Notre objectif va donc être de maximiser la somme pondérée des récompenses obtenues par notre séquence d'actions. 
 
 
-On définira notre problème sous la forme d'un processus décisionnel de Markov, soit un 5-tuple $\bm{\big(\mathbb{S}, \mathbb{A}, \mathbb{T}, \mathbb{R}, \gamma \big)}$. Le paramètre $\gamma$ qui intervient dans la définition de notre problème est important car c'est ce paramètre qui va pondérer l'importance d'un récompense au cours du temps. Il existe de multitudes choix pour la spécification de ce paramètre, néanmois usuellement $\gamma$ sera égale à .99. Cela pour deux raisons, la première est que nous souhaitons que les récompenses tardives soient prisent en compte mais de façon plus faible que celle qui sont immédiates. Deuxièmement, pour des raisons de stabilité, il est important théoriquement que le paramètre $\gamma$ soit inférieur à 1.
+On définira notre problème sous la forme d'un processus décisionnel de Markov, soit un 5-tuple $\bm{\big(\mathbb{S}, \mathbb{A}, \mathbb{T}, \mathbb{R}, \gamma \big)}$. Le paramètre $\gamma$ qui intervient dans la définition de notre problème est important car c'est ce paramètre qui va pondérer l'importance d'un récompense au cours du temps. Il existe plusieurs choix pour la spécification de ce paramètre, néanmois usuellement $\gamma$ sera égale à .99. Cela pour deux raisons, la première est que nous souhaitons que les récompenses tardives soient prises en compte mais de façon plus faible que celle qui sont immédiates. Deuxièmement, pour des raisons de stabilité, il est important théoriquement que le paramètre $\gamma$ soit inférieur à 1.
 
 
 Notre objectif est de trouver la politique $\bm{\Pi}$ tel que la somme pondérée des récompenses (notée $\bm{G_t}$) soit maximale avec:
@@ -98,9 +99,9 @@ L'objectif est de déterminer une politique (soit un fonction $\mathbb{S} \: \ri
 
 Pour déterminer la politique optimale, nous nous aidons de deux fonctions (les fonctions d'état et d'état-action) qui sont une mesure de la quantité de récompenses pouvant être espéré à un certain état (ou à un état en effectuant une certaine action) en suivant une politique. 
 
-On peut dès lors en trouvant une fonction d'état (ou d'état-action) optimale dérivé une politique optimale. 
+On peut dès lors en trouvant une fonction d'état (ou d'état-action) optimale obtenir une politique optimale. 
 
 Sauf cas jouet, les fonctions d'état et d'état-action sont inconnues, notre objectif va être de trouver une façon de les approximer pour permettre l'établissement d'algorithmes de contrôle par apprentissage par renforcement.
 
 
-Enfin, nous montrerons que nous ne sommes pas obliger de passer par ce intermédiare pour déterminer la politique optimale tout en insistant sur l'importance de la connaissance des fonctions d'états qui sont un atout quelques soit les approches utilisés.
+Enfin, nous montrerons que nous ne sommes pas obligés de passer par cet intermédiare pour déterminer la politique optimale tout en insistant sur l'importance de la connaissance des fonctions d'états qui sont un atout quelles que soient les approches utilisés.

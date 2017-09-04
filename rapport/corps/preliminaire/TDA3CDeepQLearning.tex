@@ -81,7 +81,7 @@ En se basant sur l'approximation décrite précédemment en utilisant l'approche
 \overset{\sim}{V}_{\pi}(S_t) \leftarrow \overset{\sim}{V}_{\pi}(S_t) + \alpha \bigg(\textcolor{blue}{G_t} - \overset{\sim}{V}_{\pi}(S_t)\bigg)
 \end{equation}
  
-Le problème de la formule ci-dessus est que, pour mettre à jour notre croyance sur la fonction d'état, nous sommes obligé d'attendre la fin d'un épisode.
+Le problème de la formule ci-dessus est que, pour mettre à jour notre croyance sur la fonction d'état, nous sommes obligés d'attendre la fin d'un épisode.
 
 Nous allons voir dans cette partie qu'il est possible de combiner les approches de Monte-Carlo et Bootstrapping pour garder les avantages dès deux méthodes tout en gommant leurs défauts. Pour cela, rappelons la formule de la fonction d'état: 
 
@@ -93,13 +93,13 @@ V_{\pi} = \valueFunction \\
  
 Nous pouvons en déduire une nouvelle formule pour estimer la fonction d'état:
  
-\begin{equation}
+\begin{equation}\ref{eq:V}
 \overset{\sim}{V}_{\pi}(S_t) \leftarrow \overset{\sim}{V}_{\pi}(S_t) + \alpha \bigg(\textcolor{red}{r_{t+1} + \gamma V_{\pi}(S_{t+1})} - \overset{\sim}{V}_{\pi}(S_t)\bigg)
 \end{equation}
 
 Nous obtenons une formule se basant sur du bootstrapping car nous nous servons de la fonction d'état à $S_{t+1}$ et nous n'avons toujours pas besoin de la connaissance du modèle (Monte-Carlo).
 
-La formule précédemment constitue la base sur laquelle nous allons nous appuyer pour créer notre contrôleur. Néanmoins, si la fonction d'état est importante, il est plus intéressant d'approximer la fonction d'état action dans le contexte d'un contrôle.
+La formule \ref{eq:V} constitue la base sur laquelle nous allons nous appuyer pour créer notre contrôleur. Néanmoins, si la fonction d'état est importante, il est plus intéressant d'approximer la fonction d'état action dans le contexte d'un contrôle.
 
 Pour le contrôle, c'est donc la formule \ref{eq:sarsa}, qui se nomme SARSA (pour \emph{state action reward state action} \footnote{voir la formule ci-dessous pour comprendre pourquoi}, qui sera utilisée:
 
@@ -148,7 +148,7 @@ Pour arriver à expliquer le fonctionnement de l'\gls{A3C}, il convient de parti
 Si l'approche présentée  est naturelle, elle reste néanmoins incomplète car nous n'avons pas encore explicité notre fonction de performance. Dans notre cas, la fonction de performance sera la fonction d'état $v_{\pi_\omega}$(qui donne un estimé de la récompense obtenue en étant à un certain état et en utilisant une certaine politique). Il est facile de voir que plus la politique est bonne plus la fonction d'état (pour un état $s$) est bonne. Cela correspond donc à une bonne métrique de la qualité de la politque.
 
 
-Le problème réside maintenant dans notre capacité à expliciter $\nabla\eta(\omega_t)$. Ce problème a été résolue dans notre définition de $\eta$. En utilisant la méthode de Monte-Carlo REINFORCE \cite{Williams1992} (qui se base sur le théorème du gradient de la politque \cite{policygradient} qui explicite le gradient de la fonction d'état selon les poids $\omega$) 
+Le problème réside maintenant dans notre capacité à expliciter $\nabla\eta(\omega_t)$. Ce problème a été résolu dans notre définition de $\eta$. En utilisant la méthode de Monte-Carlo REINFORCE \cite{Williams1992} (qui se base sur le théorème du gradient de la politque \cite{policygradient} qui explicite le gradient de la fonction d'état selon les poids $\omega$) 
 
 On obtient alors:
 
@@ -156,7 +156,7 @@ On obtient alors:
     \omega_{t+1} = \omega_t + \alpha \gamma^t G_t \nabla \log\big(\pi(A_t \,\vert\, S_t, \omega)\big)
 \end{equation}
 
-Un dès default de la méthode REINFORCE\cite{Williams1992} est que l'estimateur du gradient qu'elle génére est hautement bruitée. Pour pallier à cela, plusieurs méthodes ont été créées.
+Un défaut de la méthode REINFORCE\cite{Williams1992} est que l'estimateur du gradient qu'elle génére est hautement bruitée. Pour pallier à cela, plusieurs méthodes ont été créées.
 La façon la plus simple de réduire la variance du gradient estimée est d'utiliser la formule suivante qui utilise la fonction d'état:
 
 \begin{equation}
@@ -184,3 +184,13 @@ l'asynchronous advantage actor-critic (\gls{A3C}) augmente A2C en utilisant n ag
 L'avantage de cette méthode est donc d'accélérer l'apprentissage de l'agent (en utlisant les n agents) mais le principal avantage de cette méthode est la décorrellation des gradients car les gradients sont issus des n agents. Cette problèmatique est la même que celle pour le deep-q-learning (DQN), contrairement à la mémoire utilisée dans le DQN qui utilise une partie des ressources de l'ordinateur, s'il est possible de générer n environnements en parallèle alors cette dernière méthode permet de sauvegarder des ressources. Néanmois, avec cette méthode sans module, il n'y a pas de réutilisation des résultats possibles, cela implique qu'il faudra un grand nombre d'episodes pour stabiliser un apprentissage. Un autre avantage qui vient des n agents qui apprennent en parallèle est que cela encourage l'exploration de l'environnement car les agents auront un comportement différent les uns des autres. 
 
 L'A3C sera donc l'algorithme de base pour le contrôle d'un agent dans SE-STAR. Il sera par la suite augmenté de plusieurs modules décrits au cours de ce rapport.
+\subsubsection{Vue des algorithmes existants en apprentissage par renforcement}
+
+Pour terminer avec l'introduction des principaux algorithmes en apprentissage par renforcement, il convient d'insister qu'il existe une multitude d'autres algorithmes. En particulier, il existe beaucoups d'extensions à l'\gls{A3C} et au DQN pourtant il existe bien d'autres méthodes performantes. Selon l'environnement cible, un type d'algorithme sera plus efficace (même si l'objectif final sera de converger vers un algorithme capable d'être efficace sur tout les environnements). On peut néanmois, de façon empirique et personnel juger de la difficulté d'un environnement. Sur la figure suivante est montrée une cartographie des principaux algorithmes \gls{RL} augmentée du domaine d'application et de la difficulté de l'environnement. La figure de base est tiré du papier Deep Learning for Video Game Playing \cite{2017arXiv170807902J}.
+
+\begin{figure}[ht!]
+    \begin{center}
+        \includegraphics[scale=.4]{./assets/map}
+    \end{center}
+    \caption{Cartographie des principaux algorithmes d'apprentissage par renforcement profond}
+\end{figure}
